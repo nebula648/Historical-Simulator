@@ -1,0 +1,649 @@
+{
+  "meta": {
+    "id": "chongzhen_1644",
+    "title": "崇祯十七年",
+    "subtitle": "公元 1644 年 · 大顺军围北京 · 山海关外的抉择",
+    "description": "崇祯十七年三月，李自成的大顺军已攻破大同、宣府，兵锋直指北京。关外，多尔衮的八旗铁骑正虎视眈眈，而吴三桂的四万关宁铁骑仍驻守在山海关。你将以大明末代皇帝崇祯的身份，面对大厦将倾的危局。是死守京师、南迁留都，还是做出那个改变中国三百年命运的山海关之决？每一个选择都将引发蝴蝶效应，重新书写华夏史诗。",
+    "era": "明末清初",
+    "start_year": 1644,
+    "start_month": 3,
+    "end_year": 1662,
+    "time_scale": "month",
+    "version": "1.0.0",
+    "author": "",
+    "map_manifest_key": "late_ming_geo",
+    "era_key": "ming",
+    "tags": [
+      "明末",
+      "清初",
+      "南明",
+      "李自成",
+      "吴三桂",
+      "多尔衮",
+      "甲申之变"
+    ]
+  },
+  "player_faction": "ming_empire",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "ming_empire": [
+        "beijing",
+        "tianjin",
+        "shanhai_pass",
+        "baoding",
+        "zhen_ding",
+        "tai_yuan",
+        "da_tong",
+        "xuan_fu",
+        "ji_ning",
+        "jinan",
+        "qing_zhou",
+        "yan_zhou",
+        "nanjing",
+        "su_zhou",
+        "yang_zhou",
+        "feng_yang",
+        "an_qing",
+        "hang_zhou",
+        "ning_bo",
+        "jin_hua",
+        "nan_chang",
+        "gan_zhou",
+        "wu_chang",
+        "xiang_yang",
+        "jing_zhou",
+        "chang_sha",
+        "fu_zhou",
+        "quan_zhou",
+        "guang_zhou",
+        "zhao_qing",
+        "gui_lin",
+        "wu_zhou",
+        "gui_yang",
+        "yun_nan",
+        "han_zhong",
+        "xing_yuan",
+        "ning_xia",
+        "lan_zhou",
+        "xi_ning",
+        "qiong_zhou"
+      ],
+      "qing_empire": [
+        "sheng_jing",
+        "liao_yang",
+        "tie_ling",
+        "kai_yuan",
+        "ning_gu_ta",
+        "ji_lin",
+        "hei_long_jiang",
+        "horqin",
+        "khalkha_east",
+        "chahar"
+      ],
+      "shun_regime": [
+        "xi_an",
+        "yan_an",
+        "ping_liang",
+        "luo_yang",
+        "kai_feng",
+        "nan_yang",
+        "gui_de",
+        "ping_yang",
+        "lu_an",
+        "yu_lin",
+        "ning_zhou"
+      ],
+      "xi_regime": [
+        "cheng_du",
+        "chong_qing",
+        "kui_zhou",
+        "bao_ning",
+        "shun_qing",
+        "jia_ding"
+      ],
+      "neutral": [
+        "mongolia_west",
+        "turpan",
+        "tibet",
+        "tai_wan"
+      ]
+    }
+  },
+  "factions": {
+    "ming_empire": {
+      "name": "大明帝国",
+      "color": "#C41E3A",
+      "ruler": "朱由检",
+      "ruler_title": "皇帝",
+      "government": "中央集权帝国",
+      "capital": "beijing",
+      "description": "立国二百七十六年的大明帝国已至暮年。内有流寇蜂起、国库空虚、党争不休；外有建虏叩关、边军糜烂。然而南方半壁尚在，南京六部建制完整，中兴或有一线生机。",
+      "flag_badass": false
+    },
+    "qing_empire": {
+      "name": "大清帝国",
+      "color": "#8B4513",
+      "ruler": "爱新觉罗·福临",
+      "ruler_title": "皇帝",
+      "government": "部落联盟向帝制过渡",
+      "capital": "sheng_jing",
+      "description": "皇太极驾崩未久，六岁的福临即位，睿亲王多尔衮摄政。八旗劲旅已征服漠南蒙古与朝鲜，正以鲸吞之势窥视关内。",
+      "flag_badass": true
+    },
+    "shun_regime": {
+      "name": "大顺政权",
+      "color": "#FF8C00",
+      "ruler": "李自成",
+      "ruler_title": "大顺永昌皇帝",
+      "government": "起义政权",
+      "capital": "xi_an",
+      "description": "从驿卒到皇帝，李自成仅用了十五年。大顺军裹挟数十万饥民，势如破竹，但内部缺乏治国人才，根基未稳。进入北京后的每一步，都将考验这个新生政权的成色。",
+      "flag_badass": true
+    },
+    "xi_regime": {
+      "name": "大西政权",
+      "color": "#FFD700",
+      "ruler": "张献忠",
+      "ruler_title": "大西王",
+      "government": "起义政权",
+      "capital": "cheng_du",
+      "description": "八大王张献忠割据四川，在明、顺、清三方夹缝中自成一系。性格暴戾多变，但麾下劲旅雄踞蜀地天险，不容小觑。",
+      "flag_badass": false
+    }
+  },
+  "initial_resources": {
+    "ming_empire": {
+      "treasury": 8000,
+      "manpower": 60000,
+      "food": 15000,
+      "stability": 25,
+      "prestige": 30,
+      "corruption": 85
+    },
+    "qing_empire": {
+      "treasury": 30000,
+      "manpower": 120000,
+      "food": 50000,
+      "stability": 85,
+      "prestige": 75,
+      "corruption": 10
+    },
+    "shun_regime": {
+      "treasury": 15000,
+      "manpower": 150000,
+      "food": 25000,
+      "stability": 50,
+      "prestige": 65,
+      "corruption": 35
+    },
+    "xi_regime": {
+      "treasury": 10000,
+      "manpower": 50000,
+      "food": 18000,
+      "stability": 55,
+      "prestige": 40,
+      "corruption": 30
+    }
+  },
+  "initial_military": {
+    "ming_empire": [
+      {
+        "name": "关宁铁骑",
+        "type": "精锐骑兵",
+        "size": 40000,
+        "location": "shanhai_pass",
+        "morale": 60,
+        "general": "吴三桂"
+      },
+      {
+        "name": "京营三大营",
+        "type": "混合部队",
+        "size": 8000,
+        "location": "beijing",
+        "morale": 20,
+        "general": "李国桢"
+      },
+      {
+        "name": "宣府镇边军",
+        "type": "步兵",
+        "size": 3000,
+        "location": "xuan_fu",
+        "morale": 25,
+        "general": "朱之冯"
+      },
+      {
+        "name": "南京守备营",
+        "type": "步兵",
+        "size": 12000,
+        "location": "nanjing",
+        "morale": 45,
+        "general": "史可法"
+      },
+      {
+        "name": "武昌水师",
+        "type": "水师",
+        "size": 6000,
+        "location": "wu_chang",
+        "morale": 50,
+        "general": "左良玉"
+      },
+      {
+        "name": "福建水师",
+        "type": "水师",
+        "size": 5000,
+        "location": "fu_zhou",
+        "morale": 55,
+        "general": "郑芝龙"
+      }
+    ],
+    "qing_empire": [
+      {
+        "name": "正黄旗",
+        "type": "精锐骑兵",
+        "size": 15000,
+        "location": "sheng_jing",
+        "morale": 90,
+        "general": "多尔衮"
+      },
+      {
+        "name": "镶黄旗",
+        "type": "精锐骑兵",
+        "size": 15000,
+        "location": "sheng_jing",
+        "morale": 88,
+        "general": "多铎"
+      },
+      {
+        "name": "正白旗",
+        "type": "精锐骑兵",
+        "size": 15000,
+        "location": "liao_yang",
+        "morale": 85,
+        "general": "阿济格"
+      },
+      {
+        "name": "正蓝旗",
+        "type": "骑兵",
+        "size": 13000,
+        "location": "tie_ling",
+        "morale": 82,
+        "general": "豪格"
+      },
+      {
+        "name": "汉军旗火器营",
+        "type": "火器营",
+        "size": 8000,
+        "location": "sheng_jing",
+        "morale": 75,
+        "general": "孔有德"
+      },
+      {
+        "name": "蒙古八旗",
+        "type": "骑兵",
+        "size": 20000,
+        "location": "horqin",
+        "morale": 80,
+        "general": "吴克善"
+      }
+    ],
+    "shun_regime": [
+      {
+        "name": "大顺中军",
+        "type": "混合部队",
+        "size": 50000,
+        "location": "ping_yang",
+        "morale": 70,
+        "general": "李自成"
+      },
+      {
+        "name": "刘宗敏部",
+        "type": "骑兵",
+        "size": 30000,
+        "location": "tai_yuan",
+        "morale": 72,
+        "general": "刘宗敏"
+      },
+      {
+        "name": "李过部",
+        "type": "步兵",
+        "size": 25000,
+        "location": "luo_yang",
+        "morale": 65,
+        "general": "李过"
+      },
+      {
+        "name": "田见秀部",
+        "type": "步兵",
+        "size": 20000,
+        "location": "kai_feng",
+        "morale": 60,
+        "general": "田见秀"
+      },
+      {
+        "name": "陕北留守军",
+        "type": "民兵",
+        "size": 15000,
+        "location": "yan_an",
+        "morale": 45,
+        "general": "高一功"
+      }
+    ],
+    "xi_regime": [
+      {
+        "name": "大西中军",
+        "type": "混合部队",
+        "size": 25000,
+        "location": "cheng_du",
+        "morale": 65,
+        "general": "张献忠"
+      },
+      {
+        "name": "孙可望部",
+        "type": "步兵",
+        "size": 12000,
+        "location": "chong_qing",
+        "morale": 60,
+        "general": "孙可望"
+      },
+      {
+        "name": "李定国部",
+        "type": "精锐步兵",
+        "size": 8000,
+        "location": "kui_zhou",
+        "morale": 68,
+        "general": "李定国"
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      {
+        "a": "ming_empire",
+        "b": "qing_empire",
+        "status": "war",
+        "tension": 95
+      },
+      {
+        "a": "ming_empire",
+        "b": "shun_regime",
+        "status": "war",
+        "tension": 100
+      },
+      {
+        "a": "ming_empire",
+        "b": "xi_regime",
+        "status": "war",
+        "tension": 60
+      },
+      {
+        "a": "qing_empire",
+        "b": "shun_regime",
+        "status": "neutral",
+        "tension": 70
+      },
+      {
+        "a": "qing_empire",
+        "b": "xi_regime",
+        "status": "neutral",
+        "tension": 20
+      },
+      {
+        "a": "shun_regime",
+        "b": "xi_regime",
+        "status": "neutral",
+        "tension": 40
+      }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_cz_001",
+      "name": "大顺军兵临城下",
+      "type": "audience",
+      "trigger": {
+        "condition": "month == 3 AND turn_number <= 2",
+        "priority": "mandatory"
+      },
+      "title": "京师告急——大顺军已破大同，兵锋直指居庸关",
+      "narrative": "崇祯十七年三月，李自成的大顺军在攻陷大同、宣府后，已进抵居庸关。京城三大营名存实亡，守军不足万人且欠饷数月，士气低落。满朝文武惶惶不可终日。\n\n大学士范景文跪奏：'陛下，京城危在旦夕。臣以为当召天下勤王之师，尤以山海关吴三桂之关宁铁骑为最要。然若调吴三桂入卫，则山海关空虚，恐建虏趁虚而入。此乃两难之局也！'\n\n兵部尚书张缙彦进言：'或请陛下南幸留都南京。江南富庶，且有长江天险，足可凭借。'\n\n你的决断将决定大明的命运。"
+    },
+    {
+      "id": "evt_cz_002",
+      "name": "吴三桂的山海关之择",
+      "type": "audience",
+      "trigger": {
+        "condition": "month >= 4 AND month <= 5",
+        "priority": "mandatory"
+      },
+      "title": "山海关上的抉择——联虏平寇，还是坚守孤城？",
+      "narrative": "吴三桂的关宁铁骑已抵达山海关，但北京已经失陷的消息传来（若北京已失守）。更糟糕的是，李自成已派降将唐通率军进攻山海关，并以吴三桂的父亲吴襄为人质，逼迫吴三桂投降大顺。\n\n吴三桂在山海关城头徘徊不决。他派出密使，一面与大顺军周旋，一面派副将杨珅出关前往清军大营……\n\n多尔衮的使者带来了条件：'若将军开关迎清军入关，大清许诺封将军为平西王，且绝不伤害汉人百姓。'\n\n作为大明天子，你得知了吴三桂的处境。你的决定是——"
+    },
+    {
+      "id": "evt_cz_003",
+      "name": "崇祯殉国与南明建立",
+      "type": "outcome",
+      "trigger": {
+        "condition": "ming_empire.controls('beijing') == false AND ming_empire.controls('nanjing') == true",
+        "priority": "follow_up"
+      },
+      "title": "南都定策——陪都南京的新朝廷",
+      "narrative": "北京陷落的消息传到南京，留都群臣在史可法、马士英等人的主持下，商讨拥立新君。南京六部建制完整，江南赋税充足，大明国祚仍有一线延续之机。\n\n史可法提议册立潞王朱常淓，而马士英与江北四镇将领力挺福王朱由崧。朝堂上的这场立嗣之争，将决定南明弘光朝廷的未来格局。",
+      "auto_effects": {
+        "ming_empire": {
+          "treasury": 12000,
+          "prestige": -20,
+          "stability": -10
+        }
+      },
+      "territory_changes": [],
+      "diplomacy_changes": []
+    },
+    {
+      "id": "evt_cz_004",
+      "name": "扬州十日的前夜",
+      "type": "conditional",
+      "trigger": {
+        "condition": "qing_empire.controls('beijing') AND year >= 1645 AND ming_empire.controls('yang_zhou')",
+        "priority": "mandatory"
+      },
+      "title": "扬州——江南门户告急",
+      "narrative": "清军在多铎的率领下大举南下，兵锋直指扬州。史可法以督师身份坐镇扬州，但江北四镇各怀异心。扬州的命运，牵动着整个江南的安危。"
+    },
+    {
+      "id": "evt_cz_005",
+      "name": "张献忠的动向",
+      "type": "conditional",
+      "trigger": {
+        "condition": "year == 1645 AND month >= 6 AND xi_regime.status == 'active'",
+        "priority": "random"
+      },
+      "title": "大西王北望——张献忠的战略抉择",
+      "narrative": "盘踞四川的张献忠面临抉择。北面的清军正逐步南下，东面的南明虽虚弱但仍据有江南。探马来报：'清军前锋已入汉中，或不久即南下入川。'\n\n张献忠召集义子们商议：'明朝气数将尽，然满洲人若入川，我辈亦无葬身之地。如今之计，是继续东出争霸，还是与南明联手抗清？'"
+    },
+    {
+      "id": "evt_cz_006",
+      "name": "郑氏水师的战略价值",
+      "type": "audience",
+      "trigger": {
+        "condition": "year >= 1645 AND ming_empire.controls('fu_zhou')",
+        "priority": "mandatory"
+      },
+      "title": "海上的希望——郑芝龙父子的水师",
+      "narrative": "福建总兵郑芝龙拥兵自重，麾下福建水师拥有大小战船千余艘，是东南沿海最强大的海上力量。其子郑森（后赐名成功）少年英武，深得军心。\n\n郑芝龙遣使到行在：'朝廷若能授予臣闽浙沿海之贸易专权，臣可保证每年进贡白银二十万两，并为朝廷守护海疆。'\n\n朝中有人担忧郑芝龙会成尾大不掉之势，也有人说值此危亡之际，当以大局为重。"
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_001",
+      "name": "开关迎虏的长期代价",
+      "trigger": "evt_cz_002.chosen == 'choice_allow_qing'",
+      "delayed_effects": [
+        {
+          "delay_turns": 6,
+          "effect": {
+            "ming_empire": {
+              "prestige": -10,
+              "stability": -10
+            }
+          },
+          "narrative": "清军入关的消息传遍天下，江南士绅指责朝廷'引狼入室'，民心开始动摇……"
+        },
+        {
+          "delay_turns": 18,
+          "effect": {
+            "qing_empire": {
+              "manpower": 20000,
+              "treasury": 10000
+            }
+          },
+          "narrative": "清军在华北站稳脚跟，大批汉军旗被编入八旗，清军的兵力得到了极大补充。"
+        }
+      ]
+    },
+    {
+      "id": "bf_002",
+      "name": "吴桥兵变的蝴蝶效应",
+      "trigger": "ming_empire.stability < 15 AND ming_empire.corruption > 80",
+      "delayed_effects": [
+        {
+          "delay_turns": 8,
+          "effect": {
+            "ming_empire": {
+              "manpower": -5000,
+              "stability": -10
+            }
+          },
+          "narrative": "由于欠饷日久，某镇守军发生哗变，部分士卒投奔了大顺军。"
+        }
+      ]
+    },
+    {
+      "id": "bf_003",
+      "name": "李定国的忠诚可塑性",
+      "trigger": "xi_regime.status == 'defeated' AND ming_empire.stability > 40",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {
+            "ming_empire": {
+              "manpower": 8000,
+              "prestige": 10
+            }
+          },
+          "narrative": "张献忠败亡后，其义子李定国率残部归顺南明，成为南明后期最杰出的抗清将领。"
+        }
+      ]
+    },
+    {
+      "id": "bf_004",
+      "name": "民心如水——赋税与稳定的权衡",
+      "trigger": "ming_empire.treasury < 5000 AND ming_empire.stability > 30",
+      "delayed_effects": [
+        {
+          "delay_turns": 12,
+          "effect": {
+            "ming_empire": {
+              "stability": -15,
+              "corruption": 10
+            }
+          },
+          "narrative": "为填补国库亏空，地方官员加征'剿饷''练饷'，民间怨声载道，'迎闯王不纳粮'的民谣再次流传……"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "qing_empire": {
+      "aggressiveness": 0.9,
+      "expansionism": 0.95,
+      "diplomacy_preference": "intimidation",
+      "decision_weights": {
+        "invade_south": 0.5,
+        "consolidate_north": 0.25,
+        "demand_surrender": 0.15,
+        "seek_truce": 0.1
+      }
+    },
+    "shun_regime": {
+      "aggressiveness": 0.7,
+      "expansionism": 0.6,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "expand_territory": 0.35,
+        "consolidate_power": 0.25,
+        "plunder_resources": 0.25,
+        "negotiate": 0.15
+      }
+    },
+    "xi_regime": {
+      "aggressiveness": 0.6,
+      "expansionism": 0.4,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "defend_territory": 0.4,
+        "raid_neighbors": 0.3,
+        "consolidate_power": 0.2,
+        "seek_alliance": 0.1
+      }
+    }
+  },
+  "resource_definitions": {
+    "treasury": {
+      "label": "国库",
+      "unit": "万两白银",
+      "icon": "💰",
+      "min": 0,
+      "max": 999999
+    },
+    "manpower": {
+      "label": "兵力",
+      "unit": "人",
+      "icon": "⚔️",
+      "min": 0,
+      "max": 999999
+    },
+    "food": {
+      "label": "粮草",
+      "unit": "石",
+      "icon": "🌾",
+      "min": 0,
+      "max": 999999
+    },
+    "stability": {
+      "label": "民心",
+      "unit": "%",
+      "icon": "🏛️",
+      "min": 0,
+      "max": 100
+    },
+    "prestige": {
+      "label": "威望",
+      "unit": "%",
+      "icon": "👑",
+      "min": 0,
+      "max": 100
+    },
+    "corruption": {
+      "label": "腐败度",
+      "unit": "%",
+      "icon": "🕷️",
+      "min": 0,
+      "max": 100
+    }
+  },
+  "victory_conditions": {
+    "domination_north": {
+      "description": "收复北京，驱逐清军出关",
+      "check": "ming_empire.controls('beijing') AND qing_empire.controlled_regions.length == 0"
+    },
+    "survival": {
+      "description": "坚持到 1662 年，南明政权依然存在",
+      "check": "year >= 1662 AND ming_empire.status == 'active'"
+    },
+    "alliance_victory": {
+      "description": "联合大顺和大西，共同将清军逐出中原",
+      "check": "ming_empire.status == 'active' AND qing_empire.status == 'defeated' AND (shun_regime.status == 'alliance' OR xi_regime.status == 'alliance')"
+    }
+  }
+}

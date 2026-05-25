@@ -1,0 +1,463 @@
+{
+  "meta": {
+    "id": "yuan_conquest_1276",
+    "title": "元灭南宋",
+    "subtitle": "元至元十三年 · 公元 1276 年 · 伯颜下江南·临安降元",
+    "description": "至元十一年，元世祖忽必烈以伯颜为统帅，发兵二十万大举伐宋。襄阳苦守六年后陷落，元军顺江而下，连破鄂州、安庆、建康，兵锋直指南宋行在临安。南宋朝廷在谢太后的主持下，以五岁幼帝赵㬎（宋恭帝）名义遣使求和，愿称侄纳贡，但被伯颜严词拒绝。你将以元世祖忽必烈的身份，指挥这场结束宋金元三百年分裂的大一统之战——是武力征服、怀柔招降，还是以雷霆之势一举扫平江南？你的每一个决策，都将决定中华帝国未来六百年的政治格局。",
+    "era": "元朝·至元年间",
+    "start_year": 1276,
+    "start_month": 1,
+    "end_year": 1294,
+    "time_scale": "month",
+    "version": "3.0.0",
+    "author": "",
+    "map_manifest_key": "yuan_geo",
+    "era_key": "yuan",
+    "tags": [
+      "元朝",
+      "忽必烈",
+      "伯颜",
+      "南宋灭亡",
+      "临安",
+      "文天祥",
+      "崖山海战",
+      "大一统"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 大元朝廷（大都·汗廷）",
+    "intel_org_name": "大都监察司",
+    "region_lore_map": {
+      "浙江": "江浙行省·临安路（南宋行在·攻略目标）",
+      "江苏": "江浙行省·集庆路（建康·元军前线大营）",
+      "湖北": "湖广行省·武昌路（元军水师基地）",
+      "重庆": "四川行省·重庆路（钓鱼城·宋军最后堡垒）",
+      "广东": "江西行省·广州路（南宋最后退路）",
+      "北京": "大都路（京师·汗八里·忽必烈汗廷所在）"
+    }
+  },
+  "player_faction": "yuan_empire",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "yuan_empire": [
+        "北京", "天津", "河北", "山西", "山东",
+        "河南", "陕西", "甘肃", "宁夏", "青海",
+        "新疆", "西藏", "内蒙古", "辽宁", "吉林",
+        "黑龙江", "湖北", "安徽", "江苏", "四川"
+      ],
+      "southern_song": [
+        "浙江", "江西", "福建", "广东", "广西",
+        "湖南", "贵州", "云南", "海南"
+      ],
+      "neutral": [
+        "重庆", "台湾"
+      ]
+    }
+  },
+  "factions": {
+    "yuan_empire": {
+      "name": "大元帝国",
+      "color": "#1A5C2A",
+      "ruler": "忽必烈",
+      "ruler_title": "大元皇帝·蒙古大汗",
+      "government": "蒙汉二元帝国·行省制",
+      "capital": "北京",
+      "description": "自成吉思汗统一蒙古草原，历经窝阔台、蒙哥三代大汗的征伐，蒙古帝国的版图横跨欧亚。忽必烈击败其弟阿里不哥夺得汗位后，改国号为大元，定都大都（北京），以中华正统自居。如今灭宋在即，天下统一已是指日可待。",
+      "flag_badass": true
+    },
+    "southern_song": {
+      "name": "南宋残朝",
+      "color": "#C41E3A",
+      "ruler": "赵㬎",
+      "ruler_title": "大宋皇帝",
+      "government": "垂帘听政（谢太后）·权相制",
+      "capital": "浙江",
+      "description": "立国三百余年的大宋如今仅余东南一隅。五岁幼帝赵㬎在祖母谢太后的怀抱中临朝，实际大权操于丞相贾似道之手（贾似道已在丁家洲战败后被贬杀）。朝中主战派文天祥、张世杰等人虽忠勇可嘉，但大厦将倾，独木难支。",
+      "flag_badass": false
+    }
+  },
+  "initial_resources": {
+    "yuan_empire": {
+      "treasury": 600000,
+      "manpower": 220000,
+      "food": 10000,
+      "stability": 75,
+      "prestige": 85,
+      "corruption": 20
+    },
+    "southern_song": {
+      "treasury": 150000,
+      "manpower": 90000,
+      "food": 3500,
+      "stability": 20,
+      "prestige": 25,
+      "corruption": 70
+    }
+  },
+  "initial_military": {
+    "yuan_empire": [
+      {
+        "name": "伯颜中军",
+        "type": "精锐混合兵团",
+        "size": 70000,
+        "location": "江苏",
+        "morale": 85,
+        "general": "伯颜"
+      },
+      {
+        "name": "阿术骑兵军团",
+        "type": "精锐骑兵",
+        "size": 35000,
+        "location": "湖北",
+        "morale": 88,
+        "general": "阿术"
+      },
+      {
+        "name": "张弘范水师",
+        "type": "水师",
+        "size": 25000,
+        "location": "江苏",
+        "morale": 78,
+        "general": "张弘范"
+      },
+      {
+        "name": "吕文焕降军",
+        "type": "混合部队",
+        "size": 30000,
+        "location": "湖北",
+        "morale": 55,
+        "general": "吕文焕"
+      },
+      {
+        "name": "大都宿卫军",
+        "type": "精锐骑兵",
+        "size": 20000,
+        "location": "北京",
+        "morale": 90,
+        "general": "真金太子"
+      },
+      {
+        "name": "四川行省驻军",
+        "type": "混合部队",
+        "size": 25000,
+        "location": "四川",
+        "morale": 65,
+        "general": ""
+      },
+      {
+        "name": "河南江北驻军",
+        "type": "步兵",
+        "size": 20000,
+        "location": "河南",
+        "morale": 60,
+        "general": "史天泽"
+      }
+    ],
+    "southern_song": [
+      {
+        "name": "临安禁军",
+        "type": "禁军",
+        "size": 35000,
+        "location": "浙江",
+        "morale": 20,
+        "general": "张世杰"
+      },
+      {
+        "name": "文天祥勤王军",
+        "type": "民兵",
+        "size": 12000,
+        "location": "江西",
+        "morale": 50,
+        "general": "文天祥"
+      },
+      {
+        "name": "福建水师",
+        "type": "水师",
+        "size": 10000,
+        "location": "福建",
+        "morale": 40,
+        "general": ""
+      },
+      {
+        "name": "广南驻军",
+        "type": "步兵",
+        "size": 10000,
+        "location": "广东",
+        "morale": 35,
+        "general": ""
+      },
+      {
+        "name": "湖南驻屯军",
+        "type": "混合部队",
+        "size": 8000,
+        "location": "湖南",
+        "morale": 30,
+        "general": ""
+      },
+      {
+        "name": "钓鱼城守军",
+        "type": "精锐步兵",
+        "size": 5000,
+        "location": "重庆",
+        "morale": 70,
+        "general": "王坚"
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      {
+        "a": "yuan_empire",
+        "b": "southern_song",
+        "status": "war",
+        "tension": 100
+      }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "yuan_bayan_advance",
+      "name": "伯颜下江南",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "建康大营——伯颜请示进攻临安方略",
+      "narrative": "伯颜的二十万大军已攻克建康（南京），兵分三路向临安推进。南宋朝廷遣使求和，愿称臣、称侄，岁贡银绢各二十五万。\n\n大都汗廷接到伯颜的飞马急报——是接受南宋的求和条件、暂缓攻势巩固江北，还是令伯颜继续进军、一举荡平江南？\n\n朝中汉臣建议以怀柔之策招降宋室，以减少江南抵抗；蒙古诸王则力主乘胜追击、不留后患。",
+      "choices": [
+        {
+          "id": "reject_peace_march_on",
+          "text": "拒绝求和！命伯颜继续南进，一举攻克临安",
+          "effects": {
+            "treasury": -30000,
+            "manpower": -12000,
+            "prestige": 20,
+            "stability": 5
+          },
+          "territory_changes": [
+            {"region_id": "浙江", "to_faction": "yuan_empire", "reason": "伯颜攻克临安，宋恭帝出降"}
+          ],
+          "narrative_result": "伯颜断然拒绝南宋求和，挥师直下临安。宋军在皋亭山作最后抵抗后溃散。谢太后携五岁幼帝赵㬎出城降元，南宋实质灭亡。\n\n伯颜入临安后封存府库、安抚百姓，将宋恭帝及宗室大臣押送大都。忽必烈在太庙告祭祖先：天下归一，大元为中华正统！"
+        },
+        {
+          "id": "accept_song_surrender",
+          "text": "接受南宋称臣纳贡，暂留宋朝为藩属国",
+          "effects": {
+            "treasury": 80000,
+            "prestige": 5,
+            "stability": 10
+          },
+          "narrative_result": "忽必烈接受了南宋的称臣请求，保留宋朝为东南藩属。这一决策减少了江南的抵抗，但也留下了宋朝日后图谋复国的隐患。文天祥、陆秀夫等忠臣拒不接受投降条件，南下福建、广东继续抗元……"
+        },
+        {
+          "id": "consolidate_first",
+          "text": "暂缓进攻，令伯颜巩固江北、建立水师基地",
+          "effects": {
+            "treasury": -15000,
+            "manpower": 10000,
+            "stability": 10,
+            "prestige": -5
+          },
+          "narrative_result": "忽必烈下令暂缓攻势。伯颜在江北设立行营，张弘范加紧督造战船、训练水师。半年后，元军水陆并进，以压倒之势南渡——但这半年的迟滞也让南宋有了喘息之机，文天祥和张世杰正在南方组织新的防线……"
+        }
+      ]
+    },
+    {
+      "id": "yuan_wen_tianxiang",
+      "name": "文天祥不屈",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number >= 4 AND southern_song.status == 'active'",
+        "priority": "high"
+      },
+      "title": "文天祥——南宋最后的脊梁",
+      "narrative": "文天祥在南剑州（今福建南平）开府聚兵，号召天下忠义之士继续抗元。他散尽家财充作军费，短期间募兵数万，转战于江西、福建、广东之间。\n\n伯颜在大都进言：'文天祥一日不除，江南一日不宁。然此人是忠义之士，杀之恐失江南人心。'\n\n对于文天祥，你的态度是——",
+      "choices": [
+        {
+          "id": "recruit_wen",
+          "text": "以宰相之位招降文天祥，许其保留汉族衣冠礼制",
+          "effects": {
+            "treasury": -10000,
+            "prestige": 15,
+            "stability": 10
+          },
+          "narrative_result": "忽必烈亲笔修书，遣使以上宾之礼招降文天祥，许以宰相之位，承诺保护汉族文化礼制。文天祥在被俘后婉拒道：'人生自古谁无死，留取丹心照汗青。'\n\n然而元廷的宽容姿态赢得了部分江南士人的好感，投降者络绎不绝。"
+        },
+        {
+          "id": "capture_wen",
+          "text": "命张弘范全力追捕文天祥，不降则囚于大都",
+          "effects": {
+            "treasury": -8000,
+            "manpower": -3000,
+            "prestige": -5,
+            "stability": -5
+          },
+          "narrative_result": "张弘范率精兵追剿文天祥部，在五坡岭将其俘获。文天祥被押送大都，忽必烈多次亲自劝降未果。文天祥在狱中写下《正气歌》，于柴市慷慨就义。\n\n文天祥之死反而激发了江南的抵抗意志……"
+        }
+      ]
+    },
+    {
+      "id": "yuan_diaoyu_city",
+      "name": "钓鱼城——最后的堡垒",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 6 AND yuan_empire.controls('重庆') == false",
+        "priority": "high"
+      },
+      "title": "钓鱼城——这座山城曾令蒙哥大汗殒命",
+      "narrative": "重庆府合州钓鱼城，这座建在嘉陵江畔绝壁之上的山城，在宋将王坚、张珏等人的坚守下已抗蒙三十六年。当年蒙哥大汗亲征至此，中飞石殒命。如今南宋已灭，钓鱼城却仍在倔强地飘扬着宋字旗。\n\n忽必烈面对这个杀兄之地，心情复杂。是强攻复仇，还是围困劝降？",
+      "choices": [
+        {
+          "id": "siege_diaoyu",
+          "text": "重兵围困不攻，断绝粮道迫其自降",
+          "effects": {
+            "treasury": -10000,
+            "manpower": -2000,
+            "stability": 5,
+            "prestige": 5
+          },
+          "territory_changes": [
+            {"region_id": "重庆", "to_faction": "yuan_empire", "reason": "钓鱼城粮尽投降，四川全面纳入元朝版图"}
+          ],
+          "narrative_result": "元军围困钓鱼城长达数月，城中粮尽。守将王立于城头见南宋已亡、再战无益，遂与元军谈判：不杀降卒、不屠百姓，方开城投降。忽必烈同意了条件。\n\n钓鱼城终降，三十六年的坚守画上了句号。这座山城的忠诚与坚韧，连蒙古人也为之动容。"
+        },
+        {
+          "id": "assault_diaoyu",
+          "text": "誓破此城以报蒙哥之仇！调集回回炮强攻",
+          "effects": {
+            "treasury": -25000,
+            "manpower": -15000,
+            "prestige": 10,
+            "stability": -10
+          },
+          "narrative_result": "元军调集西域回回炮匠，以巨石日夜轰击钓鱼城。城垣多处崩塌，守军浴血巷战，最终城破。元军在城内大索三日……这座英雄山城化为废墟，但'钓鱼城'三个字永远刻在了华夏抵抗史上。"
+        }
+      ]
+    },
+    {
+      "id": "yuan_yashan_battle",
+      "name": "崖山海战",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 10 AND southern_song.status == 'active' AND yuan_empire.controls('广东') == false",
+        "priority": "mandatory"
+      },
+      "title": "崖山·最后的决战",
+      "narrative": "南宋残部在陆秀夫、张世杰的拥护下，立八岁的赵昺为帝，退至广东新会崖山，以巨大锁链联结千余艘战船，背海结阵，作最后一搏。\n\n张弘范率水师赶到崖山，见宋军连环船阵，笑道：'此乃三国赤壁故事也！'遂以火攻之策，大破宋军水寨。\n\n陆秀夫见大势已去，背负幼帝赵昺蹈海殉国。数万宋军将士、官民妇孺随帝跳海，海上浮尸蔽日……南宋三百年基业，于此画上悲壮的句号。",
+      "auto_effects": {
+        "prestige": 30,
+        "stability": 15
+      },
+      "territory_changes": [
+        {"region_id": "广东", "to_faction": "yuan_empire", "reason": "崖山海战大捷，宋室彻底覆灭"},
+        {"region_id": "福建", "to_faction": "yuan_empire", "reason": "福建纳入元朝版图"},
+        {"region_id": "江西", "to_faction": "yuan_empire", "reason": "江西纳入元朝版图"},
+        {"region_id": "湖南", "to_faction": "yuan_empire", "reason": "湖南纳入元朝版图"},
+        {"region_id": "广西", "to_faction": "yuan_empire", "reason": "广西纳入元朝版图"},
+        {"region_id": "贵州", "to_faction": "yuan_empire", "reason": "贵州纳入元朝版图"},
+        {"region_id": "云南", "to_faction": "yuan_empire", "reason": "云南纳入元朝版图"},
+        {"region_id": "海南", "to_faction": "yuan_empire", "reason": "海南纳入元朝版图"}
+      ]
+    },
+    {
+      "id": "yuan_kublai_legacy",
+      "name": "大都之治",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 18 AND southern_song.status == 'defeated'",
+        "priority": "medium"
+      },
+      "title": "天下一统——忽必烈的建国方略",
+      "narrative": "天下初定，忽必烈在大都皇城面临新的抉择——如何治理这个庞大的帝国？是用蒙古旧制管理汉地，还是推行汉法、以儒学立国？\n\n汉臣刘秉忠、许衡等建议开科举、复礼乐、轻徭薄赋；蒙古贵族则主张保持游牧旧俗、分封诸王、重武轻文。",
+      "choices": [
+        {
+          "id": "adopt_han_law",
+          "text": "推行汉法：开科举、设学校、编律令、兴农桑",
+          "effects": {
+            "treasury": -50000,
+            "stability": 20,
+            "prestige": 15,
+            "corruption": -10
+          },
+          "narrative_result": "忽必烈采纳汉臣之策，推行汉法。开科取士，编订《至元新格》（法典），劝课农桑。大元帝国在中原的统治日益稳固，江南经济亦逐渐恢复。然而蒙古诸王对新政的不满也在暗中积聚……"
+        },
+        {
+          "id": "keep_mongol_tradition",
+          "text": "维持蒙古旧制：保留分封、四等人制、重武轻文",
+          "effects": {
+            "stability": -10,
+            "prestige": 5,
+            "corruption": 15
+          },
+          "narrative_result": "忽必烈偏向蒙古贵族的立场，保留了四等人制。虽然短期内巩固了蒙古统治集团，但民族矛盾的加剧为日后埋下了深深的隐患。江南汉人的怨气在暗中发酵……"
+        }
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "yuan_southern_resistance",
+      "name": "江南抵抗的代价",
+      "trigger": "yuan_bayan_advance.chosen == 'reject_peace_march_on' AND turn_number >= 8",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {"stability": -10, "corruption": 10},
+          "narrative": "武力灭宋导致江南各地此起彼伏的民间抵抗，元廷不得不在江南驻军镇压，消耗了大量军费。"
+        }
+      ]
+    },
+    {
+      "id": "yuan_maritime_trade",
+      "name": "海上丝绸之路的繁荣",
+      "trigger": "yuan_yashan_battle 事件已触发 AND turn_number >= 16",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {"treasury": 30000, "prestige": 10},
+          "narrative": "天下一统后，泉州、广州的海外贸易空前繁荣。马可·波罗来到大都朝见忽必烈，盛赞大元帝国的富庶与文明。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "southern_song": {
+      "aggressiveness": 0.15,
+      "expansionism": 0.05,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "sue_for_peace": 0.40,
+        "defend": 0.35,
+        "flee": 0.15,
+        "attack": 0.10
+      }
+    }
+  },
+  "victory_conditions": {
+    "total_conquest": {
+      "description": "天下一统：南宋残部全部覆灭，大元统一华夏全境",
+      "conditions": [
+        "southern_song.status == 'defeated'",
+        "重庆 ∈ yuan_empire 控制",
+        "广东 ∈ yuan_empire 控制",
+        "台湾 ∈ yuan_empire 控制"
+      ]
+    },
+    "standard_victory": {
+      "description": "降伏宋室：南宋投降或灭亡，且拥有浙江、福建、广东",
+      "conditions": [
+        "southern_song.status == 'defeated' OR southern_song.status == 'vassal'",
+        "浙江 ∈ yuan_empire 控制"
+      ]
+    },
+    "stalemate": {
+      "description": "持久未决：turn_number ≥ 60 而南宋犹存",
+      "conditions": [
+        "turn_number ≥ 60",
+        "southern_song.status == 'active'"
+      ]
+    }
+  }
+}

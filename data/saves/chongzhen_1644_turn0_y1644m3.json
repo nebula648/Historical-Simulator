@@ -1,0 +1,2001 @@
+{
+  "meta": {
+    "slot_name": "chongzhen_1644_turn0_y1644m3",
+    "saved_at": "2026-05-24T18:35:04.776254",
+    "scenario_id": "chongzhen_1644",
+    "scenario_title": "崇祯十七年",
+    "year": 1649,
+    "month": 3,
+    "turn_number": 1
+  },
+  "game_state": {
+    "year": 1649,
+    "month": 3,
+    "season": "春",
+    "turn_number": 1,
+    "global_flags": {},
+    "scenario_id": "chongzhen_1644",
+    "scenario_title": "崇祯十七年",
+    "scenario_meta": {
+      "id": "chongzhen_1644",
+      "title": "崇祯十七年",
+      "subtitle": "公元 1644 年 · 大顺军围北京 · 山海关外的抉择",
+      "description": "崇祯十七年三月，李自成的大顺军已攻破大同、宣府，兵锋直指北京。关外，多尔衮的八旗铁骑正虎视眈眈，而吴三桂的四万关宁铁骑仍驻守在山海关。你将以大明末代皇帝崇祯的身份，面对大厦将倾的危局。是死守京师、南迁留都，还是做出那个改变中国三百年命运的山海关之决？每一个选择都将引发蝴蝶效应，重新书写华夏史诗。",
+      "era": "明末清初",
+      "start_year": 1644,
+      "start_month": 3,
+      "end_year": 1662,
+      "time_scale": "month",
+      "version": "1.0.0",
+      "author": "",
+      "tags": [
+        "明末",
+        "清初",
+        "南明",
+        "李自成",
+        "吴三桂",
+        "多尔衮",
+        "甲申之变"
+      ]
+    },
+    "player_faction": "ming_empire",
+    "factions": {
+      "ming_empire": {
+        "__dataclass__": "Faction",
+        "fields": {
+          "faction_id": "ming_empire",
+          "name": "大明帝国",
+          "color": "#C41E3A",
+          "ruler": "朱由检",
+          "ruler_title": "皇帝",
+          "government": "中央集权帝国",
+          "capital": "tai_wan",
+          "description": "立国二百七十六年的大明帝国已至暮年。内有流寇蜂起、国库空虚、党争不休；外有建虏叩关、边军糜烂。然而南方半壁尚在，南京六部建制完整，中兴或有一线生机。",
+          "status": "active",
+          "flag_badass": false,
+          "resources": {
+            "treasury": 0,
+            "manpower": 0,
+            "food": 0,
+            "stability": 0,
+            "prestige": 0,
+            "corruption": 169
+          },
+          "military": [
+            {
+              "name": "关宁铁骑",
+              "unit_type": "精锐骑兵",
+              "size": 40000,
+              "location": "shanhai_pass",
+              "morale": 60,
+              "general": "吴三桂",
+              "max_size": 40000
+            },
+            {
+              "name": "京营三大营",
+              "unit_type": "混合部队",
+              "size": 8000,
+              "location": "beijing",
+              "morale": 20,
+              "general": "李国桢",
+              "max_size": 8000
+            },
+            {
+              "name": "宣府镇边军",
+              "unit_type": "步兵",
+              "size": 3000,
+              "location": "xuan_fu",
+              "morale": 25,
+              "general": "朱之冯",
+              "max_size": 3000
+            },
+            {
+              "name": "南京守备营",
+              "unit_type": "步兵",
+              "size": 12000,
+              "location": "nanjing",
+              "morale": 45,
+              "general": "史可法",
+              "max_size": 12000
+            },
+            {
+              "name": "武昌水师",
+              "unit_type": "水师",
+              "size": 6000,
+              "location": "wu_chang",
+              "morale": 50,
+              "general": "左良玉",
+              "max_size": 6000
+            },
+            {
+              "name": "福建水师",
+              "unit_type": "水师",
+              "size": 5000,
+              "location": "fu_zhou",
+              "morale": 55,
+              "general": "郑芝龙",
+              "max_size": 5000
+            }
+          ],
+          "controlled_regions": [
+            "tai_yuan",
+            "da_tong",
+            "xuan_fu",
+            "ji_ning",
+            "jinan",
+            "qing_zhou",
+            "yan_zhou",
+            "nanjing",
+            "su_zhou",
+            "yang_zhou",
+            "feng_yang",
+            "an_qing",
+            "hang_zhou",
+            "ning_bo",
+            "jin_hua",
+            "nan_chang",
+            "gan_zhou",
+            "wu_chang",
+            "xiang_yang",
+            "jing_zhou",
+            "chang_sha",
+            "fu_zhou",
+            "quan_zhou",
+            "guang_zhou",
+            "zhao_qing",
+            "gui_lin",
+            "wu_zhou",
+            "gui_yang",
+            "yun_nan",
+            "han_zhong",
+            "xing_yuan",
+            "ning_xia",
+            "lan_zhou",
+            "xi_ning",
+            "qiong_zhou",
+            "taiwan",
+            "tai_wan"
+          ],
+          "aggressiveness": 0.5,
+          "expansionism": 0.5,
+          "diplomacy_preference": "neutral",
+          "decision_weights": {}
+        }
+      },
+      "qing_empire": {
+        "__dataclass__": "Faction",
+        "fields": {
+          "faction_id": "qing_empire",
+          "name": "大清帝国",
+          "color": "#8B4513",
+          "ruler": "爱新觉罗·福临",
+          "ruler_title": "皇帝",
+          "government": "部落联盟向帝制过渡",
+          "capital": "sheng_jing",
+          "description": "皇太极驾崩未久，六岁的福临即位，睿亲王多尔衮摄政。八旗劲旅已征服漠南蒙古与朝鲜，正以鲸吞之势窥视关内。",
+          "status": "active",
+          "flag_badass": true,
+          "resources": {
+            "treasury": 30000,
+            "manpower": 120000,
+            "food": 50000,
+            "stability": 85,
+            "prestige": 75,
+            "corruption": 10
+          },
+          "military": [
+            {
+              "name": "正黄旗",
+              "unit_type": "精锐骑兵",
+              "size": 15000,
+              "location": "sheng_jing",
+              "morale": 90,
+              "general": "多尔衮",
+              "max_size": 15000
+            },
+            {
+              "name": "镶黄旗",
+              "unit_type": "精锐骑兵",
+              "size": 15000,
+              "location": "sheng_jing",
+              "morale": 88,
+              "general": "多铎",
+              "max_size": 15000
+            },
+            {
+              "name": "正白旗",
+              "unit_type": "精锐骑兵",
+              "size": 15000,
+              "location": "liao_yang",
+              "morale": 85,
+              "general": "阿济格",
+              "max_size": 15000
+            },
+            {
+              "name": "正蓝旗",
+              "unit_type": "骑兵",
+              "size": 13000,
+              "location": "tie_ling",
+              "morale": 82,
+              "general": "豪格",
+              "max_size": 13000
+            },
+            {
+              "name": "汉军旗火器营",
+              "unit_type": "火器营",
+              "size": 8000,
+              "location": "sheng_jing",
+              "morale": 75,
+              "general": "孔有德",
+              "max_size": 8000
+            },
+            {
+              "name": "蒙古八旗",
+              "unit_type": "骑兵",
+              "size": 20000,
+              "location": "horqin",
+              "morale": 80,
+              "general": "吴克善",
+              "max_size": 20000
+            }
+          ],
+          "controlled_regions": [
+            "sheng_jing",
+            "liao_yang",
+            "tie_ling",
+            "kai_yuan",
+            "ning_gu_ta",
+            "ji_lin",
+            "hei_long_jiang",
+            "horqin",
+            "khalkha_east",
+            "chahar"
+          ],
+          "aggressiveness": 0.9,
+          "expansionism": 0.95,
+          "diplomacy_preference": "intimidation",
+          "decision_weights": {
+            "invade_south": 0.5,
+            "consolidate_north": 0.25,
+            "demand_surrender": 0.15,
+            "seek_truce": 0.1
+          }
+        }
+      },
+      "shun_regime": {
+        "__dataclass__": "Faction",
+        "fields": {
+          "faction_id": "shun_regime",
+          "name": "大顺政权",
+          "color": "#FF8C00",
+          "ruler": "李自成",
+          "ruler_title": "大顺永昌皇帝",
+          "government": "起义政权",
+          "capital": "xi_an",
+          "description": "从驿卒到皇帝，李自成仅用了十五年。大顺军裹挟数十万饥民，势如破竹，但内部缺乏治国人才，根基未稳。进入北京后的每一步，都将考验这个新生政权的成色。",
+          "status": "active",
+          "flag_badass": true,
+          "resources": {
+            "treasury": 15000,
+            "manpower": 150000,
+            "food": 25000,
+            "stability": 50,
+            "prestige": 65,
+            "corruption": 35
+          },
+          "military": [
+            {
+              "name": "大顺中军",
+              "unit_type": "混合部队",
+              "size": 50000,
+              "location": "ping_yang",
+              "morale": 70,
+              "general": "李自成",
+              "max_size": 50000
+            },
+            {
+              "name": "刘宗敏部",
+              "unit_type": "骑兵",
+              "size": 30000,
+              "location": "tai_yuan",
+              "morale": 72,
+              "general": "刘宗敏",
+              "max_size": 30000
+            },
+            {
+              "name": "李过部",
+              "unit_type": "步兵",
+              "size": 25000,
+              "location": "luo_yang",
+              "morale": 65,
+              "general": "李过",
+              "max_size": 25000
+            },
+            {
+              "name": "田见秀部",
+              "unit_type": "步兵",
+              "size": 20000,
+              "location": "kai_feng",
+              "morale": 60,
+              "general": "田见秀",
+              "max_size": 20000
+            },
+            {
+              "name": "陕北留守军",
+              "unit_type": "民兵",
+              "size": 15000,
+              "location": "yan_an",
+              "morale": 45,
+              "general": "高一功",
+              "max_size": 15000
+            }
+          ],
+          "controlled_regions": [
+            "xi_an",
+            "yan_an",
+            "ping_liang",
+            "luo_yang",
+            "kai_feng",
+            "nan_yang",
+            "gui_de",
+            "ping_yang",
+            "lu_an",
+            "yu_lin",
+            "ning_zhou",
+            "tianjin",
+            "zhen_ding",
+            "beijing",
+            "ju_yong_guan"
+          ],
+          "aggressiveness": 0.7,
+          "expansionism": 0.6,
+          "diplomacy_preference": "opportunistic",
+          "decision_weights": {
+            "expand_territory": 0.35,
+            "consolidate_power": 0.25,
+            "plunder_resources": 0.25,
+            "negotiate": 0.15
+          }
+        }
+      },
+      "xi_regime": {
+        "__dataclass__": "Faction",
+        "fields": {
+          "faction_id": "xi_regime",
+          "name": "大西政权",
+          "color": "#FFD700",
+          "ruler": "张献忠",
+          "ruler_title": "大西王",
+          "government": "起义政权",
+          "capital": "cheng_du",
+          "description": "八大王张献忠割据四川，在明、顺、清三方夹缝中自成一系。性格暴戾多变，但麾下劲旅雄踞蜀地天险，不容小觑。",
+          "status": "active",
+          "flag_badass": false,
+          "resources": {
+            "treasury": 10000,
+            "manpower": 50000,
+            "food": 18000,
+            "stability": 55,
+            "prestige": 40,
+            "corruption": 30
+          },
+          "military": [
+            {
+              "name": "大西中军",
+              "unit_type": "混合部队",
+              "size": 25000,
+              "location": "cheng_du",
+              "morale": 65,
+              "general": "张献忠",
+              "max_size": 25000
+            },
+            {
+              "name": "孙可望部",
+              "unit_type": "步兵",
+              "size": 12000,
+              "location": "chong_qing",
+              "morale": 60,
+              "general": "孙可望",
+              "max_size": 12000
+            },
+            {
+              "name": "李定国部",
+              "unit_type": "精锐步兵",
+              "size": 8000,
+              "location": "kui_zhou",
+              "morale": 68,
+              "general": "李定国",
+              "max_size": 8000
+            }
+          ],
+          "controlled_regions": [
+            "cheng_du",
+            "chong_qing",
+            "kui_zhou",
+            "bao_ning",
+            "shun_qing",
+            "jia_ding"
+          ],
+          "aggressiveness": 0.6,
+          "expansionism": 0.4,
+          "diplomacy_preference": "survival",
+          "decision_weights": {
+            "defend_territory": 0.4,
+            "raid_neighbors": 0.3,
+            "consolidate_power": 0.2,
+            "seek_alliance": 0.1
+          }
+        }
+      },
+      "infected_zone": {
+        "__dataclass__": "Faction",
+        "fields": {
+          "faction_id": "infected_zone",
+          "name": "Infected Zone",
+          "color": "#FFD700",
+          "ruler": "Infected Zone",
+          "ruler_title": "异界之主",
+          "government": "未知",
+          "capital": "",
+          "description": "【动态势力】由玩家推演中自动生成（ID: infected_zone）",
+          "status": "active",
+          "flag_badass": false,
+          "resources": {
+            "treasury": 50000,
+            "manpower": 50000,
+            "food": 30000,
+            "stability": 70,
+            "prestige": 50,
+            "corruption": 20
+          },
+          "military": [],
+          "controlled_regions": [
+            "baoding",
+            "tian_jin"
+          ],
+          "aggressiveness": 0.5,
+          "expansionism": 0.5,
+          "diplomacy_preference": "neutral",
+          "decision_weights": {}
+        }
+      }
+    },
+    "resources": {
+      "ming_empire": {
+        "treasury": 0,
+        "manpower": 0,
+        "food": 0,
+        "stability": 0,
+        "prestige": 0,
+        "corruption": 169
+      },
+      "qing_empire": {
+        "treasury": 30000,
+        "manpower": 120000,
+        "food": 50000,
+        "stability": 85,
+        "prestige": 75,
+        "corruption": 10
+      },
+      "shun_regime": {
+        "treasury": 15000,
+        "manpower": 150000,
+        "food": 25000,
+        "stability": 50,
+        "prestige": 65,
+        "corruption": 35
+      },
+      "xi_regime": {
+        "treasury": 10000,
+        "manpower": 50000,
+        "food": 18000,
+        "stability": 55,
+        "prestige": 40,
+        "corruption": 30
+      },
+      "infected_zone": {
+        "treasury": 50000,
+        "manpower": 50000,
+        "food": 30000,
+        "stability": 70,
+        "prestige": 50,
+        "corruption": 20
+      }
+    },
+    "military": {
+      "ming_empire": [
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "关宁铁骑",
+            "unit_type": "精锐骑兵",
+            "size": 40000,
+            "location": "shanhai_pass",
+            "morale": 60,
+            "general": "吴三桂",
+            "max_size": 40000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "京营三大营",
+            "unit_type": "混合部队",
+            "size": 8000,
+            "location": "beijing",
+            "morale": 20,
+            "general": "李国桢",
+            "max_size": 8000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "宣府镇边军",
+            "unit_type": "步兵",
+            "size": 3000,
+            "location": "xuan_fu",
+            "morale": 25,
+            "general": "朱之冯",
+            "max_size": 3000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "南京守备营",
+            "unit_type": "步兵",
+            "size": 12000,
+            "location": "nanjing",
+            "morale": 45,
+            "general": "史可法",
+            "max_size": 12000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "武昌水师",
+            "unit_type": "水师",
+            "size": 6000,
+            "location": "wu_chang",
+            "morale": 50,
+            "general": "左良玉",
+            "max_size": 6000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "福建水师",
+            "unit_type": "水师",
+            "size": 5000,
+            "location": "fu_zhou",
+            "morale": 55,
+            "general": "郑芝龙",
+            "max_size": 5000
+          }
+        }
+      ],
+      "qing_empire": [
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "正黄旗",
+            "unit_type": "精锐骑兵",
+            "size": 15000,
+            "location": "sheng_jing",
+            "morale": 90,
+            "general": "多尔衮",
+            "max_size": 15000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "镶黄旗",
+            "unit_type": "精锐骑兵",
+            "size": 15000,
+            "location": "sheng_jing",
+            "morale": 88,
+            "general": "多铎",
+            "max_size": 15000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "正白旗",
+            "unit_type": "精锐骑兵",
+            "size": 15000,
+            "location": "liao_yang",
+            "morale": 85,
+            "general": "阿济格",
+            "max_size": 15000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "正蓝旗",
+            "unit_type": "骑兵",
+            "size": 13000,
+            "location": "tie_ling",
+            "morale": 82,
+            "general": "豪格",
+            "max_size": 13000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "汉军旗火器营",
+            "unit_type": "火器营",
+            "size": 8000,
+            "location": "sheng_jing",
+            "morale": 75,
+            "general": "孔有德",
+            "max_size": 8000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "蒙古八旗",
+            "unit_type": "骑兵",
+            "size": 20000,
+            "location": "horqin",
+            "morale": 80,
+            "general": "吴克善",
+            "max_size": 20000
+          }
+        }
+      ],
+      "shun_regime": [
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "大顺中军",
+            "unit_type": "混合部队",
+            "size": 50000,
+            "location": "ping_yang",
+            "morale": 70,
+            "general": "李自成",
+            "max_size": 50000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "刘宗敏部",
+            "unit_type": "骑兵",
+            "size": 30000,
+            "location": "tai_yuan",
+            "morale": 72,
+            "general": "刘宗敏",
+            "max_size": 30000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "李过部",
+            "unit_type": "步兵",
+            "size": 25000,
+            "location": "luo_yang",
+            "morale": 65,
+            "general": "李过",
+            "max_size": 25000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "田见秀部",
+            "unit_type": "步兵",
+            "size": 20000,
+            "location": "kai_feng",
+            "morale": 60,
+            "general": "田见秀",
+            "max_size": 20000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "陕北留守军",
+            "unit_type": "民兵",
+            "size": 15000,
+            "location": "yan_an",
+            "morale": 45,
+            "general": "高一功",
+            "max_size": 15000
+          }
+        }
+      ],
+      "xi_regime": [
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "大西中军",
+            "unit_type": "混合部队",
+            "size": 25000,
+            "location": "cheng_du",
+            "morale": 65,
+            "general": "张献忠",
+            "max_size": 25000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "孙可望部",
+            "unit_type": "步兵",
+            "size": 12000,
+            "location": "chong_qing",
+            "morale": 60,
+            "general": "孙可望",
+            "max_size": 12000
+          }
+        },
+        {
+          "__dataclass__": "MilitaryUnit",
+          "fields": {
+            "name": "李定国部",
+            "unit_type": "精锐步兵",
+            "size": 8000,
+            "location": "kui_zhou",
+            "morale": 68,
+            "general": "李定国",
+            "max_size": 8000
+          }
+        }
+      ]
+    },
+    "diplomacy": [
+      {
+        "__dataclass__": "DiplomacyRelation",
+        "fields": {
+          "faction_a": "ming_empire",
+          "faction_b": "qing_empire",
+          "status": "war",
+          "tension": 100
+        }
+      },
+      {
+        "__dataclass__": "DiplomacyRelation",
+        "fields": {
+          "faction_a": "ming_empire",
+          "faction_b": "shun_regime",
+          "status": "war",
+          "tension": 80
+        }
+      },
+      {
+        "__dataclass__": "DiplomacyRelation",
+        "fields": {
+          "faction_a": "ming_empire",
+          "faction_b": "xi_regime",
+          "status": "war",
+          "tension": 60
+        }
+      },
+      {
+        "__dataclass__": "DiplomacyRelation",
+        "fields": {
+          "faction_a": "qing_empire",
+          "faction_b": "shun_regime",
+          "status": "neutral",
+          "tension": 85
+        }
+      },
+      {
+        "__dataclass__": "DiplomacyRelation",
+        "fields": {
+          "faction_a": "qing_empire",
+          "faction_b": "xi_regime",
+          "status": "neutral",
+          "tension": 20
+        }
+      },
+      {
+        "__dataclass__": "DiplomacyRelation",
+        "fields": {
+          "faction_a": "shun_regime",
+          "faction_b": "xi_regime",
+          "status": "neutral",
+          "tension": 40
+        }
+      }
+    ],
+    "territory": {
+      "beijing": "shun_regime",
+      "tianjin": "shun_regime",
+      "shanhai_pass": "neutral",
+      "baoding": "infected_zone",
+      "zhen_ding": "shun_regime",
+      "tai_yuan": "ming_empire",
+      "da_tong": "ming_empire",
+      "xuan_fu": "ming_empire",
+      "ji_ning": "ming_empire",
+      "jinan": "ming_empire",
+      "qing_zhou": "ming_empire",
+      "yan_zhou": "ming_empire",
+      "nanjing": "ming_empire",
+      "su_zhou": "ming_empire",
+      "yang_zhou": "ming_empire",
+      "feng_yang": "ming_empire",
+      "an_qing": "ming_empire",
+      "hang_zhou": "ming_empire",
+      "ning_bo": "ming_empire",
+      "jin_hua": "ming_empire",
+      "nan_chang": "ming_empire",
+      "gan_zhou": "ming_empire",
+      "wu_chang": "ming_empire",
+      "xiang_yang": "ming_empire",
+      "jing_zhou": "ming_empire",
+      "chang_sha": "ming_empire",
+      "fu_zhou": "ming_empire",
+      "quan_zhou": "ming_empire",
+      "guang_zhou": "ming_empire",
+      "zhao_qing": "ming_empire",
+      "gui_lin": "ming_empire",
+      "wu_zhou": "ming_empire",
+      "gui_yang": "ming_empire",
+      "yun_nan": "ming_empire",
+      "han_zhong": "ming_empire",
+      "xing_yuan": "ming_empire",
+      "ning_xia": "ming_empire",
+      "lan_zhou": "ming_empire",
+      "xi_ning": "ming_empire",
+      "qiong_zhou": "ming_empire",
+      "sheng_jing": "qing_empire",
+      "liao_yang": "qing_empire",
+      "tie_ling": "qing_empire",
+      "kai_yuan": "qing_empire",
+      "ning_gu_ta": "qing_empire",
+      "ji_lin": "qing_empire",
+      "hei_long_jiang": "qing_empire",
+      "horqin": "qing_empire",
+      "khalkha_east": "qing_empire",
+      "chahar": "qing_empire",
+      "xi_an": "shun_regime",
+      "yan_an": "shun_regime",
+      "ping_liang": "shun_regime",
+      "luo_yang": "shun_regime",
+      "kai_feng": "shun_regime",
+      "nan_yang": "shun_regime",
+      "gui_de": "shun_regime",
+      "ping_yang": "shun_regime",
+      "lu_an": "shun_regime",
+      "yu_lin": "shun_regime",
+      "ning_zhou": "shun_regime",
+      "cheng_du": "xi_regime",
+      "chong_qing": "xi_regime",
+      "kui_zhou": "xi_regime",
+      "bao_ning": "xi_regime",
+      "shun_qing": "xi_regime",
+      "jia_ding": "xi_regime",
+      "mongolia_west": "neutral",
+      "turpan": "neutral",
+      "tibet": "neutral",
+      "tai_wan": "ming_empire",
+      "taiwan": "ming_empire",
+      "tian_jin": "infected_zone",
+      "ju_yong_guan": "shun_regime"
+    },
+    "scripted_events": [
+      {
+        "id": "evt_cz_001",
+        "name": "大顺军兵临城下",
+        "type": "audience",
+        "trigger": {
+          "condition": "month == 3 AND turn_number <= 2",
+          "priority": "mandatory"
+        },
+        "title": "京师告急——大顺军已破大同，兵锋直指居庸关",
+        "narrative": "崇祯十七年三月，李自成的大顺军在攻陷大同、宣府后，已进抵居庸关。京城三大营名存实亡，守军不足万人且欠饷数月，士气低落。满朝文武惶惶不可终日。\n\n大学士范景文跪奏：'陛下，京城危在旦夕。臣以为当召天下勤王之师，尤以山海关吴三桂之关宁铁骑为最要。然若调吴三桂入卫，则山海关空虚，恐建虏趁虚而入。此乃两难之局也！'\n\n兵部尚书张缙彦进言：'或请陛下南幸留都南京。江南富庶，且有长江天险，足可凭借。'\n\n你的决断将决定大明的命运。"
+      },
+      {
+        "id": "evt_cz_002",
+        "name": "吴三桂的山海关之择",
+        "type": "audience",
+        "trigger": {
+          "condition": "month >= 4 AND month <= 5",
+          "priority": "mandatory"
+        },
+        "title": "山海关上的抉择——联虏平寇，还是坚守孤城？",
+        "narrative": "吴三桂的关宁铁骑已抵达山海关，但北京已经失陷的消息传来（若北京已失守）。更糟糕的是，李自成已派降将唐通率军进攻山海关，并以吴三桂的父亲吴襄为人质，逼迫吴三桂投降大顺。\n\n吴三桂在山海关城头徘徊不决。他派出密使，一面与大顺军周旋，一面派副将杨珅出关前往清军大营……\n\n多尔衮的使者带来了条件：'若将军开关迎清军入关，大清许诺封将军为平西王，且绝不伤害汉人百姓。'\n\n作为大明天子，你得知了吴三桂的处境。你的决定是——"
+      },
+      {
+        "id": "evt_cz_003",
+        "name": "崇祯殉国与南明建立",
+        "type": "outcome",
+        "trigger": {
+          "condition": "ming_empire.controls('beijing') == false AND ming_empire.controls('nanjing') == true",
+          "priority": "follow_up"
+        },
+        "title": "南都定策——陪都南京的新朝廷",
+        "narrative": "北京陷落的消息传到南京，留都群臣在史可法、马士英等人的主持下，商讨拥立新君。南京六部建制完整，江南赋税充足，大明国祚仍有一线延续之机。\n\n史可法提议册立潞王朱常淓，而马士英与江北四镇将领力挺福王朱由崧。朝堂上的这场立嗣之争，将决定南明弘光朝廷的未来格局。",
+        "auto_effects": {
+          "ming_empire": {
+            "treasury": 12000,
+            "prestige": -20,
+            "stability": -10
+          }
+        },
+        "territory_changes": [],
+        "diplomacy_changes": []
+      },
+      {
+        "id": "evt_cz_004",
+        "name": "扬州十日的前夜",
+        "type": "conditional",
+        "trigger": {
+          "condition": "qing_empire.controls('beijing') AND year >= 1645 AND ming_empire.controls('yang_zhou')",
+          "priority": "mandatory"
+        },
+        "title": "扬州——江南门户告急",
+        "narrative": "清军在多铎的率领下大举南下，兵锋直指扬州。史可法以督师身份坐镇扬州，但江北四镇各怀异心。扬州的命运，牵动着整个江南的安危。"
+      },
+      {
+        "id": "evt_cz_005",
+        "name": "张献忠的动向",
+        "type": "conditional",
+        "trigger": {
+          "condition": "year == 1645 AND month >= 6 AND xi_regime.status == 'active'",
+          "priority": "random"
+        },
+        "title": "大西王北望——张献忠的战略抉择",
+        "narrative": "盘踞四川的张献忠面临抉择。北面的清军正逐步南下，东面的南明虽虚弱但仍据有江南。探马来报：'清军前锋已入汉中，或不久即南下入川。'\n\n张献忠召集义子们商议：'明朝气数将尽，然满洲人若入川，我辈亦无葬身之地。如今之计，是继续东出争霸，还是与南明联手抗清？'"
+      },
+      {
+        "id": "evt_cz_006",
+        "name": "郑氏水师的战略价值",
+        "type": "audience",
+        "trigger": {
+          "condition": "year >= 1645 AND ming_empire.controls('fu_zhou')",
+          "priority": "mandatory"
+        },
+        "title": "海上的希望——郑芝龙父子的水师",
+        "narrative": "福建总兵郑芝龙拥兵自重，麾下福建水师拥有大小战船千余艘，是东南沿海最强大的海上力量。其子郑森（后赐名成功）少年英武，深得军心。\n\n郑芝龙遣使到行在：'朝廷若能授予臣闽浙沿海之贸易专权，臣可保证每年进贡白银二十万两，并为朝廷守护海疆。'\n\n朝中有人担忧郑芝龙会成尾大不掉之势，也有人说值此危亡之际，当以大局为重。"
+      }
+    ],
+    "event_state": "idle",
+    "event_queue": [],
+    "butterfly_rules": [
+      {
+        "id": "bf_001",
+        "name": "开关迎虏的长期代价",
+        "trigger": "evt_cz_002.chosen == 'choice_allow_qing'",
+        "delayed_effects": [
+          {
+            "delay_turns": 6,
+            "effect": {
+              "ming_empire": {
+                "prestige": -10,
+                "stability": -10
+              }
+            },
+            "narrative": "清军入关的消息传遍天下，江南士绅指责朝廷'引狼入室'，民心开始动摇……"
+          },
+          {
+            "delay_turns": 18,
+            "effect": {
+              "qing_empire": {
+                "manpower": 20000,
+                "treasury": 10000
+              }
+            },
+            "narrative": "清军在华北站稳脚跟，大批汉军旗被编入八旗，清军的兵力得到了极大补充。"
+          }
+        ]
+      },
+      {
+        "id": "bf_002",
+        "name": "吴桥兵变的蝴蝶效应",
+        "trigger": "ming_empire.stability < 15 AND ming_empire.corruption > 80",
+        "delayed_effects": [
+          {
+            "delay_turns": 8,
+            "effect": {
+              "ming_empire": {
+                "manpower": -5000,
+                "stability": -10
+              }
+            },
+            "narrative": "由于欠饷日久，某镇守军发生哗变，部分士卒投奔了大顺军。"
+          }
+        ]
+      },
+      {
+        "id": "bf_003",
+        "name": "李定国的忠诚可塑性",
+        "trigger": "xi_regime.status == 'defeated' AND ming_empire.stability > 40",
+        "delayed_effects": [
+          {
+            "delay_turns": 4,
+            "effect": {
+              "ming_empire": {
+                "manpower": 8000,
+                "prestige": 10
+              }
+            },
+            "narrative": "张献忠败亡后，其义子李定国率残部归顺南明，成为南明后期最杰出的抗清将领。"
+          }
+        ]
+      },
+      {
+        "id": "bf_004",
+        "name": "民心如水——赋税与稳定的权衡",
+        "trigger": "ming_empire.treasury < 5000 AND ming_empire.stability > 30",
+        "delayed_effects": [
+          {
+            "delay_turns": 12,
+            "effect": {
+              "ming_empire": {
+                "stability": -15,
+                "corruption": 10
+              }
+            },
+            "narrative": "为填补国库亏空，地方官员加征'剿饷''练饷'，民间怨声载道，'迎闯王不纳粮'的民谣再次流传……"
+          }
+        ]
+      }
+    ],
+    "butterfly_flags": {},
+    "chronicle_log": [
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【剧本开始】崇祯十七年 —— 公元 1644 年 · 大顺军围北京 · 山海关外的抉择",
+        "category": "system",
+        "importance": 2
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】taiwan：无主之地 → 大明帝国（皇帝宣布迁都台湾，大明势力开始向台湾转移）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【迁都】朝廷移驻 taiwan（旧都：beijing）。天子行在自此变更。",
+        "category": "system",
+        "importance": 3
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": " 崇祯十七年三月，帝忽降诏曰：'朕观天象，紫微星移，华夏气数将变。今命迁都台湾，携千万臣民同往，以避中原之厄。'朝堂闻之，满座皆惊。首辅陈演伏地泣谏：'陛下，京师乃社稷根本，台湾乃荒岛蛮夷之地，千里海路，千万黎庶如何迁徙？'帝怒斥曰：'尔等庸臣，岂知天命！'遂命锦衣卫查封六部库房，强征京城及周边民船二千余艘。百姓闻之，哭声震天，多有逃亡者。吴三桂急奏称关外清军蠢动，李自成已克太原，而朝廷却欲弃北南遁，恐天下从此瓦解。然帝意已决，命京营押送国库银两与粮草先行登船。然仓促之间，船只有限，千万人口不过虚言，实际能登船者不过数万富户与禁军家属，百万黎庶被弃于京师，怨声载道。",
+        "category": "event",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": " 崇祯十七年春，帝驻跸台湾，闻北地烽烟四起，李闯已破太原，满清铁骑叩关。帝召群臣议曰：‘朕欲亲率义师，沿途招募流民，裹挟壮丁，以壮声势，直捣中原。’左都御史李邦华伏地泣谏：‘陛下不可！今大明精锐尽失，况台湾孤悬海外，若强征民壮，恐失民心，且粮秣不济。’帝不从，命福建水师郑芝龙征调沿海渔船，欲渡海北上。然台湾新附，百姓未安，闻朝廷欲强征丁口，多举家避入山林。地方官吏亦惧民变，阳奉阴违，旬月间仅得老弱千余，粮草耗费却甚巨。帝怒，下旨切责郑芝龙，芝龙惶恐。朝野暗议纷纷，皆言陛下失其常度。",
+        "category": "event",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】beijing：大明帝国 → 大顺政权（李自成攻陷北京，守军溃散）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】tianjin：大明帝国 → 大顺政权（大顺军乘势占领天津卫）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】baoding：大明帝国 → 大顺政权（畿辅州县望风归顺大顺）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】zhen_ding：大明帝国 → 大顺政权（真定府守将降顺）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "[天机阁纠错重推] 崇祯十七年三月，上驻跸台湾府，诏令以台湾为行在，改元永历。旨意传至大陆，朝野震动。江南诸臣皆愕然，有言上弃宗庙社稷者，有言上避敌锋锐、徐图恢复者。郑芝龙得旨，即率福建水师护驾，并献银三千两充作朝廷用度。然北方诸镇闻之，军心浮动——关宁铁骑吴三桂按兵不动，观望风色；京营残部溃散过半，李国桢不知所踪。李自成闻上南狩，急率大顺军北攻北京，留守太监开门迎降，北京遂陷。清军亦乘机入塞，前锋已抵山海关外。天下大势，至此骤变。",
+        "category": "event",
+        "importance": 2
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【迁都】朝廷移驻 fu_zhou（旧都：taiwan）。天子行在自此变更。",
+        "category": "system",
+        "importance": 3
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": " 崇祯十七年三月，流寇猖獗，北都沦陷，天子南狩已驻跸台湾。然台湾孤悬海外，粮秣不继，难以支撑中兴大业。福建承宣布政使司闻天子在台，急遣使臣渡海，奏请圣驾移跸福州。福州乃闽省首府，城池坚固，仓储充足，且有郑氏水师拱卫海疆，进可规复江南，退可固守海隅。圣上纳巡抚张肯堂之议，诏令迁都福州，以福州府署暂充行宫。沿海舟师奉命接驾，台湾府库银两辎重尽数装船。朝中诸臣有言迁都仓促者，然圣意已决，诏书已下。三月中旬，銮驾渡海，抵达福州。闽地士绅夹道相迎，然闻京畿沦陷，多掩面而泣。",
+        "category": "event",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】tai_wan：无主之地 → 大明帝国（郑芝龙率福建水师攻占台湾，荷兰守军败退热兰遮城）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": " 崇祯十七年三月，上在福州行在，忽降旨意：命郑芝龙督福建水师五万众，并集海船，限一月内渡海攻取台湾。朝臣愕然，然上意已决。郑芝龙领旨，即于福州港外大集艨艟，装载兵丁、火炮、粮秣，扬帆东渡。台湾本为海寇巢穴，红夷荷兰人亦筑热兰遮城据守。明军水师先至鹿耳门，郑氏熟知水道，乘潮大涨，战舰鱼贯而入，炮轰赤嵌城。荷兰守军不过千余，仓促应战，然明军势众，又有郑氏招抚之汉人内应，四面围攻，终克赤嵌，荷兰人退守热兰遮城。明军登陆台湾，斩获颇丰，然台湾府县初设，需银钱粮草安抚招徕，国库为之空虚，粮草亦消耗甚巨。朝中闻报，有谓此举虚耗国力、徒树外敌者，亦有谓开疆拓土、恢复故土者，议论纷纷。民心因开疆而稍振，威望亦有所增益。然郑氏水师暂离福建海防，沿海空虚，清军、海寇或有可乘之机。",
+        "category": "event",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【迁都】朝廷移驻 tai_wan（旧都：fu_zhou）。天子行在自此变更。",
+        "category": "system",
+        "importance": 3
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": " 崇祯十七年春三月，帝驾驻跸福州。诏令既下，以台湾未陷敌手、海隅可守，决意迁都台湾府。朝野哗然，廷臣谏曰‘弃神州如敝履，何以对列祖列宗？’帝弗听，命郑芝龙督福建水师五千人整备舟师，载宫眷、府库与京营残兵八千，自福州放洋东渡。海途三日，风浪颠簸，粮船沉没三艘，损粮草二百石。至台湾府，见荒莽未辟，土番杂处，士卒多怨望。帝命立行在、筑土城，暂以鹿皮为帐，然民心益离，腐败之徒乘机敛财，府库虚耗愈甚。",
+        "category": "event",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "<span style='color:#9932CC;font-weight:bold;'>【🌍 新势力登场】Infected Zone（infected_zone）首次出现于历史舞台！势力色：#FFD700</span>",
+        "category": "system",
+        "importance": 3
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】beijing：大顺政权 → Infected Zone（T病毒爆发，北京城沦为感染区，明廷失去控制）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】baoding：大顺政权 → Infected Zone（瘟疫北传，保定府沦陷）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】tian_jin：无主之地 → Infected Zone（天津卫告急，守军溃散）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "<span style='color:#9932CC;font-weight:bold;'>【🪐 世界法则扭曲】T病毒（僵尸瘟）从北京爆发，可通过体液传播，感染者丧失理智、攻击活人，死后仍能活动</span>",
+        "category": "system",
+        "importance": 3
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "<span style='color:#9932CC;font-weight:bold;'>【🪐 世界法则扭曲】台湾成为大明最后的避难所，迁入人口可暂时免于感染</span>",
+        "category": "system",
+        "importance": 3
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": " 崇祯十七年三月，京师忽传异变！城中百姓染奇疾，肤生脓疮，目赤如血，不日便狂性大发，噬人血肉，所过之处瘟疫蔓延，十室九空。此疫迅猛，半月间席卷京畿，顺天府、保定府相继告急。朝野震惊，有司称之为‘僵尸瘟’。帝在台湾闻讯，当机立断，下诏大开海禁，命福建水师郑芝龙部倾巢而出，北上山东、南直隶沿海各府，强行迁民渡海入台。圣旨严令：凡愿迁者，每丁给银五两、粮三石；抗命不从者，以通敌论处。然内陆诸省闻‘僵尸瘟’凶名，逃难者如潮涌向海岸，船只调度不及，港口拥挤不堪，争渡者溺水而亡者数以千计。朝中大臣多言此举动摇国本，然帝意已决，一月之内，约三十万难民渡海抵台，台湾府城内外顿成粥厂遍地、棚屋连天之象。",
+        "category": "event",
+        "importance": 1
+      },
+      {
+        "year": 1644,
+        "month": 3,
+        "season": "春",
+        "text": "【宏观推演 · 5年】崇祯十七年（1644）春，大明已如风中残烛。帝诏迁台，留大陆诸将各自为战。然天变骤至，T病毒自北京蔓延，僵尸横行，秩序崩解。清军趁乱南下，李自成、张献忠诸部亦遭疫病重创，天下大乱。\n\n首年，北京陷落，僵尸瘟疫沿运河扩散，山东、南直隶相继告急。吴三桂率关宁铁骑退守山海关，然内外交困，终降清以避疫。清军虽得精骑，亦惧瘟疫，暂缓南下，转而收编流民，固守华北。李自成大顺军西撤关中，沿途遭僵尸追击，死伤过半，潼关内外尽成鬼域。张献忠据四川，闭境自守，然蜀中瘟疫渐起，势亦衰微。\n\n三年间，江南诸镇各自为政。史可法守南京，左良玉据武昌，郑芝龙控闽海，皆无力北伐，只得招抚流亡，固守残疆。然粮饷不继，民心离散，腐败横行。台湾虽成乐土，然渡海艰难，移民有限。\n\n五年之期，大陆已无统一政权。清据华北、辽东，大顺据陕甘，大西据川滇，明廷仅存江南半壁及台湾孤岛。僵尸瘟疫虽渐平息，然人口锐减，田亩荒芜。万里江山，四分五裂，大明中兴之望，渺如烟云。",
+        "category": "event",
+        "importance": 2
+      },
+      {
+        "year": 1649,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】beijing：Infected Zone → 大顺政权（大顺军攻占北京）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1649,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】ju_yong_guan：无主之地 → 大顺政权（居庸关守军溃散，大顺军占领）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1649,
+        "month": 3,
+        "season": "春",
+        "text": "【版图变更】shanhai_pass：大明帝国 → 无主之地（吴三桂观望自守，名义上脱离大明）",
+        "category": "military",
+        "importance": 1
+      },
+      {
+        "year": 1649,
+        "month": 3,
+        "season": "春",
+        "text": "【京师告急——大顺军已破大同，兵锋直指居庸关】崇祯十七年三月，帝在台湾闻京师告急，竟以‘随便’二字回应朝臣。满朝文武愕然，不知圣意所指。大学士范景文再奏请定夺，帝仍不置可否。消息传出，天下震动。大顺军闻朝廷无主，士气大振，三日后破居庸关，京师守军不战而溃。李自成入北京，崇祯帝虽在台湾，然大明正统已失半壁。吴三桂在山海关闻京师陷落，进退失据，遂遣使与清廷接洽。江南诸臣闻变，纷纷自立门户，史可法在南京宣布监国，左良玉拥兵自重，郑芝龙则暗通海上。台湾虽为避难所，然朝廷威信荡然无存，天下分崩离析之势已成。",
+        "category": "event",
+        "importance": 2
+      }
+    ],
+    "resource_log": [
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": -5000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": -30000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -8000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": -25,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": -25,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 15,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": -800,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": 1200,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -1500,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 0,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": -5,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 2,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": 1000,
+          "reason": "micro_corrected_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": -5000,
+          "reason": "micro_corrected_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -2000,
+          "reason": "micro_corrected_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 0,
+          "reason": "micro_corrected_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": 0,
+          "reason": "micro_corrected_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 5,
+          "reason": "micro_corrected_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": -800,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": -1000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -500,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 0,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": 0,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 2,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": -800,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": -2000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -1500,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 3,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": 8,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": -800,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": -8000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -500,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": -3,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": -8,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 5,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": -800,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": 5000,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -900,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 0,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": 5,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 5,
+          "reason": "micro_response",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": 0,
+          "reason": "macro_turn",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": -20200,
+          "reason": "macro_turn",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": -100,
+          "reason": "macro_turn",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 0,
+          "reason": "macro_turn",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": -5,
+          "reason": "macro_turn",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 0,
+          "year": 1644,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 30,
+          "reason": "macro_turn",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 1,
+          "year": 1649,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "treasury",
+          "delta": 0,
+          "reason": "crisis:evt_cz_001",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 1,
+          "year": 1649,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "manpower",
+          "delta": 0,
+          "reason": "crisis:evt_cz_001",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 1,
+          "year": 1649,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "food",
+          "delta": 0,
+          "reason": "crisis:evt_cz_001",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 1,
+          "year": 1649,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "stability",
+          "delta": 0,
+          "reason": "crisis:evt_cz_001",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 1,
+          "year": 1649,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "prestige",
+          "delta": 0,
+          "reason": "crisis:evt_cz_001",
+          "source": "llm"
+        }
+      },
+      {
+        "__dataclass__": "ResourceDelta",
+        "fields": {
+          "turn": 1,
+          "year": 1649,
+          "month": 3,
+          "faction_id": "ming_empire",
+          "resource_key": "corruption",
+          "delta": 20,
+          "reason": "crisis:evt_cz_001",
+          "source": "llm"
+        }
+      }
+    ],
+    "ai_personality": {
+      "qing_empire": {
+        "aggressiveness": 0.9,
+        "expansionism": 0.95,
+        "diplomacy_preference": "intimidation",
+        "decision_weights": {
+          "invade_south": 0.5,
+          "consolidate_north": 0.25,
+          "demand_surrender": 0.15,
+          "seek_truce": 0.1
+        }
+      },
+      "shun_regime": {
+        "aggressiveness": 0.7,
+        "expansionism": 0.6,
+        "diplomacy_preference": "opportunistic",
+        "decision_weights": {
+          "expand_territory": 0.35,
+          "consolidate_power": 0.25,
+          "plunder_resources": 0.25,
+          "negotiate": 0.15
+        }
+      },
+      "xi_regime": {
+        "aggressiveness": 0.6,
+        "expansionism": 0.4,
+        "diplomacy_preference": "survival",
+        "decision_weights": {
+          "defend_territory": 0.4,
+          "raid_neighbors": 0.3,
+          "consolidate_power": 0.2,
+          "seek_alliance": 0.1
+        }
+      }
+    },
+    "sandbox_mode": "strategic"
+  }
+}

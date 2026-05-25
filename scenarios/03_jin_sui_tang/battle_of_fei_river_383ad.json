@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "id": "battle_of_fei_river_383ad",
+    "title": "淝水之战",
+    "subtitle": "东晋太元八年 · 公元 383 年 · 苻坚百万雄师南下",
+    "description": "前秦皇帝苻坚统一北方已逾十年，志在混一寰宇。他罔顾王猛临终遗言，征发各族兵马百万，号称'投鞭断流'，水陆并进南下伐晋。长江以北诸镇望风而降，前秦先锋已攻陷寿阳（今安徽寿县），兵锋距建康仅一江之隔。你将以东晋皇帝司马曜（实由谢安执政）的身份，倚仗谢玄、刘牢之率领的北府兵，在淝水之畔迎击苻坚的百万大军。是击溃前秦、趁势北伐收复旧都洛阳与长安，还是在苻坚的铁蹄下国破家亡？每一个决策都将重写华夏南北朝的命运。",
+    "era": "东晋十六国",
+    "start_year": 383,
+    "start_month": 10,
+    "end_year": 400,
+    "time_scale": "month",
+    "version": "2.0.0",
+    "author": "",
+    "map_manifest_key": "jin_geo",
+    "era_key": "jin",
+    "tags": [
+      "东晋",
+      "淝水之战",
+      "苻坚",
+      "谢安",
+      "北府兵",
+      "南北朝序曲",
+      "前秦"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 大晋朝廷（建康台城·乌衣巷）",
+    "intel_org_name": "台使·典签",
+    "region_lore_map": {
+      "江苏": "扬州·建康（东晋京师·台城所在）",
+      "安徽": "扬州·寿阳（淝水前线·八公山）",
+      "浙江": "扬州·会稽郡（三吴腹地·王谢庄园）",
+      "江西": "江州·豫章郡（浔阳·粮道枢纽）",
+      "湖北": "荆州·江陵/襄阳（桓氏西府·北府犄角）",
+      "陕西": "雍州·长安（前秦京师·苻坚行在）",
+      "河南": "豫州·洛阳（前秦东都·中原腹心）",
+      "河北": "冀州·邺城（前秦河北大营）",
+      "山西": "并州·晋阳（前秦河东重镇）",
+      "山东": "青州·广固（前秦东方前线）"
+    }
+  },
+  "player_faction": "eastern_jin",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "eastern_jin": [
+        "江苏", "浙江", "江西", "福建",
+        "广东", "广西", "湖南", "贵州",
+        "云南", "海南", "台湾", "重庆"
+      ],
+      "former_qin": [
+        "北京", "天津", "河北", "山西",
+        "山东", "河南", "陕西", "甘肃",
+        "宁夏", "青海", "新疆", "西藏",
+        "四川", "辽宁", "吉林", "黑龙江",
+        "内蒙古"
+      ],
+      "neutral": [
+        "湖北", "安徽"
+      ]
+    }
+  },
+  "factions": {
+    "eastern_jin": {
+      "name": "东晋",
+      "color": "#C41E3A",
+      "ruler": "司马曜",
+      "ruler_title": "大晋天子",
+      "government": "门阀士族政治（琅琊王氏·陈郡谢氏）",
+      "capital": "江苏",
+      "description": "永嘉南渡已六十余年，侨寓士族与江东土著共治江南。谢安执掌中书，谢玄统领北府劲卒——这支由北方流民子弟组成的精锐之师，是大晋最后的脊梁。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    },
+    "former_qin": {
+      "name": "前秦",
+      "color": "#8B0000",
+      "ruler": "苻坚",
+      "ruler_title": "大秦天王",
+      "government": "胡汉二元帝国（氐族核心·汉臣辅政）",
+      "capital": "陕西",
+      "description": "苻坚以氐族之资，用汉臣王猛之谋，十年间吞燕灭凉、收代平仇池，一统北方。然王猛死后，朝中胡汉矛盾日深，百万大军中各族各怀异心。慕容垂、姚苌等降将表面上尊奉大秦天王，内心却各有所图。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    }
+  },
+  "initial_resources": {
+    "eastern_jin": {
+      "treasury": 120000,
+      "manpower": 85000,
+      "food": 3500,
+      "stability": 55,
+      "prestige": 60,
+      "corruption": 25
+    },
+    "former_qin": {
+      "treasury": 350000,
+      "manpower": 350000,
+      "food": 6000,
+      "stability": 40,
+      "prestige": 75,
+      "corruption": 45
+    }
+  },
+  "initial_military": {
+    "eastern_jin": [
+      {
+        "name": "北府兵·主力",
+        "type": "精锐步兵",
+        "size": 70000,
+        "location": "安徽",
+        "morale": 85,
+        "general": "谢玄"
+      },
+      {
+        "name": "北府兵·前锋",
+        "type": "精锐骑兵",
+        "size": 8000,
+        "location": "安徽",
+        "morale": 80,
+        "general": "刘牢之"
+      },
+      {
+        "name": "荆州西府兵",
+        "type": "混合部队",
+        "size": 40000,
+        "location": "湖北",
+        "morale": 65,
+        "general": "桓冲"
+      },
+      {
+        "name": "台城宿卫",
+        "type": "步兵",
+        "size": 5000,
+        "location": "江苏",
+        "morale": 60,
+        "general": "谢石"
+      },
+      {
+        "name": "三吴水师",
+        "type": "水师",
+        "size": 12000,
+        "location": "浙江",
+        "morale": 55,
+        "general": "桓伊"
+      }
+    ],
+    "former_qin": [
+      {
+        "name": "前秦中军·氐族精锐",
+        "type": "精锐步兵",
+        "size": 80000,
+        "location": "河南",
+        "morale": 70,
+        "general": "苻融"
+      },
+      {
+        "name": "前秦前锋·骑兵",
+        "type": "精锐骑兵",
+        "size": 35000,
+        "location": "安徽",
+        "morale": 75,
+        "general": "苻坚"
+      },
+      {
+        "name": "慕容鲜卑·骑兵",
+        "type": "骑兵",
+        "size": 25000,
+        "location": "河北",
+        "morale": 55,
+        "general": "慕容垂"
+      },
+      {
+        "name": "羌族·姚苌部",
+        "type": "混合部队",
+        "size": 20000,
+        "location": "陕西",
+        "morale": 50,
+        "general": "姚苌"
+      },
+      {
+        "name": "前秦河北驻屯军",
+        "type": "步兵",
+        "size": 50000,
+        "location": "河北",
+        "morale": 55,
+        "general": ""
+      },
+      {
+        "name": "前秦关中驻屯军",
+        "type": "步兵",
+        "size": 30000,
+        "location": "陕西",
+        "morale": 50,
+        "general": ""
+      },
+      {
+        "name": "前秦益州驻屯军",
+        "type": "混合部队",
+        "size": 20000,
+        "location": "四川",
+        "morale": 45,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      {
+        "a": "eastern_jin",
+        "b": "former_qin",
+        "status": "war",
+        "tension": 95
+      }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "fei_river_crossing",
+      "name": "淝水对峙",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 1 AND turn_number <= 6",
+        "priority": "high"
+      },
+      "title": "淝水对峙 —— 苻坚百万大军压境",
+      "narrative": "前秦前锋已攻陷寿阳，苻坚亲率中军抵达淝水西岸。百万大军列阵，旌旗蔽日，鼓声震天。东晋北府兵八万已推进至淝水东岸，两军隔河对峙。苻坚遣降将朱序前来劝降，朱序却私下告知谢玄：'秦军虽众，然多系胁迫而来，若趁其半渡而击，必溃。'\n\n淝水宽阔而浅，可涉水而过。谢玄面临抉择——是主动出击先发制人，还是坚守东岸以待援军？",
+      "choices": [
+        {
+          "id": "initiative_attack",
+          "text": "遣使告诉苻坚：请秦军稍退，让晋军渡河决战（诱敌后撤，半渡而击）",
+          "effects": {
+            "treasury": -5000,
+            "manpower": -5000,
+            "prestige": 25,
+            "corruption": 2
+          },
+          "territory_changes": [
+            {"region_id": "安徽", "to_faction": "eastern_jin", "reason": "淝水大捷，收复寿阳"}
+          ],
+          "narrative_result": "谢玄遣使至秦营，言：'君悬军深入，而置阵逼水，此持久之计，岂欲战者乎？若移阵少却，使晋兵得渡，以决胜负，不亦善乎！'苻坚力排众议，下令全军后撤。\n\n然而百万大军语言不通、号令不齐，后撤瞬间变为溃退。朱序趁乱在秦军后方大呼'秦军败了！'，全军大乱。谢玄、刘牢之率八千北府精骑趁势渡河，直冲秦军中军。苻融战马被绊倒，死于乱军之中。苻坚身中流矢，单骑北逃。\n\n北府兵一日内斩首数万、俘获十余万，淝水之战以晋军完胜告终！"
+        },
+        {
+          "id": "defend_river",
+          "text": "坚守淝水东岸，利用地利消耗秦军锐气（稳妥防御）",
+          "effects": {
+            "treasury": -2000,
+            "manpower": -1000,
+            "stability": 10,
+            "prestige": 5,
+            "corruption": -1
+          },
+          "narrative_result": "谢玄下令沿淝水东岸修筑壁垒，以强弩劲弓封锁河面。秦军数度试探渡河，均被北府兵射退。随着冬季临近，秦军粮道延伸数百里，补给日益困难。各族将领牢骚满腹，慕容垂、姚苌等人阳奉阴违，苻坚被迫分兵就粮，百万大军不战自溃……"
+        },
+        {
+          "id": "diplomatic_stall",
+          "text": "遣使求和，以金银布帛换取苻坚退兵（外交绥靖）",
+          "effects": {
+            "treasury": -25000,
+            "prestige": -15,
+            "stability": 5,
+            "corruption": 5
+          },
+          "narrative_result": "谢安遣使携重金至秦营，卑辞求和。苻坚大喜，以为晋廷怯懦，遂暂缓攻势，与晋使周旋。此举为东晋赢得了宝贵的喘息之机，但朝野上下皆以此为耻，清议哗然，谢氏的执政声望受到动摇……"
+        }
+      ]
+    },
+    {
+      "id": "murong_changs_coup",
+      "name": "慕容垂自立",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 4 AND former_qin.stability <= 30",
+        "priority": "high"
+      },
+      "title": "鲜卑复国 —— 慕容垂趁乱自立",
+      "narrative": "淝水之战后，前秦元气大伤，各族降将蠢蠢欲动。慕容垂借口回邺城整顿旧部，脱离苻坚控制。他一到邺城，立即举起复国大旗，自称燕王，重建燕国（后燕）。河北大地数月间尽归慕容氏。\n\n前秦帝国正在崩塌，而东晋朝中，谢安谏言：此乃千载难逢的北伐良机——是否趁机收复中原？",
+      "choices": [
+        {
+          "id": "northern_expedition",
+          "text": "出师北伐！令谢玄率北府兵趁势收复洛阳、长安",
+          "effects": {
+            "treasury": -10000,
+            "manpower": -8000,
+            "prestige": 30,
+            "stability": 15
+          },
+          "territory_changes": [
+            {"region_id": "河南", "to_faction": "eastern_jin", "reason": "北伐收复洛阳"},
+            {"region_id": "山东", "to_faction": "eastern_jin", "reason": "北府兵北进收复青州"}
+          ],
+          "narrative_result": "谢玄率北府兵渡淮北上，势如破竹。洛阳守军开城迎降，关中豪杰亦纷纷起兵响应。晋军前锋直抵长安城外，距收复两京仅一步之遥！然而补给线过长、后方门阀掣肘、桓氏荆州势力不愿配合……北伐能走多远，考验着建康朝廷的意志。"
+        },
+        {
+          "id": "consolidate_south",
+          "text": "稳固江南，暂不北顾（休养生息，巩固边防）",
+          "effects": {
+            "treasury": 5000,
+            "manpower": 5000,
+            "stability": 10,
+            "prestige": -10,
+            "food": 500
+          },
+          "narrative_result": "谢安力排众议，选择暂不出兵。'北伐事大，不可急图。'朝廷全力巩固江淮防线，吸收北方流民充实户籍，休养生息。此举稳妥，但亦有老将感叹：'此乃遗恨千古之良机也……'"
+        }
+      ]
+    },
+    {
+      "id": "xie_an_dies",
+      "name": "谢安薨逝",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 12",
+        "priority": "medium"
+      },
+      "title": "东山再起之人，终于归隐东山",
+      "narrative": "太傅、中书监谢安病重薨逝，终年六十六岁。自淝水之战以来，他以一人之力平衡朝中门阀、安抚江北流民、维系北伐大局。他的离去，意味着东晋朝廷失去了最后一位能统合各方的主心骨。\n\n建康台城内外，一片哀恸。乌衣巷中，谢氏子弟披麻戴孝。但更多人心中暗想：没有了谢安，这个朝廷还能走多远？",
+      "auto_effects": {
+        "stability": -20,
+        "prestige": -10,
+        "corruption": 15
+      }
+    },
+    {
+      "id": "huan_xuan_ambition",
+      "name": "桓玄觊觎",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 18 AND eastern_jin.stability <= 40",
+        "priority": "high"
+      },
+      "title": "桓玄问鼎 —— 荆州将叛",
+      "narrative": "荆州刺史桓玄（桓温之子）坐镇江陵，手握西府重兵，见朝廷暗弱，渐生不臣之心。他上表要求加九锡、假节钺，名为尊崇，实为试探建康底线。\n\n朝中分为两派：或主张安抚桓玄，以荆州阻隔上游威胁；或主张先下手为强，削其兵权。",
+      "choices": [
+        {
+          "id": "appease_huan",
+          "text": "加封桓玄为楚王，以满足其野心绥靖之",
+          "effects": {
+            "prestige": -20,
+            "stability": -5,
+            "corruption": 10
+          },
+          "territory_changes": [
+            {"region_id": "湖北", "to_faction": "huan_chu", "reason": "桓玄受封楚王，荆州半独立"}
+          ],
+          "narrative_result": "朝廷下诏加桓玄为楚王、都督荆雍梁益四州诸军事。桓玄表面上谢恩，实则尽收荆州军政大权。江陵与建康，已成二日并悬之势……"
+        },
+        {
+          "id": "suppress_huan",
+          "text": "诏令刘牢之率北府兵讨伐桓玄（武力削藩）",
+          "effects": {
+            "treasury": -15000,
+            "manpower": -12000,
+            "stability": -10,
+            "prestige": 15
+          },
+          "narrative_result": "刘牢之奉诏率北府兵西征。桓玄据江陵坚城以守，两军在荆州相持。建康朝中，琅琊王氏暗中与桓玄通款，前线粮草时断时续……这是考验北府兵忠诚与朝堂权术的时刻。"
+        }
+      ]
+    },
+    {
+      "id": "northern_fragmentation",
+      "name": "北方大崩解",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 8",
+        "priority": "medium"
+      },
+      "title": "前秦崩溃 —— 十六国乱世再临",
+      "narrative": "淝水惨败后，前秦帝国如积木崩塌。姚苌在关中自立为大秦王（后秦），慕容冲围攻长安，乞伏国仁割据陇西，吕光远征西域不再东返。\n\n曾经统一北方的前秦，如今仅剩长安孤城和少许残兵。苻坚在绝望中出奔五将山，被姚苌擒杀。\n\n北方重新陷入十六国混战——这是东晋的机遇，还是新一轮动荡的开始？",
+      "auto_effects": {
+        "prestige": 15
+      },
+      "territory_changes": [
+        {"region_id": "陕西", "to_faction": "later_qin", "reason": "姚苌建立后秦，占据关中"},
+        {"region_id": "甘肃", "to_faction": "later_qin", "reason": "后秦势力西扩"},
+        {"region_id": "宁夏", "to_faction": "later_qin", "reason": "后秦收取安定"},
+        {"region_id": "河北", "to_faction": "later_yan", "reason": "慕容垂建立后燕"},
+        {"region_id": "山西", "to_faction": "later_yan", "reason": "后燕收取并州"},
+        {"region_id": "内蒙古", "to_faction": "northern_wei", "reason": "拓跋珪重建代国·北魏"}
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "northern_wei_rise",
+      "name": "北魏崛起",
+      "trigger": "northern_fragmentation 事件已触发 AND turn_number >= 15",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {"event_trigger": "northern_wei_unification"},
+          "narrative": "拓跋珪的部落联盟在代北草原日益壮大，开始南侵后燕……"
+        }
+      ]
+    },
+    {
+      "id": "xuanwu_coup",
+      "name": "司马道子乱政",
+      "trigger": "xie_an_dies 事件已触发 AND eastern_jin.stability <= 45",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {"corruption": 20, "stability": -15},
+          "narrative": "会稽王司马道子与其子司马元显擅权乱政，卖官鬻爵，朝纲大坏。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "former_qin": {
+      "aggressiveness": 0.85,
+      "expansionism": 0.90,
+      "diplomacy_preference": "aggressive",
+      "decision_weights": {
+        "attack": 0.70,
+        "conscript": 0.15,
+        "diplomacy": 0.05,
+        "develop": 0.10
+      }
+    },
+    "later_qin": {
+      "aggressiveness": 0.55,
+      "expansionism": 0.60,
+      "diplomacy_preference": "balanced",
+      "decision_weights": {
+        "attack": 0.45,
+        "conscript": 0.15,
+        "diplomacy": 0.20,
+        "develop": 0.20
+      }
+    },
+    "later_yan": {
+      "aggressiveness": 0.70,
+      "expansionism": 0.65,
+      "diplomacy_preference": "aggressive",
+      "decision_weights": {
+        "attack": 0.55,
+        "conscript": 0.20,
+        "diplomacy": 0.10,
+        "develop": 0.15
+      }
+    },
+    "northern_wei": {
+      "aggressiveness": 0.75,
+      "expansionism": 0.80,
+      "diplomacy_preference": "aggressive",
+      "decision_weights": {
+        "attack": 0.60,
+        "conscript": 0.15,
+        "diplomacy": 0.10,
+        "develop": 0.15
+      }
+    }
+  },
+  "victory_conditions": {
+    "major_victory": {
+      "description": "北伐成功：收复洛阳与长安两京，且控制河南、陕西至少24回合",
+      "conditions": [
+        "河南 ∈ eastern_jin 控制",
+        "陕西 ∈ eastern_jin 控制",
+        "turn_number ≥ 触发时回合 + 24"
+      ]
+    },
+    "standard_victory": {
+      "description": "江南稳固：保住建康不失，且战力 ≥ 100,000 人",
+      "conditions": [
+        "江苏 ∈ eastern_jin 控制",
+        "eastern_jin.manpower ≥ 100000"
+      ]
+    },
+    "failure": {
+      "description": "国破家亡：建康失陷于任何势力",
+      "conditions": [
+        "江苏 ∉ eastern_jin 控制"
+      ]
+    }
+  }
+}

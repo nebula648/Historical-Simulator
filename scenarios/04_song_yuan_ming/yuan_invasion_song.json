@@ -1,0 +1,468 @@
+{
+  "meta": {
+    "id": "southern_song_defense_1260ad",
+    "title": "南宋：中兴与覆灭",
+    "subtitle": "宋景定元年 · 公元 1260 年 · 蒙哥暴毙·忽必烈北归·天赐良机",
+    "description": "景定元年，一个不可思议的消息传到了临安——蒙古大汗蒙哥在围攻四川钓鱼城时暴毙而亡！忽必烈匆忙从鄂州前线北撤争夺汗位，整个欧亚大陆的蒙古军团陷入了一场空前的内战。对于南宋而言，这是自岳飞北伐以来一百年中最宝贵的喘息之机。你将以南宋皇帝的身份坐镇临安行在，面对一个千疮百孔却尚存希望的帝国：襄阳前线吕文焕的守军疲惫不堪；四川钓鱼城王坚孤军刚刚创造了奇迹，但已弹尽粮绝；朝堂之上，权臣贾似道把持朝政、粉饰太平；江南的富庶仍在，但这些钱粮是用于重建防线，还是填满贪官的口袋？每一个抉择都承载着大宋最后的国运——是抓住这天赐良机奋发中兴，还是在权谋与怯懦中一步步滑向崖山的深渊？",
+    "era": "南宋末年·景定年间",
+    "start_year": 1260,
+    "start_month": 4,
+    "end_year": 1279,
+    "time_scale": "month",
+    "version": "6.1.0",
+    "author": "",
+    "map_manifest_key": "song_geo",
+    "era_key": "song",
+    "map_template": "china",
+    "world_rules": ["imperial_command", "jiangnan_finance"],
+    "tags": [
+      "南宋", "忽必烈", "襄阳", "钓鱼城", "贾似道",
+      "蒙宋战争", "崖山", "文天祥", "中兴", "覆灭"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 临安行在·大宋中枢（垂拱殿·政事堂）",
+    "intel_org_name": "皇城司",
+    "region_lore_map": {
+      "浙江": "临安府·行在（大宋皇都·西湖烟雨中的最后王朝）",
+      "湖北": "京湖路·襄阳府（长江咽喉·吕文焕守军驻地·蒙宋绞肉机）",
+      "重庆": "合州·钓鱼城（蜀地奇迹·王坚孤军·蒙哥毙命之地）",
+      "江苏": "江淮路·建康府（长江下游重镇·水师基地·江南门户）",
+      "安徽": "淮西路·庐州（淮西防区·两淮粮仓·直面蒙古兵锋）",
+      "四川": "四川路·成都府（大部已陷·残破蜀地·蒙古南征跳板）",
+      "河南": "南京路·蔡州（金国故地·蒙古南征前线指挥部）",
+      "内蒙古": "漠南·上都开平府（忽必烈汗廷·蒙古帝国新心脏）"
+    }
+  },
+  "player_faction": "song_empire",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "song_empire": [
+        "浙江", "江苏", "安徽", "江西", "福建",
+        "广东", "广西", "湖南", "湖北",
+        "重庆", "贵州",
+        "海南", "台湾"
+      ],
+      "mongol_empire": [
+        "内蒙古", "北京", "天津", "河北",
+        "山西", "山东", "河南", "辽宁",
+        "吉林", "黑龙江",
+        "陕西", "甘肃", "宁夏", "青海",
+        "新疆", "西藏",
+        "四川", "云南"
+      ]
+    }
+  },
+  "factions": {
+    "song_empire": {
+      "name": "大宋",
+      "color": "#4169E1",
+      "ruler": "赵昀",
+      "ruler_title": "大宋皇帝",
+      "government": "南宋朝廷（皇帝-权臣二元制·贾似道把持朝政）",
+      "capital": "浙江",
+      "description": "赵昀在位已近四十年，是南宋在位最久的皇帝之一。他早年有励精图治之志，端平更化一度让人看到中兴希望——但端平入洛的惨败击碎了一切。如今他已是一位疲惫的老人，对朝政日渐懈怠，将大权交给了权臣贾似道。然而蒙哥之死像一道闪电划破了南宋的沉沉暮色——这是天赐良机。他能在生命的最后时光中，重新握紧权柄，为大宋博一个中兴的可能吗？",
+      "flag_badass": false,
+      "faction_type": "Empire"
+    },
+    "mongol_empire": {
+      "name": "大蒙古国",
+      "color": "#8B0000",
+      "ruler": "忽必烈",
+      "ruler_title": "大蒙古国大汗（与阿里不哥争位中）",
+      "government": "蒙古帝国（汗位继承内战·忽必烈vs阿里不哥·四兀鲁思分裂）",
+      "capital": "内蒙古",
+      "description": "蒙哥汗暴毙钓鱼城下，蒙古帝国陷入了前所未有的危机。忽必烈与幼弟阿里不哥分别召开忽里勒台大会自称大汗，内战一触即发。旭烈兀在波斯观望，别儿哥在金帐汗国与旭烈兀交恶，曾经铁板一块的蒙古帝国正在撕裂。但忽必烈绝非等闲之辈——他一边集结汉军世侯的兵力与阿里不哥争夺草原，一边已经将目光重新投向了南方。南宋，从来不曾从他的版图上被抹去。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    }
+  },
+  "initial_resources": {
+    "song_empire": {
+      "treasury": 75000,
+      "manpower": 85000,
+      "food": 32000,
+      "stability": 42,
+      "prestige": 48,
+      "corruption": 58
+    },
+    "mongol_empire": {
+      "treasury": 180000,
+      "manpower": 130000,
+      "food": 55000,
+      "stability": 55,
+      "prestige": 75,
+      "corruption": 22
+    }
+  },
+  "initial_military": {
+    "song_empire": [
+      {
+        "name": "襄阳守军·京湖制置司",
+        "type": "精锐步兵",
+        "size": 15000,
+        "location": "湖北",
+        "morale": 72,
+        "general": "吕文焕"
+      },
+      {
+        "name": "长江水师·沿江制置司",
+        "type": "水师",
+        "size": 22000,
+        "location": "江苏",
+        "morale": 68,
+        "general": ""
+      },
+      {
+        "name": "钓鱼城守军·蜀地孤军",
+        "type": "精锐步兵",
+        "size": 4000,
+        "location": "重庆",
+        "morale": 92,
+        "general": "王坚"
+      },
+      {
+        "name": "临安禁军·殿前司",
+        "type": "步兵",
+        "size": 10000,
+        "location": "浙江",
+        "morale": 40,
+        "general": ""
+      },
+      {
+        "name": "淮西军·两淮制置司",
+        "type": "混合部队",
+        "size": 12000,
+        "location": "安徽",
+        "morale": 58,
+        "general": "李庭芝"
+      },
+      {
+        "name": "福建水师·海道司",
+        "type": "水师",
+        "size": 8000,
+        "location": "福建",
+        "morale": 55,
+        "general": ""
+      },
+      {
+        "name": "江西·湖南·民兵义从",
+        "type": "民兵",
+        "size": 15000,
+        "location": "江西",
+        "morale": 45,
+        "general": ""
+      }
+    ],
+    "mongol_empire": [
+      {
+        "name": "忽必烈中军·怯薛禁卫",
+        "type": "精锐骑兵",
+        "size": 25000,
+        "location": "内蒙古",
+        "morale": 90,
+        "general": "忽必烈"
+      },
+      {
+        "name": "南征军·襄阳方面·汉军世侯",
+        "type": "混合部队",
+        "size": 30000,
+        "location": "河南",
+        "morale": 78,
+        "general": "史天泽"
+      },
+      {
+        "name": "四川方面军·蒙古探马赤军",
+        "type": "精锐骑兵",
+        "size": 18000,
+        "location": "四川",
+        "morale": 82,
+        "general": "纽璘"
+      },
+      {
+        "name": "大理·云南驻屯军",
+        "type": "骑兵",
+        "size": 12000,
+        "location": "云南",
+        "morale": 75,
+        "general": "兀良合台"
+      },
+      {
+        "name": "北方水师·汉军战船",
+        "type": "水师",
+        "size": 10000,
+        "location": "山东",
+        "morale": 62,
+        "general": ""
+      },
+      {
+        "name": "回回砲·西域砲手营",
+        "type": "火器营",
+        "size": 4000,
+        "location": "河南",
+        "morale": 80,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      { "a": "song_empire", "b": "mongol_empire", "status": "war", "tension": 85 }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_ss_001",
+      "name": "蒙哥暴毙——天赐良机",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number == 1",
+        "priority": "mandatory"
+      },
+      "title": "蒙哥暴毙——来自钓鱼城的惊天消息",
+      "narrative": "景定元年四月，一封来自四川钓鱼城的捷报飞马驰入临安——蒙古大汗蒙哥，在围攻钓鱼城时暴毙于军中！\n\n垂拱殿上，满朝文武先是震惊得鸦雀无声，随即爆发出一片嘈杂的议论。\n\n枢密使贾似道出班奏道：'陛下！蒙哥一死，蒙古必生内乱。忽必烈与阿里不哥争位在即，此乃天赐大宋以喘息之机！臣请即刻下令，命沿江诸军加固防线，同时遣使北上——'\n\n参知政事吴潜厉声打断：'贾相公！天赐良机，岂能止于'加固防线'？当命吕文焕出襄阳、王坚出四川，南北夹击，收复中原！'\n\n贾似道冷笑：'吴大人好大的口气。敢问粮草从何而来？银两从何而来？'\n\n两个大臣在殿上争得面红耳赤。而你——大宋天子——坐在龙椅上，知道从这一刻起，历史将开始计时。",
+      "auto_effects": {
+        "song_empire": { "stability": 10, "prestige": 10 },
+        "mongol_empire": { "stability": -20, "manpower": -10000 }
+      },
+      "diplomacy_changes": [
+        { "a": "song_empire", "b": "mongol_empire", "tension_delta": -15 }
+      ]
+    },
+    {
+      "id": "evt_ss_002",
+      "name": "朝堂辩论——主战还是主守",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 2 AND turn_number <= 5",
+        "priority": "mandatory"
+      },
+      "title": "朝堂辩论——垂拱殿上的路线之争",
+      "narrative": "蒙哥死后，临安的朝堂分裂成了旗帜鲜明的两派。\n\n主战派以参知政事吴潜、枢密副使李庭芝为首，主张趁蒙古内乱主动出击，收复荆襄与两淮失地。他们认为这是百年一遇的窗口期，错过便永无翻身之日。\n\n主守派以贾似道为首，主张加固长江防线、积蓄国力、暂不与蒙古正面交锋。他们指出国库已空、各路边军良莠不齐、贸然北伐恐是第二个端平入洛。\n\n两派在垂拱殿上唇枪舌剑，互不相让。吴潜甚至当廷弹劾贾似道'姑息养奸、误国误民'。贾似道则反唇相讥吴潜'纸上谈兵、不知钱粮为何物'。\n\n所有人都在等待你的裁决。你是大宋的天子——你的决定就是国策。",
+      "choices": [
+        {
+          "id": "choice_offensive",
+          "text": "支持主战派——命吕文焕出襄阳、联络王坚反攻四川，趁蒙乱收复失地",
+          "effects": {
+            "song_empire": { "stability": 5, "prestige": 15, "manpower": -8000, "treasury": -15000 },
+            "mongol_empire": { "stability": -10, "manpower": -5000 }
+          },
+          "diplomacy_changes": [
+            { "a": "song_empire", "b": "mongol_empire", "tension_delta": 15 }
+          ],
+          "narrative_result": "你拍案而起，苍老的声音中带着许久未见的威严：'传朕旨意——命吕文焕率襄阳精锐北进，命王坚自钓鱼城出击，两路夹击，收复中原！'\n\n吴潜跪地叩首，老泪纵横。\n\n这是四十年来大宋第一次主动出击。不论成败，至少在这一刻，垂拱殿上重新响起了北伐的号角。但贾似道在你身后，眼中闪过一丝极深的寒意。"
+        },
+        {
+          "id": "choice_defensive",
+          "text": "支持主守派——厚赏钓鱼城守军，将资源投入长江防线与江南经济重建",
+          "effects": {
+            "song_empire": { "stability": 10, "treasury": 5000, "food": 3000 },
+            "mongol_empire": { "stability": 5 }
+          },
+          "diplomacy_changes": [
+            { "a": "song_empire", "b": "mongol_empire", "tension_delta": -10 }
+          ],
+          "narrative_result": "你沉默了很长时间，最后只是轻轻点了点头。你选择了务实——但朝堂上吴潜的眼中充满了失望。\n\n'陛下，我们这一代人老了。但大宋还有多少个十年可以等？'\n\n这句话像一把钝刀，慢慢地割在你的心上。你知道他说得对——但作为皇帝，你不能只凭一腔热血。你需要钱，需要粮，需要时间。而所有这些，江南可以给你。"
+        }
+      ]
+    },
+    {
+      "id": "evt_ss_003",
+      "name": "襄阳告急——生死枢纽",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 5 AND turn_number <= 10",
+        "priority": "mandatory"
+      },
+      "title": "襄阳告急——吕文焕的求救血书",
+      "narrative": "一封血书从襄阳前线飞马送入临安——吕文焕的亲笔：\n\n'臣吕文焕泣血顿首：蒙古南征军忽必烈部虽北撤，然史天泽所率汉军世侯仍驻河南虎视襄阳。城中箭矢所剩不足三月，城外民田已被蒙古游骑践踏殆尽。若襄阳不保，长江门户大开，蒙古铁骑将直抵江陵，大宋危矣！'\n\n襄阳——这座长江中游最后的堡垒，是南宋存亡的关键。守住襄阳，长江防线可保；失去襄阳，江南门户洞开。\n\n但援救襄阳的代价是巨大的：需要从各地抽调精兵，拨付巨额粮饷，而且可能削弱其他防线的兵力。\n\n贾似道在你身边低声说：'陛下，襄阳当然重要。但临安更重要。'",
+      "choices": [
+        {
+          "id": "choice_save_xiangyang",
+          "text": "倾全国之力救襄阳——调水师护送粮草援军，不惜代价守住长江咽喉",
+          "effects": {
+            "song_empire": { "treasury": -20000, "manpower": -10000, "food": -5000, "stability": 5, "prestige": 20 },
+            "mongol_empire": { "manpower": -8000, "stability": -5 }
+          },
+          "narrative_result": "'朕不会放弃襄阳。朕不会放弃任何一个大宋的子民。'\n\n长江水师倾巢而出，遮天蔽日的战船逆流而上，满载着粮草、箭矢和援军。吕文焕站在襄阳城头，看到江面上飘扬的宋字旗时，这个铁打的汉子第一次当众流下了眼泪。\n\n襄阳守住了。但户部尚书跪在你面前呈上的账本显示：国库已耗去近三成。而贾似道在政事堂里，正对着空荡荡的银库账册冷笑。"
+        },
+        {
+          "id": "choice_abandon_xiangyang",
+          "text": "收缩防线——让吕文焕自行坚守，集中资源构建第二道江陵防线",
+          "effects": {
+            "song_empire": { "stability": -20, "prestige": -25, "treasury": 5000, "food": 3000 },
+            "mongol_empire": { "stability": 10, "prestige": 10 }
+          },
+          "territory_changes": [
+            { "region_id": "湖北", "to_faction": "mongol_empire", "reason": "襄阳孤立无援，最终陷落" }
+          ],
+          "narrative_result": "你没有派援军。几个月后，襄阳城头升起了蒙古人的旗帜。\n\n吕文焕被迫降元——他后来给朝廷写了一封信，最后一句是：'臣不负陛下，陛下负臣。'\n\n但长江第二道防线保住了。贾似道向你报告：'陛下圣明。弃一城而保全局，此乃帝王之术。'\n\n你望着西湖上的烟雨，心中却比这湖水更冷。"
+        }
+      ]
+    },
+    {
+      "id": "evt_ss_004",
+      "name": "贾似道政争——权臣与皇权",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 6 AND turn_number <= 12",
+        "priority": "optional"
+      },
+      "title": "贾似道政争——权臣的阴影笼罩垂拱殿",
+      "narrative": "贾似道。这个以'拥立之功'起家的权臣，如今已是大宋实际上的主宰。他控制着枢密院的人事任免，把持着户部的钱粮调拨，甚至在你批阅奏章之前，所有的文书都先经过他的政事堂。\n\n近日，御史台多名官员联名弹劾贾似道——罪名包括'贪污军饷'、'卖官鬻爵'、'欺君罔上'。弹劾状言辞激烈，有理有据。\n\n但贾似道在朝堂上的势力盘根错节。武将中吕氏集团（吕文焕、吕文德一族）与他关系密切；文官系统中他的门生遍布六部。动他，朝廷可能动荡；不动他，大宋将继续被他吸干最后一滴血。\n\n深夜，参知政事吴潜秘密觐见。他只说了一句话：'陛下，若不除贾，中兴无望。'",
+      "choices": [
+        {
+          "id": "choice_purge_jia",
+          "text": "罢黜贾似道——以雷霆手段清洗权臣，重振皇权",
+          "effects": {
+            "song_empire": { "stability": -20, "prestige": 20, "corruption": -30 },
+            "mongol_empire": { "stability": -5 }
+          },
+          "narrative_result": "翌日早朝，当贾似道大摇大摆地踏入垂拱殿时，等待他的是殿前司禁军冰冷的刀锋。\n\n'贾似道，你可知罪？'\n\n朝堂大乱。贾似道一党疯狂反扑，数日内临安城中谣言四起、军队异动。但你的决心没有动摇——一个月内，贾党核心成员或被罢黜、或被流放。\n\n代价是巨大的：前线吕氏武将对朝廷产生了严重的不信任；朝堂短期内陷入混乱；甚至有人私下议论你是'鸟尽弓藏'。\n\n但你终于重新成为了大宋真正的皇帝。"
+        },
+        {
+          "id": "choice_tolerate_jia",
+          "text": "暂时隐忍——维持贾似道地位，以稳定换取短期效率",
+          "effects": {
+            "song_empire": { "stability": 10, "corruption": 15, "prestige": -15 },
+            "mongol_empire": { "stability": 5 }
+          },
+          "narrative_result": "你选择了沉默。弹劾状被留中不发，贾似道继续坐在政事堂的首位上批阅奏章。\n\n短期内，一切都异常顺利——贾似道的行政机器运转高效，前线军饷按时拨付，朝堂上没有人再提弹劾之事。\n\n但你知道，每一两拨给前线的银子，都有一半流入了贾似道的私库。\n\n你知道，那些弹劾贾似道的御史们，正在大牢中无声地腐烂。\n\n你也知道——当大宋真的需要你力挽狂澜的那一天到来时，你身边站着的，不是忠臣，而是一个腐败透顶的权臣。"
+        }
+      ]
+    },
+    {
+      "id": "evt_ss_005",
+      "name": "忽必烈称帝——命运的转折",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 10 AND turn_number <= 16",
+        "priority": "mandatory"
+      },
+      "title": "忽必烈称帝——蒙古内战的终结与新的威胁",
+      "narrative": "经过数年的惨烈内战，忽必烈终于在漠南击败了阿里不哥，成为蒙古帝国唯一的大汗。他迁都大都（北京），建国号'大元'，正式以中国王朝的身份君临天下。\n\n对南宋而言，这意味着最可怕的噩梦：蒙古人不再是一群来自草原的征服者——他们现在也是一个'中国'王朝了。忽必烈以汉法治汉地，重用汉人世侯，笼络儒生文士。越来越多的汉人开始接受这个新王朝。\n\n而忽必烈的全部注意力，现在转向了南方。襄阳、鄂州、临安——这些地名被一一标注在他的作战地图上。\n\n文天祥在殿上出班启奏：'陛下！忽必烈虽胜阿里不哥，但蒙古国力已在内战中消耗过半。此刻正是大宋奋发之际——若再拖延数年，待元朝在北中国站稳根基，则大势去矣！'\n\n贾似道（或在位的新枢密使）则持相反意见：'文大人言过其实。蒙古人刚打完内战，短期内不会南犯。陛下宜继续休养生息。'\n\n你望着舆图上的大宋江山的最后一角——从襄阳到崖山，直线距离不过两千里。时间，到底站在哪一边？",
+      "auto_effects": {
+        "mongol_empire": { "stability": 20, "prestige": 25, "manpower": 20000 },
+        "song_empire": { "stability": -5 }
+      },
+      "diplomacy_changes": [
+        { "a": "song_empire", "b": "mongol_empire", "tension_delta": 15 }
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_ss_001",
+      "name": "御前调度——皇帝的意志直达前线",
+      "trigger": "song_empire.prestige > 60 AND song_empire.treasury > 30000",
+      "delayed_effects": [
+        {
+          "delay_turns": 2,
+          "effect": {
+            "song_empire": { "manpower": 5000, "stability": 5 },
+            "mongol_empire": { "stability": -5 }
+          },
+          "narrative": "皇帝威望正隆，政令畅通无阻。前线诸将闻诏即行，各路兵马开始协调行动。大宋的战争机器——长久以来锈迹斑斑——终于重新开始运转。"
+        },
+        {
+          "delay_turns": 5,
+          "effect": {
+            "song_empire": { "prestige": 10, "stability": 5 }
+          },
+          "narrative": "捷报频传！皇帝的亲自调度初见成效。临安城中，士子们开始传唱中兴之词；前线士兵之中，流传起'天子圣明，大宋不亡'的口号。"
+        }
+      ]
+    },
+    {
+      "id": "bf_ss_002",
+      "name": "江南财赋——经济是战争的血液",
+      "trigger": "song_empire.treasury < 20000 AND song_empire.corruption > 40",
+      "delayed_effects": [
+        {
+          "delay_turns": 1,
+          "effect": {
+            "song_empire": { "stability": -10, "manpower": -3000 }
+          },
+          "narrative": "国库空虚而贪腐横行。前线开始出现逃兵——不是因为他们怕死，而是因为军饷已经拖欠了三个月。"
+        },
+        {
+          "delay_turns": 4,
+          "effect": {
+            "song_empire": { "stability": -15, "prestige": -10 }
+          },
+          "narrative": "经济危机加剧。临安米价飞涨，百姓怨声载道。甚至有太学生在太学门前张贴揭帖，直指朝廷腐败无能。"
+        }
+      ]
+    },
+    {
+      "id": "bf_ss_003",
+      "name": "忽必烈南征——元朝战争机器的启动",
+      "trigger": "turn_number >= 12 AND mongol_empire.stability > 50",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {
+            "mongol_empire": { "manpower": 15000, "prestige": 10 },
+            "song_empire": { "stability": -10 }
+          },
+          "narrative": "忽必烈在大都下令全面南征。元军的回回砲、汉军步兵、蒙古铁骑在襄阳前线集结——这是自蒙哥汗以来最大规模的军事动员。襄阳城的城墙，每一块砖都在颤抖。"
+        },
+        {
+          "delay_turns": 8,
+          "effect": {
+            "mongol_empire": { "manpower": 10000 },
+            "song_empire": { "stability": -15, "prestige": -15 }
+          },
+          "narrative": "蒙古南征军势如破竹。长江沿线的守军开始溃退——不是因为打不过，而是因为朝堂上的权力斗争让他们不知道为谁而战。"
+        }
+      ]
+    },
+    {
+      "id": "bf_ss_004",
+      "name": "忠臣义士——大宋最后的脊梁",
+      "trigger": "song_empire.stability < 30 AND song_empire.prestige > 40",
+      "delayed_effects": [
+        {
+          "delay_turns": 2,
+          "effect": {
+            "song_empire": { "manpower": 8000, "stability": 10 }
+          },
+          "narrative": "在帝国最危难的时刻，忠臣义士挺身而出。文天祥在江西招募义勇，陆秀夫在沿海组织勤王之师。大宋虽然风雨飘摇，但仍有人在为她战斗到生命最后一息。"
+        },
+        {
+          "delay_turns": 6,
+          "effect": {
+            "song_empire": { "stability": 5, "prestige": 10 }
+          },
+          "narrative": "'人生自古谁无死，留取丹心照汗青。'——文天祥的诗句传遍了大江南北。即使是最绝望的时刻，这首诗依然能让每一个宋人热泪盈眶。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "song_empire": {
+      "aggressiveness": 0.40,
+      "expansionism": 0.30,
+      "diplomacy_preference": "defensive_pragmatic",
+      "decision_weights": {
+        "economic_development": 0.25,
+        "border_defense": 0.25,
+        "diplomatic_maneuver": 0.20,
+        "internal_stability": 0.20,
+        "military_offensive": 0.10
+      }
+    },
+    "mongol_empire": {
+      "aggressiveness": 0.85,
+      "expansionism": 0.90,
+      "diplomacy_preference": "hegemonic",
+      "decision_weights": {
+        "military_conquest": 0.45,
+        "siege_warfare": 0.25,
+        "diplomatic_annexation": 0.15,
+        "internal_consolidation": 0.15
+      }
+    }
+  }
+}

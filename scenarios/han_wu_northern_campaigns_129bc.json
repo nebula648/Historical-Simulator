@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "id": "han_wu_northern_campaigns_129bc",
+    "title": "汉武北伐",
+    "subtitle": "公元前 129 年 · 马邑之围 · 帝国的反击",
+    "description": "大汉立国七十余年，和亲纳贡的屈辱即将终结。年轻的汉武帝刘彻登基已逾十年，窦太后薨逝，皇权再无掣肘。卫青、霍去病、李广——这颗星球上最耀眼的将星即将升起。你将以汉武帝的身份，发动对匈奴的全面战争，将大汉的旗帜插上狼居胥山。然而连年征伐耗尽国力，盐铁专卖动摇商人根基，巫蛊之祸暗流涌动。帝国在辉煌中前行，也在辉煌中疲惫。",
+    "era": "西汉",
+    "start_year": -129,
+    "start_month": 3,
+    "end_year": -87,
+    "time_scale": "month",
+    "version": "1.0.0",
+    "author": "",
+    "map_manifest_key": "han_wu_geo",
+    "era_key": "han",
+    "tags": [
+      "西汉",
+      "汉武帝",
+      "匈奴",
+      "卫青",
+      "霍去病",
+      "漠北之战"
+    ]
+  },
+  "player_faction": "han_empire",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "han_empire": [
+        "beijing",
+        "tianjin",
+        "shanhai_pass",
+        "baoding",
+        "zhen_ding",
+        "xuan_fu",
+        "ji_ning",
+        "tai_yuan",
+        "da_tong",
+        "jinan",
+        "qing_zhou",
+        "yan_zhou",
+        "luo_yang",
+        "kai_feng",
+        "nan_yang",
+        "gui_de",
+        "ping_yang",
+        "lu_an",
+        "xi_an",
+        "yan_an",
+        "yu_lin",
+        "ning_zhou",
+        "ping_liang",
+        "han_zhong",
+        "xing_yuan",
+        "nanjing",
+        "su_zhou",
+        "yang_zhou",
+        "feng_yang",
+        "an_qing",
+        "hang_zhou",
+        "ning_bo",
+        "jin_hua",
+        "nan_chang",
+        "gan_zhou",
+        "wu_chang",
+        "xiang_yang",
+        "jing_zhou",
+        "chang_sha",
+        "fu_zhou",
+        "quan_zhou",
+        "guang_zhou",
+        "zhao_qing",
+        "gui_lin",
+        "wu_zhou",
+        "gui_yang",
+        "yun_nan",
+        "qiong_zhou",
+        "cheng_du",
+        "chong_qing",
+        "kui_zhou",
+        "bao_ning",
+        "shun_qing",
+        "jia_ding"
+      ],
+      "xiongnu": [
+        "sheng_jing",
+        "liao_yang",
+        "tie_ling",
+        "kai_yuan",
+        "ji_lin",
+        "ning_gu_ta",
+        "hei_long_jiang",
+        "horqin",
+        "khalkha_east",
+        "chahar",
+        "ning_xia",
+        "lan_zhou",
+        "xi_ning",
+        "mongolia_west",
+        "turpan"
+      ],
+      "dian_regime": [
+        "tibet"
+      ],
+      "neutral": [
+        "tai_wan"
+      ]
+    }
+  },
+  "factions": {
+    "han_empire": {
+      "name": "大汉帝国",
+      "color": "#CC0000",
+      "ruler": "刘彻",
+      "ruler_title": "皇帝",
+      "government": "中央集权帝国",
+      "capital": "xi_an",
+      "description": "汉兴七十余年，至武帝而极盛。罢黜百家、独尊儒术，盐铁官营、均输平准，帝国的神经已深入每一寸肌理。但年年给匈奴的和亲纳贡是悬在大汉头顶的耻辱——每年数十万钱帛、公主远嫁漠北。现在，刘彻决心终结这一切。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "大汉天威",
+        "description": "骑兵征募成本-30%，步兵维持费-20%。帝国后勤体系完善，粮草转运效率翻倍。但连年战争将逐步拖累民心，每连续战争12回合，stability-5。",
+        "effects": {
+          "cavalry_recruit_cost_reduction": 30,
+          "infantry_upkeep_reduction": 20,
+          "logistics_efficiency_bonus": 100,
+          "continuous_war_stability_penalty_per_year": -5
+        }
+      }
+    },
+    "xiongnu": {
+      "name": "匈奴汗国",
+      "color": "#5D4E37",
+      "ruler": "军臣单于",
+      "ruler_title": "撑犁孤涂单于",
+      "government": "部落联盟",
+      "capital": "khalkha_east",
+      "description": "长城以北，从辽东到西域万里草原皆为匈奴牧地。控弦之士三十万，来去如风。军臣单于统率着这颗星球上最可怕的骑兵军团——他们不需要城池，不需要粮道，马蹄所至，皆为战场。然而草原上，他的弟弟伊稚斜正觊觎着单于之位。",
+      "flag_badass": true,
+      "culture_buffs": {
+        "name": "天之骄子",
+        "description": "所有骑兵单位移动力+50%，士气+20。不需粮草补给。但内部权力斗争激烈，单于威望低于40时，有概率分裂。",
+        "effects": {
+          "cavalry_speed_bonus": 50,
+          "cavalry_morale_bonus": 20,
+          "no_food_required": true,
+          "split_risk_below_prestige_40": true
+        }
+      }
+    },
+    "dian_regime": {
+      "name": "滇国",
+      "color": "#8F6B3E",
+      "ruler": "尝羌",
+      "ruler_title": "滇王",
+      "government": "部落联盟",
+      "capital": "gui_yang",
+      "description": "西南夷中的最大政权，据有滇池沃土，与夜郎、昆明等部落互相攻伐又互相联姻。汉武帝的使者已抵达滇国，带来了'内属'的条件和一枚金印。滇王却在观望——北方的这个巨人，真能跨越万水千山吗？",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "南中丛林",
+        "description": "守军在山地/丛林地形战斗力+40%，外来入侵者在该区域损耗翻倍。大象部队对骑兵有震慑效果。",
+        "effects": {
+          "mountain_jungle_defense_bonus": 40,
+          "invader_attrition_double": true,
+          "elephant_cavalry_fear": true
+        }
+      }
+    }
+  },
+  "initial_resources": {
+    "han_empire": {
+      "treasury": 80000,
+      "manpower": 250000,
+      "food": 150000,
+      "stability": 70,
+      "prestige": 80,
+      "corruption": 25
+    },
+    "xiongnu": {
+      "treasury": 25000,
+      "manpower": 200000,
+      "food": 0,
+      "stability": 75,
+      "prestige": 85,
+      "corruption": 10
+    },
+    "dian_regime": {
+      "treasury": 5000,
+      "manpower": 15000,
+      "food": 10000,
+      "stability": 65,
+      "prestige": 40,
+      "corruption": 15
+    }
+  },
+  "initial_military": {
+    "han_empire": [
+      {
+        "name": "北军五营",
+        "type": "精锐骑兵",
+        "size": 30000,
+        "location": "xi_an",
+        "morale": 80,
+        "general": "卫青"
+      },
+      {
+        "name": "羽林孤儿骑",
+        "type": "精锐骑兵",
+        "size": 8000,
+        "location": "xi_an",
+        "morale": 90,
+        "general": "霍去病"
+      },
+      {
+        "name": "李广陇西骑",
+        "type": "骑兵",
+        "size": 15000,
+        "location": "lan_zhou",
+        "morale": 75,
+        "general": "李广"
+      },
+      {
+        "name": "程不识屯田军",
+        "type": "步兵",
+        "size": 25000,
+        "location": "tai_yuan",
+        "morale": 65,
+        "general": "程不识"
+      },
+      {
+        "name": "公孙敖部",
+        "type": "骑兵",
+        "size": 12000,
+        "location": "da_tong",
+        "morale": 60,
+        "general": "公孙敖"
+      },
+      {
+        "name": "公孙贺部",
+        "type": "骑兵",
+        "size": 10000,
+        "location": "beijing",
+        "morale": 62,
+        "general": "公孙贺"
+      },
+      {
+        "name": "南军禁卫",
+        "type": "精锐步兵",
+        "size": 15000,
+        "location": "xi_an",
+        "morale": 85,
+        "general": ""
+      },
+      {
+        "name": "江淮步卒",
+        "type": "步兵",
+        "size": 30000,
+        "location": "nanjing",
+        "morale": 55,
+        "general": ""
+      },
+      {
+        "name": "会稽水师",
+        "type": "水师",
+        "size": 8000,
+        "location": "hang_zhou",
+        "morale": 50,
+        "general": ""
+      }
+    ],
+    "xiongnu": [
+      {
+        "name": "单于王庭亲卫",
+        "type": "精锐骑兵",
+        "size": 25000,
+        "location": "khalkha_east",
+        "morale": 95,
+        "general": "军臣单于"
+      },
+      {
+        "name": "左贤王部",
+        "type": "精锐骑兵",
+        "size": 35000,
+        "location": "horqin",
+        "morale": 85,
+        "general": "左贤王"
+      },
+      {
+        "name": "右贤王部",
+        "type": "骑兵",
+        "size": 30000,
+        "location": "lan_zhou",
+        "morale": 80,
+        "general": "右贤王"
+      },
+      {
+        "name": "伊稚斜部",
+        "type": "精锐骑兵",
+        "size": 20000,
+        "location": "chahar",
+        "morale": 85,
+        "general": "伊稚斜"
+      },
+      {
+        "name": "河西走廊部",
+        "type": "骑兵",
+        "size": 18000,
+        "location": "xi_ning",
+        "morale": 75,
+        "general": "浑邪王"
+      },
+      {
+        "name": "辽东突骑",
+        "type": "骑兵",
+        "size": 15000,
+        "location": "sheng_jing",
+        "morale": 70,
+        "general": ""
+      },
+      {
+        "name": "漠北游骑",
+        "type": "骑兵",
+        "size": 25000,
+        "location": "ning_gu_ta",
+        "morale": 72,
+        "general": ""
+      }
+    ],
+    "dian_regime": [
+      {
+        "name": "滇池守军",
+        "type": "步兵",
+        "size": 8000,
+        "location": "gui_yang",
+        "morale": 55,
+        "general": "尝羌"
+      },
+      {
+        "name": "夜郎盟军",
+        "type": "民兵",
+        "size": 5000,
+        "location": "yun_nan",
+        "morale": 45,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      { "a": "han_empire", "b": "xiongnu", "status": "war", "tension": 95 },
+      { "a": "han_empire", "b": "dian_regime", "status": "neutral", "tension": 35 },
+      { "a": "xiongnu", "b": "dian_regime", "status": "neutral", "tension": 10 }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_hw_001",
+      "name": "马邑之围",
+      "type": "audience",
+      "trigger": {
+        "condition": "month <= 3 AND turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "马邑之围——三十万大军的伏击",
+      "narrative": "大行令王恢提出了那个大胆到令人窒息的计划：以马邑富商聂壹为饵，假装献城投降，引诱军臣单于率主力入塞，汉军三十万伏兵四面合围，一举歼灭匈奴主力！\n\n未央宫中，你凝视着舆图上的马邑。这里北接雁门、南连云中，若伏击得手，匈奴将十年之内无力南下。但三十万大军的调动不可能完全不露痕迹，一旦被匈奴识破，将功亏一篑。\n\n王恢跪地再拜：'陛下，臣愿亲率三万精兵出代郡截其辎重。此役若成，则漠南无王庭矣！和亲之耻，可一朝而雪！'\n\n御史大夫韩安国却摇头：'陛下，三代之君不与夷狄争。匈奴来去如风，我以三十万大军空耗数月，纵使取胜，国库亦将告罄。不如仍以和亲为上。'\n\n战与和，就在你的一念之间。"
+    },
+    {
+      "id": "evt_hw_002",
+      "name": "卫青龙城大捷",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 6 AND xiongnu.status == 'active'",
+        "priority": "mandatory"
+      },
+      "title": "龙城飞将——卫青首次北伐",
+      "narrative": "马邑之围虽未成功，但汉匈之间的战争已如离弦之箭。你拜卫青为车骑将军，出上谷；公孙敖出代郡；公孙贺出云中；李广出雁门——四路大军，各率万骑，分道北伐。\n\n结果三路皆败，李广全军覆没，自己也被匈奴俘虏（后夺马逃回）。但卫青却率部直捣匈奴祭天圣地——龙城，斩首七百级而还。这是他第一次向世人证明：匈奴的心脏，大汉的骑兵也能插进去。\n\n'陛下，臣愿为主将，再伐匈奴！'未央宫中，年轻的卫青眼神灼灼。\n\n而你手中，还有另外一份奏折——李广请求戴罪立功，再给他一次机会。"
+    },
+    {
+      "id": "evt_hw_003",
+      "name": "河西走廊之战",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number >= 15 AND han_empire.controls('lan_zhou') == false",
+        "priority": "mandatory"
+      },
+      "title": "冠军侯——打通河西走廊",
+      "narrative": "十九岁的霍去病跪在你的面前，那双眼睛里燃烧着与他舅舅卫青完全不同的火焰——不是报恩，不是职责，而是对功名的纯粹饥渴。\n\n'陛下，臣只需一万精骑，自陇西出塞，六日之内，穿越焉支山，直取匈奴右贤王庭！'\n\n满朝文武倒吸一口凉气。六日？穿越焉支山？这個十九岁的少年是疯了还是真的有鬼神之勇？\n\n'河西走廊是匈奴的右臂。若断此臂，则西域可通，匈奴只能龟缩漠北。'张骞在一旁补充道——他刚从匈奴的十年囚禁中逃脱归来，没有人比他更了解那片土地。\n\n'臣愿以性命担保！'霍去病的声音斩钉截铁。\n\n给他一万骑——还是求稳派遣老将？"
+    },
+    {
+      "id": "evt_hw_004",
+      "name": "漠北决战",
+      "type": "audience",
+      "trigger": {
+        "condition": "year >= -119 AND han_empire.controls('lan_zhou') AND xiongnu.status == 'active'",
+        "priority": "mandatory"
+      },
+      "title": "封狼居胥——漠北的最后决战",
+      "narrative": "元狩四年秋，你下令发动了汉匈战争中最疯狂的一击——卫青、霍去病各率五万骑兵，分两路深入漠北，横穿大漠两千余里，寻歼匈奴主力。\n\n临行前，你在未央宫为舅甥二人送行。霍去病意气风发：'匈奴未灭，何以家为！'他拒绝了你赐予的华宅美妾，只带着他的八百骠姚校尉踏上了征途。\n\n漠北的风沙遮天蔽日，单于伊稚斜的十五万骑在等他们。\n\n但卫青以武刚车环营为阵，五千精骑侧翼包抄，正面硬撼匈奴主力——风沙之中，单于大旗倒地，匈奴溃败。同月，霍去病出代郡两千余里，封狼居胥山，禅于姑衍——从此，'封狼居胥'成为华夏武将的最高荣誉。\n\n然而，十万匹战马只回来不足三万。国库的每一枚铜钱都送到了前线。"
+    },
+    {
+      "id": "evt_hw_005",
+      "name": "巫蛊之祸",
+      "type": "audience",
+      "trigger": {
+        "condition": "year >= -91 AND han_empire.corruption > 50",
+        "priority": "random"
+      },
+      "title": "长安的血夜——巫蛊之乱",
+      "narrative": "深夜，江充率绣衣使者包围了太子刘据的东宫。他在皇后卫子夫的椒房殿中也'发现'了桐木人偶——所谓诅咒皇帝的巫蛊。\n\n你的身体每况日下，你开始疑神疑鬼。每一个咳嗽、每一次恶梦，你都觉得是宫中的某一个角落有人在用巫术毒害你。江充恰到好处地利用了这份恐惧。\n\n太子刘据惊恐地跪在你面前：'父皇！儿臣冤枉！江充构陷忠良，他才是祸乱朝纲的奸臣！'\n\n但江充的证据——那些写着生庚八字、扎满银针的人偶——就摆在你面前。\n\n你相信你的儿子，还是你的恐惧？\n\n长安的夜空已被火光染红。太子起兵诛杀江充，长安城中血流成河。这场巫蛊之祸，将吞噬皇后卫子夫、太子刘据、丞相公孙贺——以及无数无辜者的性命。"
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_hw_001",
+      "name": "漠南无王庭",
+      "trigger": "han_empire.controls('horqin') AND han_empire.controls('chahar')",
+      "delayed_effects": [
+        {
+          "delay_turns": 6,
+          "effect": {
+            "han_empire": { "prestige": 20, "stability": 10 },
+            "xiongnu": { "stability": -25, "manpower": -30000 }
+          },
+          "narrative": "'漠南无王庭！'的捷报传遍天下。卫青收复河套，设立朔方郡。匈奴远遁漠北，汉匈力量对比彻底逆转。"
+        }
+      ]
+    },
+    {
+      "id": "bf_hw_002",
+      "name": "张骞通西域",
+      "trigger": "han_empire.controls('lan_zhou')",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {
+            "han_empire": { "treasury": 5000, "prestige": 10 }
+          },
+          "narrative": "张骞凿空西域归来，带来了大宛的汗血宝马、安息的葡萄苜蓿、以及通往西方世界的商路地图。丝绸之路的雏形，已在河西走廊的尽头显现。"
+        }
+      ]
+    },
+    {
+      "id": "bf_hw_003",
+      "name": "盐铁专卖的负担",
+      "trigger": "han_empire.treasury < 20000 AND han_empire.stability > 40",
+      "delayed_effects": [
+        {
+          "delay_turns": 12,
+          "effect": {
+            "han_empire": { "stability": -10, "corruption": 15, "treasury": 15000 }
+          },
+          "narrative": "桑弘羊推行盐铁专卖与均输平准法，充实了国库，却也让富商大贾怨声载道。帝国的战争机器需要金钱，而金钱来自对民间每一滴财富的榨取。"
+        }
+      ]
+    },
+    {
+      "id": "bf_hw_004",
+      "name": "霍去病英年早逝",
+      "trigger": "year >= -117",
+      "delayed_effects": [
+        {
+          "delay_turns": 1,
+          "effect": {
+            "han_empire": { "stability": -5, "prestige": -5, "manpower": -8000 }
+          },
+          "narrative": "天妒英才！冠军侯霍去病因病暴卒，年仅二十四岁。举国同悲，汉武帝为其修建祁连山形状的陵墓，以纪念他收复河西走廊的不朽功勋。汉军失去了最锋利的刀刃。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "xiongnu": {
+      "aggressiveness": 0.9,
+      "expansionism": 0.85,
+      "diplomacy_preference": "raiding",
+      "decision_weights": {
+        "raid_border": 0.4,
+        "consolidate_steppe": 0.2,
+        "counter_attack": 0.2,
+        "negotiate": 0.1,
+        "internal_power_struggle": 0.1
+      }
+    },
+    "dian_regime": {
+      "aggressiveness": 0.2,
+      "expansionism": 0.2,
+      "diplomacy_preference": "isolationist",
+      "decision_weights": {
+        "defend_territory": 0.6,
+        "submit_to_han": 0.3,
+        "expand": 0.1
+      }
+    }
+  },
+  "resource_definitions": {
+    "treasury": { "label": "国库", "unit": "万钱", "icon": "💰", "min": 0, "max": 999999 },
+    "manpower": { "label": "兵力", "unit": "人", "icon": "⚔️", "min": 0, "max": 999999 },
+    "food": { "label": "粮草", "unit": "石", "icon": "🌾", "min": 0, "max": 999999 },
+    "stability": { "label": "民心", "unit": "%", "icon": "🏛️", "min": 0, "max": 100 },
+    "prestige": { "label": "威望", "unit": "%", "icon": "👑", "min": 0, "max": 100 },
+    "corruption": { "label": "腐败度", "unit": "%", "icon": "🕷️", "min": 0, "max": 100 }
+  },
+  "victory_conditions": {
+    "total_victory": {
+      "description": "彻底击败匈奴，漠南漠北皆纳入汉土",
+      "check": "xiongnu.status == 'defeated'"
+    },
+    "hegemonic_victory": {
+      "description": "打通河西走廊并控制西域，设立西域都护府",
+      "check": "han_empire.controls('lan_zhou') AND han_empire.controls('xi_ning') AND han_empire.controls('turpan')"
+    },
+    "prosperity_victory": {
+      "description": "国库充溢（>15万钱），民心>60，腐败<30",
+      "check": "han_empire.treasury > 150000 AND han_empire.stability > 60 AND han_empire.corruption < 30"
+    },
+    "survival_victory": {
+      "description": "坚持到公元前 87 年，武帝驾崩前保持帝国完整",
+      "check": "year >= -87 AND han_empire.status == 'active' AND han_empire.controlled_regions.length > 30"
+    }
+  }
+}

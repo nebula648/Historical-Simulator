@@ -1,0 +1,687 @@
+{
+  "meta": {
+    "id": "chu_han_contention_206bc",
+    "title": "楚汉争霸",
+    "subtitle": "公元前 206 年 · 鸿门宴之后 · 十八路诸侯裂土封王",
+    "description": "秦二世而亡，天下分崩。项羽自封西楚霸王，分封十八路诸侯，将先入关中的刘邦贬至巴蜀汉中不毛之地。鸿门宴上的杀机未遂，埋下了楚汉相争的伏笔。你将以汉王刘邦的身份，自汉中暗度陈仓、还定三秦，与天下第一猛将项羽逐鹿中原。是成就大汉四百年基业，还是葬身乌江之畔？",
+    "era": "秦汉之际",
+    "start_year": -206,
+    "start_month": 4,
+    "end_year": -195,
+    "time_scale": "month",
+    "version": "1.0.0",
+    "author": "",
+    "map_manifest_key": "chu_han_geo",
+    "era_key": "han",
+    "tags": [
+      "楚汉",
+      "刘邦",
+      "项羽",
+      "韩信",
+      "鸿门宴",
+      "秦末",
+      "汉初"
+    ]
+  },
+  "player_faction": "han_regime",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "han_regime": [
+        "han_zhong",
+        "xing_yuan",
+        "cheng_du",
+        "chong_qing",
+        "kui_zhou",
+        "bao_ning",
+        "shun_qing",
+        "jia_ding"
+      ],
+      "chu_hegemon": [
+        "luo_yang",
+        "kai_feng",
+        "nan_yang",
+        "gui_de",
+        "ping_yang",
+        "lu_an",
+        "nanjing",
+        "su_zhou",
+        "yang_zhou",
+        "feng_yang",
+        "an_qing",
+        "wu_chang",
+        "xiang_yang",
+        "jing_zhou",
+        "chang_sha",
+        "nan_chang",
+        "gan_zhou"
+      ],
+      "qin_regime": [
+        "xi_an",
+        "yan_an",
+        "yu_lin",
+        "ning_zhou",
+        "ping_liang",
+        "lan_zhou",
+        "xi_ning"
+      ],
+      "qi_regime": [
+        "jinan",
+        "qing_zhou",
+        "yan_zhou"
+      ],
+      "zhao_regime": [
+        "tai_yuan",
+        "da_tong",
+        "beijing",
+        "tianjin",
+        "shanhai_pass",
+        "baoding",
+        "zhen_ding",
+        "xuan_fu",
+        "ji_ning"
+      ],
+      "yan_regime": [
+        "sheng_jing",
+        "liao_yang",
+        "tie_ling",
+        "kai_yuan"
+      ],
+      "nanyue_regime": [
+        "guang_zhou",
+        "zhao_qing",
+        "gui_lin",
+        "wu_zhou",
+        "qiong_zhou"
+      ],
+      "neutral": [
+        "hang_zhou",
+        "ning_bo",
+        "jin_hua",
+        "fu_zhou",
+        "quan_zhou",
+        "gui_yang",
+        "yun_nan",
+        "ji_lin",
+        "ning_gu_ta",
+        "hei_long_jiang",
+        "horqin",
+        "khalkha_east",
+        "chahar",
+        "mongolia_west",
+        "turpan",
+        "tibet",
+        "tai_wan",
+        "ning_xia"
+      ]
+    }
+  },
+  "factions": {
+    "han_regime": {
+      "name": "汉王·刘邦",
+      "color": "#CC0000",
+      "ruler": "刘邦",
+      "ruler_title": "汉王",
+      "government": "封建王国",
+      "capital": "han_zhong",
+      "description": "沛县亭长出身的刘邦，先入咸阳却被迫退守巴蜀汉中。麾下有萧何治粟、张良运筹、韩信掌兵，人才济济而地盘逼仄。栈道已烧，东出无路——但暗度陈仓之计，已在韩信的锦囊之中。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "约法三章",
+        "description": "废除秦苛法，与民休息。每收复咸阳旧地，民心+15，腐败-10。汉军步兵在关中地区士气+20。",
+        "effects": {
+          "stability_bonus_per_qin_region": 15,
+          "corruption_reduction_per_qin_region": 10,
+          "infantry_morale_bonus_in_guangzhong": 20
+        }
+      }
+    },
+    "chu_hegemon": {
+      "name": "西楚霸王·项羽",
+      "color": "#2F1B0E",
+      "ruler": "项籍",
+      "ruler_title": "西楚霸王",
+      "government": "封建王国",
+      "capital": "nanjing",
+      "description": "力拔山兮气盖世，项羽分封十八路诸侯，自领梁楚九郡，定都彭城。麾下八千江东子弟兵骁勇无敌，但项羽刚愎自用、不善用人——韩信、陈平、英布，皆弃楚归汉。霸业之下，暗流涌动。",
+      "flag_badass": true,
+      "culture_buffs": {
+        "name": "破釜沉舟",
+        "description": "楚军以少打多时，骑兵士气翻倍。但每失去一名将领（麾下将领叛逃），全军士气-10，民心-5。",
+        "effects": {
+          "cavalry_morale_double_when_outnumbered": true,
+          "general_defection_penalty": -10,
+          "stability_loss_per_defection": -5
+        }
+      }
+    },
+    "qin_regime": {
+      "name": "三秦·章邯",
+      "color": "#4A4A4A",
+      "ruler": "章邯",
+      "ruler_title": "雍王",
+      "government": "封建王国",
+      "capital": "xi_an",
+      "description": "秦末第一名将章邯，率二十万秦军降楚，被封雍王镇守关中，与塞王司马欣、翟王董翳共为'三秦'。然而项羽坑杀二十万秦卒的旧恨，让关中子民对这位曾经的秦将并不买账。民心浮动，防线虚设。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "赳赳老秦",
+        "description": "步战防御+25%，但统治区民心基础值-20——关中百姓永不会忘记二十万被坑杀的子弟。",
+        "effects": {
+          "infantry_defense_bonus": 25,
+          "base_stability_penalty": -20
+        }
+      }
+    },
+    "qi_regime": {
+      "name": "齐·田荣",
+      "color": "#1A5276",
+      "ruler": "田荣",
+      "ruler_title": "齐王",
+      "government": "封建王国",
+      "capital": "jinan",
+      "description": "田氏代齐的后裔，盘踞齐鲁富庶之地。田荣不满项羽分封不公，拒绝承认项羽的霸王地位，是最先竖旗反楚的诸侯。齐地富甲天下，但军力不足以单独对抗西楚。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "鱼盐之利",
+        "description": "国库收入+30%，水师士气+15。齐地富庶，但安逸易滋生腐败，每和平12回合腐败+5。",
+        "effects": {
+          "treasury_income_bonus": 30,
+          "navy_morale_bonus": 15,
+          "corruption_peace_penalty": 5
+        }
+      }
+    },
+    "zhao_regime": {
+      "name": "赵·赵歇",
+      "color": "#7D3C98",
+      "ruler": "赵歇",
+      "ruler_title": "赵王",
+      "government": "封建王国",
+      "capital": "tai_yuan",
+      "description": "赵国后裔，被张耳、陈馀拥立为赵王。据有太行山东西两麓，北接燕代、南临魏梁。赵地多慷慨悲歌之士，骑兵凶悍，但国力已被秦末战乱消耗殆尽。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "胡服骑射",
+        "description": "赵地骑兵攻击力+20%，骑兵征募成本-25%。继承赵武灵王改革遗产，骑兵为王牌。",
+        "effects": {
+          "cavalry_attack_bonus": 20,
+          "cavalry_recruit_cost_reduction": 25
+        }
+      }
+    },
+    "yan_regime": {
+      "name": "燕·臧荼",
+      "color": "#1A6B3C",
+      "ruler": "臧荼",
+      "ruler_title": "燕王",
+      "government": "封建王国",
+      "capital": "beijing",
+      "description": "原燕国将领，因随项羽入关有功被封燕王。据有辽东苦寒之地，地广人稀、兵力薄弱，但东北防线使其免于卷入中原混战的第一波冲击。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "苦寒铁卫",
+        "description": "守城战时全军士气+30，冬季敌方入侵时敌军损耗翻倍。辽东苦寒是天险。",
+        "effects": {
+          "defense_morale_bonus": 30,
+          "winter_attrition_double": true
+        }
+      }
+    },
+    "nanyue_regime": {
+      "name": "南越·赵佗",
+      "color": "#B8860B",
+      "ruler": "赵佗",
+      "ruler_title": "南越武王",
+      "government": "封建王国",
+      "capital": "guang_zhou",
+      "description": "原秦朝南海郡尉赵佗，趁中原大乱闭关自守，割据岭南称王。南越地处天南，与中原悬隔千里，拥有象兵与海上贸易之利，是一个中原诸侯无暇南顾的潜在变量。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "天南宝货",
+        "description": "贸易收入+40%，象兵单位对步兵士气压制-15。远离中原战火，可安心发育。",
+        "effects": {
+          "trade_income_bonus": 40,
+          "elephant_morale_debuff_on_enemy_infantry": -15
+        }
+      }
+    }
+  },
+  "initial_resources": {
+    "han_regime": {
+      "treasury": 5000,
+      "manpower": 30000,
+      "food": 20000,
+      "stability": 60,
+      "prestige": 25,
+      "corruption": 20
+    },
+    "chu_hegemon": {
+      "treasury": 30000,
+      "manpower": 150000,
+      "food": 60000,
+      "stability": 60,
+      "prestige": 90,
+      "corruption": 15
+    },
+    "qin_regime": {
+      "treasury": 8000,
+      "manpower": 40000,
+      "food": 15000,
+      "stability": 30,
+      "prestige": 30,
+      "corruption": 25
+    },
+    "qi_regime": {
+      "treasury": 20000,
+      "manpower": 40000,
+      "food": 30000,
+      "stability": 70,
+      "prestige": 50,
+      "corruption": 30
+    },
+    "zhao_regime": {
+      "treasury": 6000,
+      "manpower": 35000,
+      "food": 12000,
+      "stability": 55,
+      "prestige": 35,
+      "corruption": 25
+    },
+    "yan_regime": {
+      "treasury": 3000,
+      "manpower": 20000,
+      "food": 8000,
+      "stability": 65,
+      "prestige": 30,
+      "corruption": 20
+    },
+    "nanyue_regime": {
+      "treasury": 12000,
+      "manpower": 25000,
+      "food": 25000,
+      "stability": 75,
+      "prestige": 40,
+      "corruption": 15
+    }
+  },
+  "initial_military": {
+    "han_regime": [
+      {
+        "name": "韩信征东军",
+        "type": "精锐步兵",
+        "size": 15000,
+        "location": "han_zhong",
+        "morale": 75,
+        "general": "韩信"
+      },
+      {
+        "name": "樊哙先锋营",
+        "type": "精锐骑兵",
+        "size": 5000,
+        "location": "han_zhong",
+        "morale": 80,
+        "general": "樊哙"
+      },
+      {
+        "name": "巴蜀戍卫营",
+        "type": "步兵",
+        "size": 10000,
+        "location": "cheng_du",
+        "morale": 55,
+        "general": "萧何"
+      }
+    ],
+    "chu_hegemon": [
+      {
+        "name": "项羽江东亲卫",
+        "type": "精锐骑兵",
+        "size": 8000,
+        "location": "nanjing",
+        "morale": 100,
+        "general": "项羽"
+      },
+      {
+        "name": "龙且前锋军",
+        "type": "骑兵",
+        "size": 30000,
+        "location": "kai_feng",
+        "morale": 80,
+        "general": "龙且"
+      },
+      {
+        "name": "英布九江军",
+        "type": "步兵",
+        "size": 25000,
+        "location": "wu_chang",
+        "morale": 70,
+        "general": "英布"
+      },
+      {
+        "name": "钟离昧中军",
+        "type": "混合部队",
+        "size": 35000,
+        "location": "luo_yang",
+        "morale": 75,
+        "general": "钟离昧"
+      },
+      {
+        "name": "彭城守备军",
+        "type": "步兵",
+        "size": 15000,
+        "location": "su_zhou",
+        "morale": 60,
+        "general": "项伯"
+      }
+    ],
+    "qin_regime": [
+      {
+        "name": "废丘禁卫军",
+        "type": "步兵",
+        "size": 18000,
+        "location": "xi_an",
+        "morale": 45,
+        "general": "章邯"
+      },
+      {
+        "name": "塞王戍边营",
+        "type": "步兵",
+        "size": 10000,
+        "location": "yan_an",
+        "morale": 40,
+        "general": "司马欣"
+      },
+      {
+        "name": "翟王骑兵营",
+        "type": "骑兵",
+        "size": 8000,
+        "location": "lan_zhou",
+        "morale": 42,
+        "general": "董翳"
+      }
+    ],
+    "qi_regime": [
+      {
+        "name": "齐师主力",
+        "type": "混合部队",
+        "size": 25000,
+        "location": "jinan",
+        "morale": 65,
+        "general": "田荣"
+      },
+      {
+        "name": "即墨水师",
+        "type": "水师",
+        "size": 8000,
+        "location": "qing_zhou",
+        "morale": 55,
+        "general": "田横"
+      }
+    ],
+    "zhao_regime": [
+      {
+        "name": "赵边骑军",
+        "type": "骑兵",
+        "size": 15000,
+        "location": "tai_yuan",
+        "morale": 65,
+        "general": "陈馀"
+      },
+      {
+        "name": "邯郸步卒",
+        "type": "步兵",
+        "size": 18000,
+        "location": "da_tong",
+        "morale": 55,
+        "general": "张耳"
+      }
+    ],
+    "yan_regime": [
+      {
+        "name": "蓟城守军",
+        "type": "步兵",
+        "size": 12000,
+        "location": "beijing",
+        "morale": 50,
+        "general": "臧荼"
+      },
+      {
+        "name": "辽东戍边营",
+        "type": "民兵",
+        "size": 8000,
+        "location": "sheng_jing",
+        "morale": 40,
+        "general": ""
+      }
+    ],
+    "nanyue_regime": [
+      {
+        "name": "番禺禁军",
+        "type": "步兵",
+        "size": 12000,
+        "location": "guang_zhou",
+        "morale": 65,
+        "general": "赵佗"
+      },
+      {
+        "name": "象兵营",
+        "type": "精锐骑兵",
+        "size": 3000,
+        "location": "gui_lin",
+        "morale": 70,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      { "a": "han_regime", "b": "chu_hegemon", "status": "peace", "tension": 70 },
+      { "a": "han_regime", "b": "qin_regime", "status": "neutral", "tension": 50 },
+      { "a": "han_regime", "b": "qi_regime", "status": "neutral", "tension": 30 },
+      { "a": "han_regime", "b": "zhao_regime", "status": "neutral", "tension": 25 },
+      { "a": "han_regime", "b": "yan_regime", "status": "neutral", "tension": 15 },
+      { "a": "han_regime", "b": "nanyue_regime", "status": "neutral", "tension": 10 },
+      { "a": "chu_hegemon", "b": "qin_regime", "status": "vassal", "tension": 40 },
+      { "a": "chu_hegemon", "b": "qi_regime", "status": "war", "tension": 100 },
+      { "a": "chu_hegemon", "b": "zhao_regime", "status": "peace", "tension": 45 },
+      { "a": "chu_hegemon", "b": "yan_regime", "status": "peace", "tension": 25 },
+      { "a": "chu_hegemon", "b": "nanyue_regime", "status": "neutral", "tension": 10 },
+      { "a": "qin_regime", "b": "qi_regime", "status": "neutral", "tension": 20 },
+      { "a": "qin_regime", "b": "zhao_regime", "status": "neutral", "tension": 30 },
+      { "a": "qi_regime", "b": "zhao_regime", "status": "peace", "tension": 35 },
+      { "a": "zhao_regime", "b": "yan_regime", "status": "peace", "tension": 25 }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_ch_001",
+      "name": "暗度陈仓",
+      "type": "audience",
+      "trigger": {
+        "condition": "month <= 3 AND turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "暗度陈仓——出蜀第一战",
+      "narrative": "汉中南郑的王宫中，韩信在你面前展开了那张改变天下命运的舆图。\n\n'大王，明修栈道，暗度陈仓。臣已遣樊哙率千人假装修复褒斜栈道，迷惑章邯。主力大军沿故道迂回，可直取陈仓。关中三秦王，章邯、司马欣、董翳——昔日秦将，关中父老恨之入骨。我大军一到，必望风而降！'\n\n萧何拱手进言：'大王，巴蜀虽富，然天府之国不足以争天下。东出函谷，还定三秦，此其时也！'\n\n张良却提醒道：'只是项羽此刻尚在齐地平叛，若闻我出关，必怒而西来。大王须速战速决。'\n\n\"三秦之地，进可争天下，退可守汉中。此乃天赐良机，不可失也！"
+    },
+    {
+      "id": "evt_ch_002",
+      "name": "彭城之战的前夜",
+      "type": "audience",
+      "trigger": {
+        "condition": "han_regime.controls('xi_an') AND turn_number >= 6",
+        "priority": "mandatory"
+      },
+      "title": "彭城之影——趁虚而入还是稳扎稳打？",
+      "narrative": "汉军已据关中，势力初成。探马来报：项羽正亲率主力在齐地与田荣鏖战，彭城空虚！\n\n韩信双眼放光：'大王，此天赐良机！项羽倾巢而出，彭城仅有守军两万。臣请率精骑三万，轻装疾进，十日可下彭城！'\n\n但张良却面有忧色：'大王，项羽用兵如神，纵然后方空虚，我军若贸然深入楚境，一旦项羽回师，恐有被截断后路之危。不如先定魏、赵、代三国，四面合围，徐图灭楚。'\n\n萧何补充：'臣已整理关中的户口图籍，粮草足可支撑大军一年之需。打与不打，皆在陛下一念之间。但切莫轻敌——那个男人，是项羽。'"
+    },
+    {
+      "id": "evt_ch_003",
+      "name": "韩信灭赵——背水一战",
+      "type": "conditional",
+      "trigger": {
+        "condition": "han_regime.controls('tai_yuan') == false AND turn_number >= 12",
+        "priority": "mandatory"
+      },
+      "title": "井陉口——兵仙的封神之战",
+      "narrative": "韩信率三万新募之卒，面对赵国二十万劲旅，于井陉口背水列阵。\n\n'置之死地而后生！'韩信轻描淡写地下达了这道在兵书上被视为大忌的命令。\n\n副将张耳忧心忡忡：'将军，背水列阵乃兵家绝地，万一……'\n\n韩信笑道：'兵书亦云：陷之死地而后生，置之亡地而后存。此三万士卒，非我旧部，乃市井新募之人。若不置之绝境，人人皆思逃散，岂肯死战？况且——'他转头看向远方山谷，'我已伏两千轻骑于赵营侧后。待赵军倾巢而出，彼时拔旗易帜，赵军必溃。'\n\n井陉的胜负，不仅决定赵国的存亡，更将奠定韩信'兵仙'的不朽威名。"
+    },
+    {
+      "id": "evt_ch_004",
+      "name": "垓下之围",
+      "type": "audience",
+      "trigger": {
+        "condition": "year >= -203 AND han_regime.controls('nanjing') == false",
+        "priority": "mandatory"
+      },
+      "title": "垓下——最后的楚歌",
+      "narrative": "经过数年鏖战，楚汉双方都已筋疲力尽。鸿沟和议之后，项羽引兵东归，而你听从张良、陈平的计策，撕毁和约，追击楚军至垓下。\n\n韩信指挥三十万大军布下十面埋伏之阵。是夜，张良命汉军齐唱楚歌。\n\n'汉皆已得楚乎？是何楚人之多也！'楚营中，项羽夜起饮帐中，面对爱妾虞姬、骏马乌骓，慷慨悲歌：'力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！'\n\n天明之前，他率八百骑溃围南走。\n\n你的选择——是将这位宿敌赶尽杀绝，还是……留他一命？"
+    },
+    {
+      "id": "evt_ch_005",
+      "name": "韩信请封齐王",
+      "type": "audience",
+      "trigger": {
+        "condition": "han_regime.controls('qi_regime') OR turn_number >= 18",
+        "priority": "random"
+      },
+      "title": "将星难驭——韩信的野心",
+      "narrative": "使者从齐地飞马而来，呈上韩信的亲笔书信：\n\n'齐地已平，然齐人狡诈，南有西楚，非假王镇之，其势不定。愿为假齐王。'\n\n你攥着这封信，气得几乎要捏碎手中的酒杯。什么'假齐王'？這分明是拥兵自重，要挟封王！\n\n张良急忙踩你的脚——他在暗示：现在不是和韩信翻脸的时候。项羽还在，若逼反了韩信，天下大势将瞬间逆转。\n\n陈平低声进言：'陛下，不如顺水推舟，封他为真齐王。待天下平定之后……再作计较。'\n\n如何处置这尊'神'——大汉的将星，还是明天的敌人？"
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_ch_001",
+      "name": "暗度陈仓的连锁反应",
+      "trigger": "han_regime.controls('xi_an')",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {
+            "han_regime": { "prestige": 15, "stability": 10 },
+            "qin_regime": { "stability": -25, "corruption": 20 }
+          },
+          "narrative": "汉军占领废丘，三秦震动。关中父老箪食壶浆以迎王师——他们终于等来了一个不像暴秦的新主人。"
+        }
+      ]
+    },
+    {
+      "id": "bf_ch_002",
+      "name": "英布倒戈",
+      "trigger": "chu_hegemon.stability < 30 AND han_regime.prestige > 50",
+      "delayed_effects": [
+        {
+          "delay_turns": 6,
+          "effect": {
+            "chu_hegemon": { "manpower": -25000, "stability": -10, "prestige": -15 },
+            "han_regime": { "manpower": 20000, "prestige": 10 }
+          },
+          "narrative": "九江王英布举旗降汉！项羽麾下第一名将的倒戈，标志着西楚霸业的裂痕已不可弥合。"
+        }
+      ]
+    },
+    {
+      "id": "bf_ch_003",
+      "name": "关中粮仓",
+      "trigger": "han_regime.controls('xi_an') AND han_regime.controls('yan_an')",
+      "delayed_effects": [
+        {
+          "delay_turns": 12,
+          "effect": {
+            "han_regime": { "food": 15000, "treasury": 8000 }
+          },
+          "narrative": "萧何坐镇关中，修郑国渠故道、整治粮仓。巴蜀之粟顺江而下，关中之麦源源不断——大汉的后勤机器轰鸣运转。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "chu_hegemon": {
+      "aggressiveness": 0.9,
+      "expansionism": 0.8,
+      "diplomacy_preference": "intimidation",
+      "decision_weights": {
+        "crush_rebellion": 0.5,
+        "consolidate_power": 0.2,
+        "raid_han": 0.2,
+        "negotiate": 0.1
+      }
+    },
+    "qin_regime": {
+      "aggressiveness": 0.3,
+      "expansionism": 0.2,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "defend_guangzhong": 0.5,
+        "seek_peace": 0.3,
+        "counter_attack": 0.2
+      }
+    },
+    "qi_regime": {
+      "aggressiveness": 0.7,
+      "expansionism": 0.4,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "resist_chu": 0.5,
+        "ally_with_han": 0.3,
+        "expand_local": 0.2
+      }
+    },
+    "zhao_regime": {
+      "aggressiveness": 0.5,
+      "expansionism": 0.3,
+      "diplomacy_preference": "defensive",
+      "decision_weights": {
+        "defend_territory": 0.5,
+        "ally_with_chu": 0.3,
+        "negotiate": 0.2
+      }
+    },
+    "yan_regime": {
+      "aggressiveness": 0.2,
+      "expansionism": 0.1,
+      "diplomacy_preference": "isolationist",
+      "decision_weights": {
+        "stay_neutral": 0.6,
+        "defend_territory": 0.3,
+        "join_winner": 0.1
+      }
+    },
+    "nanyue_regime": {
+      "aggressiveness": 0.3,
+      "expansionism": 0.5,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "consolidate_south": 0.5,
+        "trade": 0.3,
+        "northern_expedition": 0.2
+      }
+    }
+  },
+  "resource_definitions": {
+    "treasury": { "label": "国库", "unit": "万钱", "icon": "💰", "min": 0, "max": 999999 },
+    "manpower": { "label": "兵力", "unit": "人", "icon": "⚔️", "min": 0, "max": 999999 },
+    "food": { "label": "粮草", "unit": "石", "icon": "🌾", "min": 0, "max": 999999 },
+    "stability": { "label": "民心", "unit": "%", "icon": "🏛️", "min": 0, "max": 100 },
+    "prestige": { "label": "威望", "unit": "%", "icon": "👑", "min": 0, "max": 100 },
+    "corruption": { "label": "腐败度", "unit": "%", "icon": "🕷️", "min": 0, "max": 100 }
+  },
+  "victory_conditions": {
+    "total_victory": {
+      "description": "击败项羽，统一天下，建立大汉王朝",
+      "check": "chu_hegemon.status == 'defeated' AND han_regime.controls('nanjing') AND han_regime.controls('luo_yang')"
+    },
+    "hegemonic_victory": {
+      "description": "控制天下三分之二以上的领土",
+      "check": "han_regime.controlled_regions.length > 45"
+    },
+    "diplomatic_victory": {
+      "description": "通过外交使所有存续诸侯臣服或结盟",
+      "check": "qi_regime.status in ('vassal', 'alliance') AND zhao_regime.status in ('vassal', 'alliance') AND yan_regime.status in ('vassal', 'alliance')"
+    },
+    "survival_victory": {
+      "description": "坚持到公元前 195 年，刘邦寿终正寝前保住汉王基业",
+      "check": "year >= -195 AND han_regime.status == 'active'"
+    }
+  }
+}

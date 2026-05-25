@@ -1,0 +1,797 @@
+{
+  "meta": {
+    "id": "red_cliffs_208ad",
+    "title": "赤壁之战",
+    "subtitle": "建安十三年 · 公元 208 年 · 曹操南征 · 孙刘联盟的诞生",
+    "description": "曹操已统一北方，率八十万大军（实约二十三万）水陆并进，兵锋直指荆州。刘表新丧，其子刘琮望风而降。兵不血刃拿下荆州的曹操，下一个目标就是江东孙权和落魄英雄刘备。你将以汉室宗亲刘备的身份，携民渡江、联吴抗曹，在赤壁的漫天烽火中，亲手点燃三国时代的序幕。这个剧本的核心难点在于：你初始兵力极少、地盘为零、寄人篱下，必须依靠外交智慧与战略定力，在曹操和孙权两大巨人之间找到生存之道。",
+    "era": "东汉末年 · 三国",
+    "start_year": 208,
+    "start_month": 7,
+    "end_year": 220,
+    "time_scale": "month",
+    "version": "1.0.0",
+    "author": "",
+    "map_manifest_key": "three_kingdoms_geo",
+    "era_key": "three_kingdoms",
+    "tags": [
+      "三国",
+      "赤壁之战",
+      "曹操",
+      "刘备",
+      "孙权",
+      "诸葛亮",
+      "周瑜"
+    ]
+  },
+  "player_faction": "liu_shu",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "cao_wei": [
+        "beijing",
+        "tianjin",
+        "shanhai_pass",
+        "baoding",
+        "zhen_ding",
+        "xuan_fu",
+        "ji_ning",
+        "tai_yuan",
+        "da_tong",
+        "jinan",
+        "qing_zhou",
+        "yan_zhou",
+        "luo_yang",
+        "kai_feng",
+        "nan_yang",
+        "gui_de",
+        "ping_yang",
+        "lu_an",
+        "xi_an",
+        "yan_an",
+        "yu_lin",
+        "ning_zhou",
+        "ping_liang",
+        "lan_zhou",
+        "xi_ning",
+        "ning_xia",
+        "han_zhong",
+        "xing_yuan",
+        "sheng_jing",
+        "liao_yang",
+        "tie_ling",
+        "kai_yuan",
+        "ji_lin",
+        "ning_gu_ta",
+        "hei_long_jiang",
+        "horqin",
+        "khalkha_east",
+        "chahar",
+        "xiang_yang",
+        "jing_zhou",
+        "wu_chang"
+      ],
+      "sun_wu": [
+        "nanjing",
+        "su_zhou",
+        "yang_zhou",
+        "feng_yang",
+        "an_qing",
+        "hang_zhou",
+        "ning_bo",
+        "jin_hua",
+        "nan_chang",
+        "gan_zhou",
+        "fu_zhou",
+        "quan_zhou",
+        "chang_sha"
+      ],
+      "liu_shu": [
+        "gui_yang"
+      ],
+      "liu_zhang": [
+        "cheng_du",
+        "chong_qing",
+        "kui_zhou",
+        "bao_ning",
+        "shun_qing",
+        "jia_ding"
+      ],
+      "ma_teng": [],
+      "nanman_tribe": [
+        "yun_nan",
+        "gui_lin",
+        "wu_zhou"
+      ],
+      "shanyue_tribe": [
+        "qiong_zhou"
+      ],
+      "neutral": [
+        "guang_zhou",
+        "zhao_qing",
+        "mongolia_west",
+        "turpan",
+        "tibet",
+        "tai_wan"
+      ]
+    }
+  },
+  "factions": {
+    "cao_wei": {
+      "name": "魏·曹操",
+      "color": "#1A3A5C",
+      "ruler": "曹操",
+      "ruler_title": "汉丞相·魏王",
+      "government": "中央集权帝国",
+      "capital": "luo_yang",
+      "description": "挟天子以令诸侯，曹操已据有天下九州之六。麾下谋士如云（荀彧、荀攸、贾诩、程昱），猛将如雨（夏侯惇、张辽、徐晃、许褚）。官渡一战灭袁绍，北征乌桓定朔方。如今亲率二十三万大军水陆南征，志在一统天下。天下三分，已有二分半在他手中。",
+      "flag_badass": true,
+      "culture_buffs": {
+        "name": "挟天子以令诸侯",
+        "description": "威望基础值+30，征募降兵转化率+50%。占据朝廷正统，可发布'天子诏令'强制其他诸侯停战或出兵。但占领区民心基础值-15——名为汉相，实为汉贼的形象已深入人心。",
+        "effects": {
+          "base_prestige_bonus": 30,
+          "surrender_conversion_rate": 50,
+          "occupied_stability_penalty": -15
+        }
+      }
+    },
+    "sun_wu": {
+      "name": "吴·孙权",
+      "color": "#8B0000",
+      "ruler": "孙权",
+      "ruler_title": "讨虏将军·领会稽太守",
+      "government": "封建王国",
+      "capital": "nanjing",
+      "description": "孙策临终遗言：'内事不决问张昭，外事不决问周瑜。'十九岁的孙权继承父兄基业，坐断东南。江东已历三世，国险而民附，长江天堑是天然屏障。水师之精锐冠绝天下——周瑜、程普、黄盖、甘宁，一个个名字就是一场场海战的胜利。但曹操的八十万大军已在江北扎营。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "江东水师",
+        "description": "水师战斗力+40%，水战攻防+30%。长江天堑——北方军队渡江时损耗翻倍。但骑兵征募成本+50%——江东缺马。",
+        "effects": {
+          "navy_combat_bonus": 40,
+          "naval_battle_bonus": 30,
+          "enemy_river_crossing_attrition_double": true,
+          "cavalry_recruit_cost_penalty": 50
+        }
+      }
+    },
+    "liu_shu": {
+      "name": "汉·刘备",
+      "color": "#CC6600",
+      "ruler": "刘备",
+      "ruler_title": "汉左将军·宜城亭侯·豫州牧",
+      "government": "起义政权",
+      "capital": "gui_yang",
+      "description": "织席贩履的汉室宗亲，颠沛流离半生而无尺寸之地。三顾茅庐请出了卧龙诸葛亮，隆中对的蓝图刚刚展开——先取荆州为家，再图益州为基，待天下有变，两路北伐中原。然而眼下，你带着十万跟随的百姓，每天只能走十几里路。身后是曹操的精锐虎豹骑，前方是茫茫江水。但你的身边站着关羽、张飞、赵云、诸葛亮——天团已聚，只待天时。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "仁义之师",
+        "description": "每控制一个新区域，民心自动+10（仁德之名远播）。将领忠诚度固定100（永不叛变）。但国库收入-20%——刘备从不劫掠百姓。",
+        "effects": {
+          "new_region_stability_bonus": 10,
+          "general_loyalty_locked": 100,
+          "treasury_income_penalty": -20
+        }
+      }
+    },
+    "liu_zhang": {
+      "name": "益州·刘璋",
+      "color": "#556B2F",
+      "ruler": "刘璋",
+      "ruler_title": "益州牧",
+      "government": "封建王国",
+      "capital": "cheng_du",
+      "description": "天府之国的守财奴。刘璋暗弱无能、不善用人，但益州富甲天下——都江堰灌溉千里沃野，蜀锦远销万里。张鲁据汉中作乱，刘璋无力征讨，内部暗流涌动。法正、张松已密谋'引狼入室'。没有人知道，这个懦弱的益州牧，正静待一个被称为'皇叔'的人来接管他的江山。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "天府之国",
+        "description": "粮草产量+50%，国库收入+20%。但军队士气基础-20——刘璋无将帅之才。",
+        "effects": {
+          "food_production_bonus": 50,
+          "treasury_income_bonus": 20,
+          "base_morale_penalty": -20
+        }
+      }
+    },
+    "ma_teng": {
+      "name": "西凉·马腾",
+      "color": "#A0522D",
+      "ruler": "马腾",
+      "ruler_title": "征西将军",
+      "government": "军阀割据",
+      "capital": "lan_zhou",
+      "description": "西凉铁骑闻名天下，马腾与韩遂割据凉州，虽名义上归顺朝廷，实则独立半独立。其子马超勇冠三军，被羌人尊为'神威天将军'。曹操对这支悬在头顶的西凉铁骑始终心存忌惮——赤壁之战前，他先要确保侧后无忧。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "西凉铁骑",
+        "description": "骑兵攻击力+30%，骑兵士气+25。西凉马匹天下第一，征募骑兵成本-40%。但步兵战力-20%。",
+        "effects": {
+          "cavalry_attack_bonus": 30,
+          "cavalry_morale_bonus": 25,
+          "cavalry_recruit_cost_reduction": 40,
+          "infantry_power_penalty": -20
+        }
+      }
+    },
+    "nanman_tribe": {
+      "name": "南中诸部",
+      "color": "#6B3A2E",
+      "ruler": "孟获",
+      "ruler_title": "南中渠帅",
+      "government": "部落联盟",
+      "capital": "yun_nan",
+      "description": "南中地区的蛮族部落联盟，以孟获为首。部落据有瘴气密林与险峻山地，善用毒箭与象兵。名义上臣服于益州，实则时有叛乱。南中各部并非铁板一块——孟获只是其中最大的渠帅。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "丛林之鬼",
+        "description": "山地/丛林攻防+50%，入侵者在该区域每回合损耗8%兵力。象兵对骑兵有震慑（士气-15）。但水战全军溃败。",
+        "effects": {
+          "jungle_combat_bonus": 50,
+          "invader_attrition_per_turn": 8,
+          "elephant_cavalry_morale_debuff": -15,
+          "naval_combat_penalty_high": true
+        }
+      }
+    },
+    "shanyue_tribe": {
+      "name": "山越",
+      "color": "#3E6B3A",
+      "ruler": "",
+      "ruler_title": "山越首领",
+      "government": "部落联盟",
+      "capital": "",
+      "description": "散居在江东山区与南方岛屿的山越部族，常趁江东空虚时出山劫掠。孙权为山越问题头疼已久——这些深山中的部落是江东后方永远的不稳定因素。",
+      "flag_badass": false,
+      "culture_buffs": {
+        "name": "山野之民",
+        "description": "山地游击战+40%，被攻击时可选择退入深山（免于战斗）。但无法被联盟或外交收买，只会武力对抗。",
+        "effects": {
+          "mountain_guerilla_bonus": 40,
+          "retreat_to_mountains": true,
+          "no_diplomacy_possible": true
+        }
+      }
+    }
+  },
+  "initial_resources": {
+    "cao_wei": {
+      "treasury": 120000,
+      "manpower": 350000,
+      "food": 200000,
+      "stability": 70,
+      "prestige": 95,
+      "corruption": 25
+    },
+    "sun_wu": {
+      "treasury": 40000,
+      "manpower": 80000,
+      "food": 50000,
+      "stability": 75,
+      "prestige": 60,
+      "corruption": 20
+    },
+    "liu_shu": {
+      "treasury": 3000,
+      "manpower": 12000,
+      "food": 15000,
+      "stability": 70,
+      "prestige": 50,
+      "corruption": 10
+    },
+    "liu_zhang": {
+      "treasury": 35000,
+      "manpower": 50000,
+      "food": 60000,
+      "stability": 60,
+      "prestige": 40,
+      "corruption": 40
+    },
+    "ma_teng": {
+      "treasury": 10000,
+      "manpower": 35000,
+      "food": 20000,
+      "stability": 65,
+      "prestige": 55,
+      "corruption": 20
+    },
+    "nanman_tribe": {
+      "treasury": 3000,
+      "manpower": 20000,
+      "food": 15000,
+      "stability": 80,
+      "prestige": 35,
+      "corruption": 5
+    },
+    "shanyue_tribe": {
+      "treasury": 1000,
+      "manpower": 15000,
+      "food": 8000,
+      "stability": 85,
+      "prestige": 20,
+      "corruption": 5
+    }
+  },
+  "initial_military": {
+    "cao_wei": [
+      {
+        "name": "曹操中军",
+        "type": "混合部队",
+        "size": 50000,
+        "location": "xiang_yang",
+        "morale": 85,
+        "general": "曹操"
+      },
+      {
+        "name": "虎豹骑",
+        "type": "精锐骑兵",
+        "size": 10000,
+        "location": "xiang_yang",
+        "morale": 95,
+        "general": "曹纯"
+      },
+      {
+        "name": "张辽前锋",
+        "type": "精锐骑兵",
+        "size": 15000,
+        "location": "wu_chang",
+        "morale": 88,
+        "general": "张辽"
+      },
+      {
+        "name": "夏侯惇军团",
+        "type": "步兵",
+        "size": 25000,
+        "location": "jing_zhou",
+        "morale": 80,
+        "general": "夏侯惇"
+      },
+      {
+        "name": "于禁水军",
+        "type": "水师",
+        "size": 40000,
+        "location": "wu_chang",
+        "morale": 50,
+        "general": "于禁"
+      },
+      {
+        "name": "许褚虎卫",
+        "type": "精锐步兵",
+        "size": 5000,
+        "location": "xiang_yang",
+        "morale": 98,
+        "general": "许褚"
+      },
+      {
+        "name": "徐晃部",
+        "type": "步兵",
+        "size": 20000,
+        "location": "luo_yang",
+        "morale": 82,
+        "general": "徐晃"
+      },
+      {
+        "name": "曹仁襄阳守军",
+        "type": "步兵",
+        "size": 15000,
+        "location": "xiang_yang",
+        "morale": 78,
+        "general": "曹仁"
+      },
+      {
+        "name": "北方留守军",
+        "type": "步兵",
+        "size": 50000,
+        "location": "beijing",
+        "morale": 60,
+        "general": ""
+      }
+    ],
+    "sun_wu": [
+      {
+        "name": "周瑜水师",
+        "type": "水师",
+        "size": 30000,
+        "location": "nanjing",
+        "morale": 90,
+        "general": "周瑜"
+      },
+      {
+        "name": "程普右督",
+        "type": "水师",
+        "size": 15000,
+        "location": "su_zhou",
+        "morale": 82,
+        "general": "程普"
+      },
+      {
+        "name": "黄盖先锋",
+        "type": "水师",
+        "size": 8000,
+        "location": "yang_zhou",
+        "morale": 85,
+        "general": "黄盖"
+      },
+      {
+        "name": "甘宁锦帆营",
+        "type": "精锐步兵",
+        "size": 5000,
+        "location": "nanjing",
+        "morale": 88,
+        "general": "甘宁"
+      },
+      {
+        "name": "吕蒙陆战营",
+        "type": "步兵",
+        "size": 12000,
+        "location": "nan_chang",
+        "morale": 75,
+        "general": "吕蒙"
+      },
+      {
+        "name": "太史慈骑",
+        "type": "骑兵",
+        "size": 3000,
+        "location": "hang_zhou",
+        "morale": 85,
+        "general": "太史慈"
+      }
+    ],
+    "liu_shu": [
+      {
+        "name": "刘备亲卫",
+        "type": "步兵",
+        "size": 3000,
+        "location": "gui_yang",
+        "morale": 80,
+        "general": "刘备"
+      },
+      {
+        "name": "关羽校刀手",
+        "type": "精锐步兵",
+        "size": 2000,
+        "location": "gui_yang",
+        "morale": 92,
+        "general": "关羽"
+      },
+      {
+        "name": "张飞虎贲营",
+        "type": "精锐步兵",
+        "size": 2000,
+        "location": "gui_yang",
+        "morale": 90,
+        "general": "张飞"
+      },
+      {
+        "name": "赵云白马骑",
+        "type": "精锐骑兵",
+        "size": 1500,
+        "location": "gui_yang",
+        "morale": 95,
+        "general": "赵云"
+      },
+      {
+        "name": "诸葛亮军师营",
+        "type": "混合部队",
+        "size": 2000,
+        "location": "gui_yang",
+        "morale": 75,
+        "general": "诸葛亮"
+      }
+    ],
+    "liu_zhang": [
+      {
+        "name": "益州中军",
+        "type": "步兵",
+        "size": 20000,
+        "location": "cheng_du",
+        "morale": 40,
+        "general": "刘璋"
+      },
+      {
+        "name": "张任卫戍",
+        "type": "步兵",
+        "size": 12000,
+        "location": "cheng_du",
+        "morale": 50,
+        "general": "张任"
+      },
+      {
+        "name": "涪陵水军",
+        "type": "水师",
+        "size": 6000,
+        "location": "chong_qing",
+        "morale": 42,
+        "general": "严颜"
+      },
+      {
+        "name": "法正参军",
+        "type": "步兵",
+        "size": 5000,
+        "location": "bao_ning",
+        "morale": 45,
+        "general": "法正"
+      }
+    ],
+    "ma_teng": [
+      {
+        "name": "马超西凉骑",
+        "type": "精锐骑兵",
+        "size": 15000,
+        "location": "lan_zhou",
+        "morale": 92,
+        "general": "马超"
+      },
+      {
+        "name": "马腾中军",
+        "type": "骑兵",
+        "size": 10000,
+        "location": "lan_zhou",
+        "morale": 78,
+        "general": "马腾"
+      },
+      {
+        "name": "韩遂部",
+        "type": "骑兵",
+        "size": 8000,
+        "location": "xi_ning",
+        "morale": 70,
+        "general": "韩遂"
+      }
+    ],
+    "nanman_tribe": [
+      {
+        "name": "孟获本部",
+        "type": "步兵",
+        "size": 10000,
+        "location": "yun_nan",
+        "morale": 65,
+        "general": "孟获"
+      },
+      {
+        "name": "南中象兵",
+        "type": "精锐骑兵",
+        "size": 2000,
+        "location": "gui_lin",
+        "morale": 70,
+        "general": ""
+      }
+    ],
+    "shanyue_tribe": [
+      {
+        "name": "山越游击部",
+        "type": "步兵",
+        "size": 8000,
+        "location": "qiong_zhou",
+        "morale": 60,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      { "a": "cao_wei", "b": "sun_wu", "status": "war", "tension": 90 },
+      { "a": "cao_wei", "b": "liu_shu", "status": "war", "tension": 95 },
+      { "a": "cao_wei", "b": "liu_zhang", "status": "peace", "tension": 30 },
+      { "a": "cao_wei", "b": "ma_teng", "status": "peace", "tension": 55 },
+      { "a": "cao_wei", "b": "nanman_tribe", "status": "neutral", "tension": 10 },
+      { "a": "cao_wei", "b": "shanyue_tribe", "status": "neutral", "tension": 10 },
+      { "a": "sun_wu", "b": "liu_shu", "status": "peace", "tension": 30 },
+      { "a": "sun_wu", "b": "liu_zhang", "status": "neutral", "tension": 15 },
+      { "a": "sun_wu", "b": "nanman_tribe", "status": "neutral", "tension": 10 },
+      { "a": "sun_wu", "b": "shanyue_tribe", "status": "war", "tension": 70 },
+      { "a": "liu_shu", "b": "liu_zhang", "status": "peace", "tension": 25 },
+      { "a": "liu_shu", "b": "ma_teng", "status": "neutral", "tension": 15 },
+      { "a": "ma_teng", "b": "liu_zhang", "status": "neutral", "tension": 15 },
+      { "a": "ma_teng", "b": "nanman_tribe", "status": "neutral", "tension": 5 }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_rc_001",
+      "name": "当阳——携民渡江",
+      "type": "audience",
+      "trigger": {
+        "condition": "month == 7 OR month == 8 AND turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "当阳——十万百姓与虎豹骑的赛跑",
+      "narrative": "荆州百姓十万余人自发跟随你南逃。每天只能走十几里路，而曹操的精锐虎豹骑一日一夜奔驰三百里，已追至当阳长坂。\n\n探马飞报：'将军！曹纯率五千虎豹骑距此不足三十里！'\n\n诸葛亮急劝：'将军，须遣云长率水军先据江陵，然后速弃百姓，轻骑突围！'\n\n你看着身后扶老携幼、哭声震天的百姓，他们正是因为你'每与操反，事乃成'的仁德之名，才宁愿背井离乡也要跟随你。\n\n张飞握紧丈八蛇矛：'大哥，你们先走。我来断后！'\n\n赵云翻身上马：'主母与少主尚在乱军之中——云，去去就回！'\n\n是保全百姓但冒覆灭之险，还是轻骑突围留得青山在？"
+    },
+    {
+      "id": "evt_rc_002",
+      "name": "智激周瑜",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number >= 4 AND turn_number <= 10",
+        "priority": "mandatory"
+      },
+      "title": "柴桑——联盟的博弈",
+      "narrative": "你与诸葛亮来到柴桑，面见孙权。江东文武正激烈争论——张昭等文臣主降，周瑜等武将主战。孙权本人犹豫不决。\n\n诸葛亮轻摇羽扇，对孙权道：'将军内怀犹豫之计，事急而不决，祸至无日矣！曹操之众远来疲敝，且北方之人不习水战。今将军若能以吴越之众与中国抗衡，不如早与之绝；若不能，何不按兵束甲，北面而事之？'\n\n这番话激得孙权勃然大怒又恍然大悟。\n\n周瑜也连夜进言：'操虽托名汉相，实为汉贼。瑜请得精兵五万，保为将军破之！'\n\n但联盟的条件是什么？周瑜暗示：若破曹之后，荆州应当归吴。而诸葛亮和你心知肚明——荆州是你们未来的安身之所。\n\n如何在这场联盟谈判中既促成合作，又不失去未来的立足之地？"
+    },
+    {
+      "id": "evt_rc_003",
+      "name": "借东风——赤壁之战",
+      "type": "audience",
+      "trigger": {
+        "condition": "month == 11 OR month == 12 AND sun_wu.status == 'alliance'",
+        "priority": "mandatory"
+      },
+      "title": "赤壁——风起了",
+      "narrative": "长江赤壁段。周瑜的三万水师与曹操的庞大舰队隔江对峙。北军水土不服，正在大规模地感染瘟疫，战斗力骤降。庞统已献连环计——曹操将战船用铁索相连，如履平地。\n\n一切准备就绪。只欠东风。\n\n周瑜望着军旗飘扬的方向，眉头紧锁：'这个季节，江面盛行西北风。若用火攻，只会烧向我们自己。'\n\n而你身边的诸葛亮却微微一笑，登上了七星坛。\n\n十二月某日。傍晚时分，军旗忽转——东南风起！\n\n黄盖率数十艘装满柴草、灌足鱼油的艨艟斗舰，诈称投降，直冲曹军水寨。二十艘火船如离弦之箭，在东南风中化作一片火海。\n\n曹军铁索连环，一艘起火，数十艘相继燃烧。火光照亮了长江的夜空，杀声震天，周瑜率主力趁势出击——\n\n曹操在烈焰中弃船上岸，遁走华容道。\n\n而你——是否要派关羽去华容道截杀曹操？若曹操死于此地，天下局势将彻底改写。"
+    },
+    {
+      "id": "evt_rc_004",
+      "name": "取益州——隆中对的关键一步",
+      "type": "audience",
+      "trigger": {
+        "condition": "liu_shu.controlled_regions.length >= 5 AND year <= 210",
+        "priority": "mandatory"
+      },
+      "title": "法正的密信——机会还是陷阱？",
+      "narrative": "一封密信从成都秘密送达你的手中。益州别驾张松和军议校尉法正联名写道：\n\n'刘璋暗弱，民殷国富而不知存恤，智能之士思得明君。今张鲁在北，攻之甚急。璋愿请将军入川相助——此乃天以益州授将军也！'\n\n诸葛亮双眼放光：'将军，隆中对的第二步——跨有荆益——就在眼前！'\n\n庞统（若已归附）补充道：'刘璋请君入川共拒张鲁，此乃名正言顺。待入益州之后，可于酒宴之上擒璋——则益州可不战而定！'\n\n但刘备沉吟：'我与刘璋同为汉室宗亲，若以诈谋夺其基业，天下人将如何看我？'\n\n仁义与霸业，你能两全吗？"
+    },
+    {
+      "id": "evt_rc_005",
+      "name": "汉中之战",
+      "type": "audience",
+      "trigger": {
+        "condition": "liu_shu.controls('cheng_du') AND turn_number >= 24",
+        "priority": "mandatory"
+      },
+      "title": "汉中——与曹操的正面决战",
+      "narrative": "法正向你进言：'曹操一举而降张鲁、定汉中，不因此势以图巴蜀，而留夏侯渊、张郃屯守——此非其智不逮，力不足也！今取汉中，可图关中也！'\n\n这是继赤壁之后，你与曹操的第二次大规模对决。定军山下，老将黄忠斩夏侯渊于阵前——'一战斩渊，虎步关右！'\n\n曹操亲率大军来救汉中。你在山上扎营，据险不战。曹操仰攻不得，士卒多死，被迫退军。\n\n'鸡肋'——曹操望着汉中群山，说出了那句千古名言。\n\n汉中，终于在你的手中。诸葛亮劝进：'将军今可为汉中王矣！'\n\n但称王的后果——许都的天子会作何反应？孙权会不会感到被背叛？"
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_rc_001",
+      "name": "赤壁大胜后的格局重塑",
+      "trigger": "sun_wu.controls('wu_chang') AND sun_wu.controls('jing_zhou')",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {
+            "sun_wu": { "prestige": 25, "manpower": 15000, "stability": 10 },
+            "cao_wei": { "stability": -15, "prestige": -20, "manpower": -40000 }
+          },
+          "narrative": "赤壁一炬，曹操仓皇北遁。周瑜趁势攻占南郡、江陵，孙权势力推进至长江中游。而刘备则迅速略取荆南四郡——联盟的表面之下，裂缝正在暗中生长。"
+        }
+      ]
+    },
+    {
+      "id": "bf_rc_002",
+      "name": "关羽大意失荆州",
+      "trigger": "liu_shu.controls('jing_zhou') AND sun_wu.status == 'war'",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {
+            "liu_shu": { "stability": -15, "prestige": -20, "manpower": -25000 },
+            "sun_wu": { "manpower": 10000, "prestige": 10 }
+          },
+          "narrative": "吕蒙白衣渡江，关羽腹背受敌，败走麦城……江东已据有荆州全境。蜀汉失去了北伐最重要的前哨基地，隆中对的蓝图出现了致命裂痕。"
+        }
+      ]
+    },
+    {
+      "id": "bf_rc_003",
+      "name": "益州基业的经济起飞",
+      "trigger": "liu_shu.controls('cheng_du') AND liu_shu.controls('chong_qing') AND liu_shu.controls('han_zhong')",
+      "delayed_effects": [
+        {
+          "delay_turns": 8,
+          "effect": {
+            "liu_shu": { "food": 20000, "treasury": 15000, "stability": 10 }
+          },
+          "narrative": "诸葛亮整顿蜀中经济，都江堰水利修复、蜀锦外销、井盐开发……天府之国正变为北伐中原的巨型后勤基地。"
+        }
+      ]
+    },
+    {
+      "id": "bf_rc_004",
+      "name": "曹操不杀之恩",
+      "trigger": "evt_rc_003.chosen == 'spare_cao_cao'",
+      "delayed_effects": [
+        {
+          "delay_turns": 12,
+          "effect": {
+            "cao_wei": { "stability": 10, "prestige": 15 }
+          },
+          "narrative": "曹操全身而退回到许都，迅速稳定了赤壁战败后的北方局势。他现在知道谁才是真正的心腹之患——不是东吴，而是那个在荆州站稳了脚跟的刘备。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "cao_wei": {
+      "aggressiveness": 0.9,
+      "expansionism": 0.9,
+      "diplomacy_preference": "domineering",
+      "decision_weights": {
+        "conquer_south": 0.45,
+        "consolidate_north": 0.25,
+        "suppress_rebellion": 0.15,
+        "diplomatic_annex": 0.1,
+        "ceasefire": 0.05
+      }
+    },
+    "sun_wu": {
+      "aggressiveness": 0.65,
+      "expansionism": 0.6,
+      "diplomacy_preference": "pragmatic",
+      "decision_weights": {
+        "defend_yangtze": 0.35,
+        "expand_west": 0.3,
+        "raid_cao": 0.2,
+        "negotiate": 0.15
+      }
+    },
+    "liu_zhang": {
+      "aggressiveness": 0.15,
+      "expansionism": 0.1,
+      "diplomacy_preference": "appeasement",
+      "decision_weights": {
+        "defend_chengdu": 0.5,
+        "call_for_help": 0.3,
+        "surrender": 0.2
+      }
+    },
+    "ma_teng": {
+      "aggressiveness": 0.55,
+      "expansionism": 0.4,
+      "diplomacy_preference": "independent",
+      "decision_weights": {
+        "raid_east": 0.35,
+        "defend_west": 0.3,
+        "ally_with_liu": 0.2,
+        "submit_to_cao": 0.15
+      }
+    },
+    "nanman_tribe": {
+      "aggressiveness": 0.5,
+      "expansionism": 0.3,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "raid_north": 0.4,
+        "defend_home": 0.4,
+        "submit": 0.2
+      }
+    },
+    "shanyue_tribe": {
+      "aggressiveness": 0.7,
+      "expansionism": 0.3,
+      "diplomacy_preference": "none",
+      "decision_weights": {
+        "guerilla_raid": 0.6,
+        "retreat_to_mountains": 0.3,
+        "negotiate": 0.1
+      }
+    }
+  },
+  "resource_definitions": {
+    "treasury": { "label": "国库", "unit": "万钱", "icon": "💰", "min": 0, "max": 999999 },
+    "manpower": { "label": "兵力", "unit": "人", "icon": "⚔️", "min": 0, "max": 999999 },
+    "food": { "label": "粮草", "unit": "石", "icon": "🌾", "min": 0, "max": 999999 },
+    "stability": { "label": "民心", "unit": "%", "icon": "🏛️", "min": 0, "max": 100 },
+    "prestige": { "label": "威望", "unit": "%", "icon": "👑", "min": 0, "max": 100 },
+    "corruption": { "label": "腐败度", "unit": "%", "icon": "🕷️", "min": 0, "max": 100 }
+  },
+  "victory_conditions": {
+    "total_victory": {
+      "description": "汉室复兴——攻克洛阳与长安，灭曹魏",
+      "check": "liu_shu.controls('luo_yang') AND liu_shu.controls('xi_an') AND cao_wei.status == 'defeated'"
+    },
+    "grand_strategy_victory": {
+      "description": "完成隆中对——跨有荆益，两路北伐",
+      "check": "liu_shu.controls('cheng_du') AND liu_shu.controls('jing_zhou') AND liu_shu.controls('han_zhong') AND liu_shu.controlled_regions.length > 20"
+    },
+    "diplomatic_victory": {
+      "description": "孙刘联盟坚如磐石——与孙权保持同盟，共同削弱曹魏至20区域以下",
+      "check": "sun_wu.status == 'alliance' AND cao_wei.controlled_regions.length < 20"
+    },
+    "survival_victory": {
+      "description": "坚持到 220 年（曹操病逝），作为独立势力存续",
+      "check": "year >= 220 AND liu_shu.status == 'active' AND liu_shu.controlled_regions.length > 5"
+    }
+  }
+}

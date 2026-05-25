@@ -1,0 +1,607 @@
+{
+  "meta": {
+    "id": "anshi_rebellion_762ad",
+    "title": "安史之乱：帝国黄昏",
+    "subtitle": "宝应元年 · 公元 762 年 · 长安孤城·夕阳无限好",
+    "description": "宝应元年四月，唐玄宗与唐肃宗在短短十三天内相继驾崩，年轻的代宗李豫在血迹未干的龙椅上即位。此时的帝国早已面目全非——安史之乱持续八年，两京沦陷、国库枯竭、均田制瓦解、府兵制消亡。中央禁军的神策军只剩数千羸弱之卒，而河朔三镇的前叛将们名义上归顺，实则各拥私兵、拒绝纳赋、自行任命官吏，形成一个独立王国。更可怕的是，吐蕃赞普赤松德赞已在高原集结大军，贪婪地注视着这座风雨飘摇的长安孤城。你将扮演唐代宗李豫，在废墟之上做出每一个令人窒息的抉择——削藩则藩镇反噬、抚藩则国库无粮、御外则禁军疲敝。帝国的黄昏已至，是成为中兴之主，还是成为亡国之君？请执笔书写大唐最后的命运。",
+    "era": "盛唐·帝国黄昏（宝应元年）",
+    "start_year": 762,
+    "start_month": 5,
+    "end_year": 780,
+    "time_scale": "month",
+    "version": "3.0.0",
+    "author": "",
+    "map_manifest_key": "tang_geo",
+    "era_key": "tang",
+    "map_template": "china",
+    "world_rules": ["jiedushi_separatism", "imperial_guard_decline"],
+    "tags": [
+      "安史之乱",
+      "唐代宗",
+      "帝国黄昏",
+      "藩镇割据",
+      "河朔三镇",
+      "吐蕃入寇",
+      "神策军",
+      "郭子仪",
+      "悲情史诗"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 大唐中枢（孤城长安·大明宫残垣）",
+    "intel_org_name": "神策军谍报司/监察使",
+    "region_lore_map": {
+      "陕西": "京畿道·长安城（京师·大明宫·太极宫——宫阙依旧在，只是朱颜改）",
+      "河南": "都畿道·洛阳（东都·已被叛军反复蹂躏·残破不堪）",
+      "河北": "河北道·幽州/魏博/成德（河朔三镇心脏地带·名义归唐·实则独立王国）",
+      "北京": "河北道·范阳郡（卢龙节度使李怀仙驻地·安史之乱发源地）",
+      "天津": "河北道·渔阳郡（'渔阳鼙鼓'已歇·但新藩镇的野心依旧滚烫）",
+      "山东": "河南道·平卢军（平卢节度使辖区·与河朔暗通款曲）",
+      "宁夏": "关内道·灵州（朔方军大营·大唐最后的主力军团所在地）",
+      "甘肃": "陇右道·凉州（河西走廊·吐蕃虎视眈眈的前线）",
+      "四川": "剑南道·成都府（南都·大唐最后的避难所与后方基地）",
+      "江苏": "淮南道·扬州（江南财赋命脉·维系帝国运转的最后血液）",
+      "西藏": "吐蕃本土·逻些城（赞普赤松德赞的宫廷·高原狼群的巢穴）"
+    }
+  },
+  "player_faction": "tang_empire",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "tang_empire": [
+        "陕西", "山西",
+        "甘肃", "宁夏", "青海",
+        "四川", "重庆",
+        "湖北", "湖南",
+        "江苏", "安徽", "浙江", "江西",
+        "福建", "广东", "广西", "贵州",
+        "云南", "新疆", "海南", "台湾"
+      ],
+      "heshuo_three_garrisons": [
+        "河北", "北京", "天津",
+        "山东", "辽宁"
+      ],
+      "tubo_empire": [
+        "西藏"
+      ],
+      "rebel_remnants": [
+        "河南"
+      ],
+      "neutral": [
+        "内蒙古", "吉林", "黑龙江"
+      ]
+    }
+  },
+  "factions": {
+    "tang_empire": {
+      "name": "大唐",
+      "color": "#FFD700",
+      "ruler": "李豫",
+      "ruler_title": "大唐天子",
+      "government": "三省六部制（名存实亡·藩镇架空中央）",
+      "capital": "陕西",
+      "description": "李豫在短短十三天内接连失去了祖父（玄宗）与父亲（肃宗），在帝国最虚弱的时刻登上了血迹未干的龙椅。禁军疲敝、国库空虚、藩镇跋扈、外敌环伺——他继承的不是开元盛世，而是一个只剩骨架的帝国。但李豫并非无能之君：他沉着、隐忍、懂得在夹缝中求生存。在那些最黑暗的夜晚，他独自站在大明宫残破的殿阶上，望向长安城外无尽的烽火，思考着一个问题：大唐，还有救吗？",
+      "flag_badass": false,
+      "faction_type": "Empire"
+    },
+    "heshuo_three_garrisons": {
+      "name": "河朔三镇",
+      "color": "#B8860B",
+      "ruler": "李怀仙/李宝臣/田承嗣",
+      "ruler_title": "节度使（卢龙·成德·魏博）",
+      "government": "藩镇军事自治（表面臣服大唐·实则世袭割据）",
+      "capital": "河北",
+      "description": "河朔三镇——卢龙李怀仙、成德李宝臣、魏博田承嗣——三人皆原安史叛将，投降后被唐廷就地任命为节度使。他们名义上尊奉大唐皇帝，实则自行任命官吏、征收赋税、蓄养私兵，将河北大地变成了事实上的独立王国。他们的军队是大唐境内最精锐的野战力量，但他们效忠的只有自己的利益。若朝廷试图削藩，三镇将毫不犹豫地重新举起叛旗。",
+      "flag_badass": true,
+      "faction_type": "Warlord"
+    },
+    "tubo_empire": {
+      "name": "吐蕃帝国",
+      "color": "#8B0000",
+      "ruler": "赤松德赞",
+      "ruler_title": "赞普",
+      "government": "吐蕃王朝（高原奴隶制军事帝国）",
+      "capital": "西藏",
+      "description": "赤松德赞是吐蕃历史上最伟大的赞普之一。在他的治下，吐蕃国力达到鼎盛，高原骑兵的蹄声从帕米尔到四川盆地无人不惧。如今大唐内乱，陇右空虚，正是千载难逢的扩张良机。赤松德赞的目光已经越过河西走廊，直直地望向那座孤立无援的长安城。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    },
+    "rebel_remnants": {
+      "name": "史朝义叛军残部",
+      "color": "#4B0082",
+      "ruler": "史朝义",
+      "ruler_title": "大燕皇帝（伪）",
+      "government": "溃败中的军事独裁（继安禄山、安庆绪、史思明之后的第四任叛首）",
+      "capital": "河南",
+      "description": "史朝义是安史叛军的第四任也是最后一任首领。他弑父自立，却无力挽回叛军的颓势。洛阳虽仍在手中，但唐军与回纥骑兵的围剿日益逼近，麾下将领纷纷动摇。他的军队仍有一战之力，但士气低迷、内斗不休。史朝义本人日夜被噩梦缠绕——他梦见父亲史思明血淋淋地站在床前，质问他为何下此毒手。",
+      "flag_badass": false,
+      "faction_type": "Rebel"
+    }
+  },
+  "initial_resources": {
+    "tang_empire": {
+      "treasury": 5000,
+      "manpower": 25000,
+      "food": 4000,
+      "stability": 20,
+      "prestige": 30,
+      "corruption": 80
+    },
+    "heshuo_three_garrisons": {
+      "treasury": 80000,
+      "manpower": 120000,
+      "food": 18000,
+      "stability": 75,
+      "prestige": 60,
+      "corruption": 15
+    },
+    "tubo_empire": {
+      "treasury": 50000,
+      "manpower": 90000,
+      "food": 12000,
+      "stability": 82,
+      "prestige": 75,
+      "corruption": 10
+    },
+    "rebel_remnants": {
+      "treasury": 10000,
+      "manpower": 20000,
+      "food": 3000,
+      "stability": 30,
+      "prestige": 15,
+      "corruption": 35
+    }
+  },
+  "initial_military": {
+    "tang_empire": [
+      {
+        "name": "神策军·禁中宿卫",
+        "type": "步兵",
+        "size": 4000,
+        "location": "陕西",
+        "morale": 20,
+        "general": "鱼朝恩（宦官监军）"
+      },
+      {
+        "name": "朔方军·仆固怀恩部",
+        "type": "精锐骑兵",
+        "size": 18000,
+        "location": "宁夏",
+        "morale": 65,
+        "general": "仆固怀恩"
+      },
+      {
+        "name": "河东军·太原留守部",
+        "type": "步兵",
+        "size": 8000,
+        "location": "山西",
+        "morale": 40,
+        "general": "郭子仪"
+      },
+      {
+        "name": "安西·北庭孤军",
+        "type": "精锐骑兵",
+        "size": 5000,
+        "location": "新疆",
+        "morale": 85,
+        "general": ""
+      },
+      {
+        "name": "剑南团练",
+        "type": "步兵",
+        "size": 8000,
+        "location": "四川",
+        "morale": 45,
+        "general": "严武"
+      },
+      {
+        "name": "江南团练·义从",
+        "type": "混合部队",
+        "size": 10000,
+        "location": "江苏",
+        "morale": 35,
+        "general": ""
+      }
+    ],
+    "heshuo_three_garrisons": [
+      {
+        "name": "卢龙牙兵·幽州突骑",
+        "type": "精锐骑兵",
+        "size": 25000,
+        "location": "北京",
+        "morale": 88,
+        "general": "李怀仙"
+      },
+      {
+        "name": "成德牙兵·恒州铁骑",
+        "type": "精锐骑兵",
+        "size": 20000,
+        "location": "河北",
+        "morale": 85,
+        "general": "李宝臣"
+      },
+      {
+        "name": "魏博牙兵·天雄军",
+        "type": "精锐步兵",
+        "size": 30000,
+        "location": "河北",
+        "morale": 82,
+        "general": "田承嗣"
+      },
+      {
+        "name": "平卢·淄青牙兵",
+        "type": "步兵",
+        "size": 15000,
+        "location": "山东",
+        "morale": 70,
+        "general": ""
+      },
+      {
+        "name": "河朔藩镇联合水师",
+        "type": "水师",
+        "size": 5000,
+        "location": "天津",
+        "morale": 55,
+        "general": ""
+      }
+    ],
+    "tubo_empire": [
+      {
+        "name": "吐蕃·高原禁卫铁骑",
+        "type": "精锐骑兵",
+        "size": 25000,
+        "location": "西藏",
+        "morale": 92,
+        "general": "赤松德赞"
+      },
+      {
+        "name": "吐蕃·苏毗·羊同联军",
+        "type": "骑兵",
+        "size": 30000,
+        "location": "西藏",
+        "morale": 80,
+        "general": "尚结息"
+      },
+      {
+        "name": "吐蕃·陇右方面军",
+        "type": "骑兵",
+        "size": 18000,
+        "location": "西藏",
+        "morale": 85,
+        "general": "达扎路恭"
+      }
+    ],
+    "rebel_remnants": [
+      {
+        "name": "叛军牙兵·曳落河残部",
+        "type": "精锐骑兵",
+        "size": 5000,
+        "location": "河南",
+        "morale": 50,
+        "general": "史朝义"
+      },
+      {
+        "name": "叛军步兵·范阳旧卒",
+        "type": "步兵",
+        "size": 12000,
+        "location": "河南",
+        "morale": 30,
+        "general": ""
+      },
+      {
+        "name": "同罗·契丹雇佣骑兵",
+        "type": "骑兵",
+        "size": 3000,
+        "location": "河南",
+        "morale": 40,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      { "a": "tang_empire", "b": "heshuo_three_garrisons", "status": "vassal", "tension": 72 },
+      { "a": "tang_empire", "b": "tubo_empire", "status": "tension", "tension": 80 },
+      { "a": "tang_empire", "b": "rebel_remnants", "status": "war", "tension": 95 },
+      { "a": "heshuo_three_garrisons", "b": "tubo_empire", "status": "neutral", "tension": 40 },
+      { "a": "heshuo_three_garrisons", "b": "rebel_remnants", "status": "neutral", "tension": 55 },
+      { "a": "tubo_empire", "b": "rebel_remnants", "status": "neutral", "tension": 15 }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_at_001",
+      "name": "吐蕃入寇——高原狼群南下",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 2 AND turn_number <= 6",
+        "priority": "mandatory"
+      },
+      "title": "吐蕃入寇——赤松德赞大举东进，长安危在旦夕",
+      "narrative": "探马来报：吐蕃赞普赤松德赞亲率五万高原铁骑东出逻些，以尚结息、达扎路恭为先锋，已突破陇右防线，兵锋直指长安！河西走廊诸州纷纷告急，而大唐的精锐边军——安西、北庭的孤军远在西域，陇右的哥舒翰早已病故，朔方军仆固怀恩远在灵州……\n\n大明宫中，鱼朝恩跪地请旨：'陛下！长安城中神策军不过四千人，且多老弱。请……请陛下效法明皇幸蜀，暂避锋芒！'\n\n中书舍人常衮却厉声反对：'陛下若离长安一步，则天下之心尽失，大唐再无翻身之日！'\n\n你必须在两个绝望的选择中做出决断。",
+      "choices": [
+        {
+          "id": "choice_fight_tubo",
+          "text": "死守长安！急调朔方军回援，不惜一切代价保卫京师",
+          "effects": {
+            "tang_empire": { "stability": 10, "prestige": 15, "manpower": -8000 },
+            "tubo_empire": { "manpower": -12000, "stability": -5 }
+          },
+          "territory_changes": [
+            { "region_id": "甘肃", "to_faction": "tubo_empire", "reason": "陇右兵力空虚，被吐蕃趁势占领" }
+          ],
+          "narrative_result": "李豫站了起来，瘦削的身影在大明宫的阴影中显得格外孤独。'朕不走。朕的祖父逃过一次——那一次，杨贵妃死在了马嵬驿。朕不会重蹈覆辙。'\n\n朔方军的传令兵昼夜兼程奔赴灵州。长安城头，年迈的郭子仪拖着病体亲自登城布防。但代价是沉重的——陇右彻底沦陷于吐蕃之手，河西走廊的汉家烽燧，一百年来第一次全部熄灭。"
+        },
+        {
+          "id": "choice_appease_tubo",
+          "text": "遣使议和——以岁币与割地换取吐蕃退兵，保全长安",
+          "effects": {
+            "tang_empire": { "stability": -15, "prestige": -25, "treasury": -3000, "corruption": 10 },
+            "tubo_empire": { "treasury": 8000, "prestige": 10, "stability": 5 }
+          },
+          "territory_changes": [
+            { "region_id": "甘肃", "to_faction": "tubo_empire", "reason": "作为议和条件割让陇右诸州" },
+            { "region_id": "青海", "to_faction": "tubo_empire", "reason": "吐蕃要求以青海为缓冲地带" }
+          ],
+          "diplomacy_changes": [
+            { "a": "tang_empire", "b": "tubo_empire", "tension_delta": -40, "new_status": "peace" }
+          ],
+          "narrative_result": "和亲使团带着屈辱的条件西去。长安城中，士子们在酒馆里低声咒骂皇帝软弱，但没有人知道国库里只剩下了五千两白银——连百官的俸禄都发不出，如何打仗？\n\n吐蕃退兵了，但赤松德赞的笑声回荡在高原上：'大唐？不过是一只病虎，我们有的是时间慢慢宰割。'"
+        }
+      ]
+    },
+    {
+      "id": "evt_at_002",
+      "name": "百官索饷——废墟中的经济危机",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 3 AND turn_number <= 8",
+        "priority": "mandatory"
+      },
+      "title": "百官索饷——大明宫前的饥寒呼号",
+      "narrative": "这是安史之乱第八年。国库的银库已见底——连皇帝自己的膳食都削减到了每餐三菜。但百官们等不了了。\n\n今日早朝，三百余名官员齐刷刷跪在含元殿前，以户部侍郎刘晏为首：'陛下，百官自去岁至今已拖欠俸禄七个月。臣等家中老小嗷嗷待哺，实难……实难继续为国效力！'\n\n刘晏的声音在发抖，但他身后那些曾经峨冠博带的朝廷命官们，此刻更像一群饥民。有人低声私语：江南盐铁转运使的职位值十万两，不如卖了……\n\n度支郎中第五琦出列禀奏：'陛下，江南尚有漕粮十万石可通过运河运抵京师，但沿途藩镇层层盘剥，每过一镇就要被抽走三成。若……若能免去藩镇盘剥，尚可解燃眉之急。'\n\n鱼朝恩却冷哼一声：'第五琦，你是要让陛下向那些藩镇低头求情吗？'",
+      "choices": [
+        {
+          "id": "choice_tax_farms",
+          "text": "被迫卖官鬻爵——公开标价出售江南盐铁使、各州刺史等实缺以筹军饷",
+          "effects": {
+            "tang_empire": { "treasury": 15000, "stability": -20, "corruption": 15, "prestige": -15 }
+          },
+          "narrative_result": "大明宫前殿上挂出了'实官鬻爵'的告示。江南盐铁使：十万两；杭州刺史：五万两；虔州知州：三万两……\n\n这是大唐开国以来最屈辱的一幕。有钱的商人穿上了官员的紫袍，但他们除了敛财什么都不会。整个官僚体系在加速腐烂。刘晏在深夜写下万言书——'以商养官，无异饮鸩止渴。'但此刻的李豫，面对空空如也的国库，已别无选择。"
+        },
+        {
+          "id": "choice_negotiate_warlords",
+          "text": "与河朔三镇谈判——以承认其世袭特权换取漕运放行与部分赋税",
+          "effects": {
+            "tang_empire": { "treasury": 10000, "food": 5000, "stability": -10, "prestige": -20 },
+            "heshuo_three_garrisons": { "stability": 15, "prestige": 10 }
+          },
+          "diplomacy_changes": [
+            { "a": "tang_empire", "b": "heshuo_three_garrisons", "tension_delta": -25, "new_status": "vassal" }
+          ],
+          "narrative_result": "李豫派出密使与河朔三镇谈判：朝廷承认三镇节度使之职世袭罔替，换取运河漕运的畅通与每年十万两的'上供'。\n\n田承嗣在魏博大笑三声，当即同意。长安的米价终于降了下来，百官也领到了拖欠已久的俸禄。但满朝文武都明白：大唐的中央权威，在这一次交易中已荡然无存。藩镇割据，从此成了制度化的事实。"
+        }
+      ]
+    },
+    {
+      "id": "evt_at_003",
+      "name": "河朔逼宫——藩镇的最后通牒",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 5 AND turn_number <= 10",
+        "priority": "mandatory"
+      },
+      "title": "河朔逼宫——三镇节度使联名上表：'请皇帝批准'",
+      "narrative": "一份来自河朔三镇的联名奏表被快马送入长安。表中措辞恭敬——'臣等惶恐顿首'、'伏请圣裁'——但字里行间透出的却是毫不掩饰的威胁：\n\n一、「请」朝廷正式授予三镇节度使'开府仪同三司'之权，自行任命管内州县官吏。\n\n二、「请」朝廷下诏，三镇所辖之赋税'留本道自用'，不再上解中央。\n\n三、「请」皇帝将一位公主下嫁魏博节度使田承嗣之子，以固君臣之谊。\n\n奏表的末尾，用极小的字写着一句话：'若蒙恩准，三镇永为大唐藩屏；若蒙驳回，臣等不敢保证将士们会做出什么。'\n\n大明宫中，年轻的李豫握着这份奏表，指节发白。他知道——这不是请求，这是最后通牒。",
+      "auto_effects": {
+        "tang_empire": { "stability": -10, "prestige": -15 },
+        "heshuo_three_garrisons": { "stability": 5 }
+      },
+      "diplomacy_changes": [
+        { "a": "tang_empire", "b": "heshuo_three_garrisons", "tension_delta": 15 }
+      ],
+      "narrative": "李豫最终选择隐忍。他同意了河朔三镇的全部请求——除了嫁女一条，他以'公主尚幼'为由暂时搁置。\n\n田承嗣接到圣旨后，对左右笑道：'天子？不过是长安城里的一个印章而已。'\n\n但李豫并非懦弱。他在等待一个时机。在夜深人静的大明宫中，他秘密召见了郭子仪，老将军眼中闪过一丝久违的光芒。"
+    },
+    {
+      "id": "evt_at_004",
+      "name": "神策军重整——最后的希望",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 6 AND turn_number <= 12",
+        "priority": "optional"
+      },
+      "title": "神策军重整——重建帝国禁军的机会",
+      "narrative": "老将军郭子仪深夜觐见。他已年逾七旬，须发皆白，但那双曾经平定安史之乱的眼睛依然锐利。\n\n'陛下，老臣有一言，冒死进谏。'\n\n'郭令公请讲。'\n\n'神策军之衰弱，不在兵甲不利，而在人心不附。若陛下能以诚待天下，下罪己诏以收人心，募关中骁勇以充禁军，老臣愿以残躯亲自主持练兵。三年之内，必能为陛下练出一支可战之师。'\n\n但鱼朝恩在一旁阴恻恻地提醒：'郭令公，练兵需要银子。银子从哪里来？'\n\n郭子仪沉默了。是啊，国库都空了，拿什么来练兵？",
+      "choices": [
+        {
+          "id": "choice_rebuild_shence",
+          "text": "倾尽最后国帑——哪怕饿着肚子也要重建神策军",
+          "effects": {
+            "tang_empire": { "treasury": -3000, "manpower": 15000, "stability": 5, "prestige": 10, "food": -1000 }
+          },
+          "narrative_result": "'朕同意了。'李豫的声音很低，但异常坚定。'朕可以从今日起每日只食两餐。但神策军，必须重建。'\n\n郭子仪老泪纵横，叩首流血。\n\n长安西郊的兵营重新升起了炊烟。关中子弟开始应募——他们不是因为军饷而来，而是因为郭子仪这三个字。老将军日夜操练，神策军的面貌以肉眼可见的速度在改变。\n\n虽然人数尚少，虽然装备简陋，但大唐禁军的脊梁，终于在废墟中艰难地重新挺起。"
+        },
+        {
+          "id": "choice_delay_reform",
+          "text": "暂缓整军——先安抚藩镇，集中财力应对吐蕃",
+          "effects": {
+            "tang_empire": { "stability": -5, "corruption": 5 },
+            "heshuo_three_garrisons": { "stability": 5 }
+          },
+          "narrative_result": "'郭令公，朕知道你说得对。但现在……不是时候。'\n\n郭子仪黯然退下。他知道皇帝说得有道理——在藩镇环伺的当下，大张旗鼓地重建中央禁军，只会刺激河朔三镇敏感的神经。但他们都知道，每拖延一天，大唐就虚弱一天。\n\n回到府中，郭子仪望着自己当年平定安史之乱的帅旗，久久无言。那面旗帜，已经很久没有在长安上空飘扬了。"
+        }
+      ]
+    },
+    {
+      "id": "evt_at_005",
+      "name": "史朝义乞降——最后一个叛首的命运",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 7 AND turn_number <= 14",
+        "priority": "optional"
+      },
+      "title": "史朝义乞降——叛军残部的最终抉择",
+      "narrative": "洛阳城中，史朝义的日子已屈指可数。唐军与回纥骑兵的合围正在收紧，麾下将领每日都有逃亡者。他的案头上堆满了各镇节度使的劝降信——其中甚至包括河朔三镇的来信。\n\n今日，史朝义的密使悄悄进入了长安，带来了一封卑躬屈膝的求和信：\n\n'罪臣史朝义顿首再拜：愿率全军归降大唐，献出洛阳，交出所有兵甲。只求……只求陛下赐罪臣一条活路，流放岭南，永不为官。'\n\n李豫看着这封信，心中五味杂陈。安史之乱，这场持续了八年的浩劫——只要他点头，就能画上句号。但满朝文武之中，有人主张斩尽杀绝，也有人主张接受投降以免生灵涂炭。",
+      "choices": [
+        {
+          "id": "choice_accept_surrender",
+          "text": "接受投降——赐史朝义不死，流放岭南。安史之乱，到此结束",
+          "effects": {
+            "tang_empire": { "stability": 15, "prestige": 20, "manpower": 5000 },
+            "rebel_remnants": { "stability": -100 }
+          },
+          "territory_changes": [
+            { "region_id": "河南", "to_faction": "tang_empire", "reason": "史朝义献出洛阳，叛军残部归降" }
+          ],
+          "narrative_result": "李豫选择了仁慈。\n\n史朝义白衣出城，跪在洛阳城外泥泞的土地上，双手献上了叛军的兵符。这个弑父自立的叛首，此刻狼狈如一条丧家之犬。\n\n长安城中，百姓燃放爆竹庆祝——持续八年的安史之乱，终于结束了。\n\n但李豫笑不出来。他站在大明宫最高的殿阶上，望向远方河朔方向。那里，田承嗣、李宝臣、李怀仙正在各自府中冷笑——叛首死了，但他们这些曾经的叛将，如今成了真正的主人。\n\n安史之乱结束了。藩镇之乱，才刚刚开始。"
+        },
+        {
+          "id": "choice_execute_rebels",
+          "text": "斩尽杀绝——将史朝义凌迟处死，叛军将领全部灭族。以儆效尤",
+          "effects": {
+            "tang_empire": { "stability": -10, "prestige": 5 },
+            "heshuo_three_garrisons": { "stability": -10 }
+          },
+          "narrative_result": "史朝义的人头被挂在了长安朱雀门外的旗杆上。一同被处斩的叛军将领，多达三百余人。\n\n血腥的清洗确实吓住了不少人——但河朔三镇的节度使们在震惊之余，更多的是警惕。田承嗣在魏博的军帐中对诸将说：'看到了吗？这就是向朝廷投降的下场。我们绝不能再犯同样的错误。'\n\n安史之乱在血泊中结束了，但河朔三镇从此更加紧闭大门，拒绝一切与朝廷的和解。李豫用恐怖换来了安宁，但失去了最后一次真正统一天下的机会。"
+        }
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_at_001",
+      "name": "节度使割据——削藩的代价",
+      "trigger": "tang_empire.prestige > 40 AND heshuo_three_garrisons.tension > 60",
+      "delayed_effects": [
+        {
+          "delay_turns": 2,
+          "effect": {
+            "heshuo_three_garrisons": { "stability": -15, "prestige": -10 },
+            "tang_empire": { "stability": -5 }
+          },
+          "narrative": "听闻朝廷有削藩之意，河朔三镇的节度使们紧急会商。田承嗣放出狠话：'谁敢动我魏博一寸土地，我让他长安城鸡犬不留。'"
+        },
+        {
+          "delay_turns": 6,
+          "effect": {
+            "heshuo_three_garrisons": { "manpower": 10000 },
+            "tang_empire": { "stability": -10, "prestige": -10 }
+          },
+          "narrative": "河朔三镇公开扩军备战。藩镇割据从隐形走向公开，大唐的版图在名义上仍是统一的，但实际上已分裂为数个独立王国。"
+        }
+      ]
+    },
+    {
+      "id": "bf_at_002",
+      "name": "禁军疲敝——神策军的命运",
+      "trigger": "tang_empire.treasury < 3000 AND tang_empire.manpower < 15000",
+      "delayed_effects": [
+        {
+          "delay_turns": 1,
+          "effect": {
+            "tang_empire": { "stability": -15, "prestige": -10 }
+          },
+          "narrative": "神策军的士兵们已经三个月没有领到军饷。今夜，三百名禁军士兵私自逃出军营，消失在长安的夜色中。京师的防御，只剩下一层薄薄的纸。"
+        },
+        {
+          "delay_turns": 4,
+          "effect": {
+            "tang_empire": { "manpower": -3000, "corruption": 10 }
+          },
+          "narrative": "禁军的崩溃引发连锁反应。长安城中的市井无赖开始冒充逃兵抢劫商户，整个京师的治安在几夜之间瓦解。"
+        }
+      ]
+    },
+    {
+      "id": "bf_at_003",
+      "name": "吐蕃坐大——高原帝国的扩张",
+      "trigger": "tubo_empire.controlled_regions contains '甘肃' AND tang_empire.stability < 20",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {
+            "tubo_empire": { "manpower": 15000, "prestige": 15 },
+            "tang_empire": { "stability": -10, "prestige": -10 }
+          },
+          "narrative": "吐蕃在陇右站稳了脚跟。赤松德赞向诸将宣布：'下一个目标——长安。大唐的皇帝，终有一天要向我吐蕃称臣。'长安城中的恐慌开始蔓延。"
+        },
+        {
+          "delay_turns": 8,
+          "effect": {
+            "tubo_empire": { "manpower": 20000 },
+            "tang_empire": { "stability": -10 }
+          },
+          "narrative": "吐蕃军队不断蚕食大唐边境，从河西走廊到四川盆地，处处告急。长安城中的米价再次飞涨——大唐的臣民们开始怀疑，这个王朝是否真的还有明天。"
+        }
+      ]
+    },
+    {
+      "id": "bf_at_004",
+      "name": "中兴之兆——黑暗中的微光",
+      "trigger": "tang_empire.stability > 40 AND tang_empire.prestige > 45 AND tang_empire.treasury > 10000",
+      "delayed_effects": [
+        {
+          "delay_turns": 2,
+          "effect": {
+            "tang_empire": { "stability": 10, "prestige": 10, "manpower": 8000 }
+          },
+          "narrative": "奇迹般的变化在长安发生。国库渐有盈余，神策军重新集结，郭子仪的脸上终于露出了难得的笑容。坊间开始流传一句话：'大唐气象，或将复振于代宗之手。'"
+        },
+        {
+          "delay_turns": 6,
+          "effect": {
+            "heshuo_three_garrisons": { "stability": -10 },
+            "tang_empire": { "prestige": 10 }
+          },
+          "narrative": "大唐中央威信开始回升。河朔三镇的牙兵中也有人开始动摇——'跟着节度使造反，不如回朝廷当兵。'一封封来自河北的密信，悄悄送到了大明宫。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "tang_empire": {
+      "aggressiveness": 0.35,
+      "expansionism": 0.25,
+      "diplomacy_preference": "cautious",
+      "decision_weights": {
+        "survival_first": 0.40,
+        "diplomatic_balancing": 0.30,
+        "internal_recovery": 0.20,
+        "military_offensive": 0.10
+      }
+    },
+    "heshuo_three_garrisons": {
+      "aggressiveness": 0.70,
+      "expansionism": 0.55,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "autonomy_preservation": 0.40,
+        "military_expansion": 0.25,
+        "diplomatic_extortion": 0.20,
+        "internal_consolidation": 0.15
+      }
+    },
+    "tubo_empire": {
+      "aggressiveness": 0.90,
+      "expansionism": 0.85,
+      "diplomacy_preference": "aggressive",
+      "decision_weights": {
+        "military_conquest": 0.50,
+        "territorial_expansion": 0.30,
+        "diplomatic_intimidation": 0.15,
+        "internal_development": 0.05
+      }
+    },
+    "rebel_remnants": {
+      "aggressiveness": 0.30,
+      "expansionism": 0.10,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "desperate_defense": 0.45,
+        "diplomatic_surrender": 0.30,
+        "internal_cohesion": 0.15,
+        "last_offensive": 0.10
+      }
+    }
+  }
+}

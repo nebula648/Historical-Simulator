@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "id": "jingkang_1126",
+    "title": "靖康之耻",
+    "subtitle": "北宋靖康元年 · 公元 1126 年 · 金兵南下围汴京",
+    "description": "宣和七年冬，金太宗完颜晟以完颜宗翰、完颜宗望为帅，分两路大举南下伐宋。西路军攻太原，东路军破燕山府后长驱直入，渡过黄河，兵锋直指东京开封府。宋徽宗赵佶仓皇禅位于太子赵桓（钦宗），改元靖康。你将以宋钦宗的身份，面对金兵围城的危局——是割地求和、迁都南幸，还是坚守汴京、号召天下勤王之师？每一个决策都将决定大宋的国运与华夏的未来。",
+    "era": "北宋末年",
+    "start_year": 1126,
+    "start_month": 1,
+    "end_year": 1142,
+    "time_scale": "month",
+    "version": "3.0.0",
+    "author": "",
+    "map_manifest_key": "song_geo",
+    "era_key": "song",
+    "tags": [
+      "北宋",
+      "靖康之耻",
+      "金国",
+      "岳飞",
+      "李纲",
+      "汴京保卫战",
+      "宋金战争"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 大宋朝廷（东京开封府·垂拱殿）",
+    "intel_org_name": "皇城司",
+    "region_lore_map": {
+      "河南": "京畿路·东京开封府（京师·汴京）",
+      "河北": "河北东路·大名府（抗金前线）",
+      "山西": "河东路·太原府（西军种师中驻地）",
+      "山东": "京东东路·青州（勤王军集结地）",
+      "陕西": "永兴军路·京兆府（西军大本营）",
+      "辽宁": "金国·东京辽阳府",
+      "黑龙江": "金国·上京会宁府（金太宗龙兴之地）"
+    }
+  },
+  "player_faction": "northern_song",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "northern_song": [
+        "河南", "山东", "江苏", "安徽", "浙江",
+        "江西", "福建", "广东", "广西", "湖南",
+        "湖北", "四川", "重庆", "贵州", "云南",
+        "海南", "台湾"
+      ],
+      "jin_empire": [
+        "北京", "天津", "河北", "辽宁", "吉林",
+        "黑龙江", "内蒙古"
+      ],
+      "western_xia": [
+        "宁夏", "甘肃", "青海", "新疆"
+      ],
+      "neutral": [
+        "山西", "陕西", "西藏"
+      ]
+    }
+  },
+  "factions": {
+    "northern_song": {
+      "name": "北宋",
+      "color": "#C41E3A",
+      "ruler": "赵桓",
+      "ruler_title": "大宋皇帝",
+      "government": "文官政治·三省六部制",
+      "capital": "河南",
+      "description": "立国一百六十余年的大宋，文治极盛而武功积弱。汴京繁华甲于天下，人口逾百万。然而重文轻武之弊、厢军冗兵之费、岁币外交之屈，使得这个文化帝国在面对女真铁骑时脆弱不堪。",
+      "flag_badass": false
+    },
+    "jin_empire": {
+      "name": "金国",
+      "color": "#8B4513",
+      "ruler": "完颜晟",
+      "ruler_title": "大金皇帝",
+      "government": "勃极烈制度向中原帝制过渡",
+      "capital": "黑龙江",
+      "description": "完颜阿骨打起兵反辽不过十余年，女真铁骑已灭辽吞宋北疆。完颜宗翰、完颜宗望两路元帅皆是当世名将。金国的扩张欲望如同草原烈火，汴京的繁华正是他们垂涎的猎物。",
+      "flag_badass": true
+    },
+    "western_xia": {
+      "name": "西夏",
+      "color": "#B8860B",
+      "ruler": "李乾顺",
+      "ruler_title": "西夏崇宗皇帝",
+      "government": "党项贵族·汉制与藩制并行",
+      "capital": "宁夏",
+      "description": "自李元昊称帝以来，西夏已立国近百年。崇宗李乾顺善于在宋辽之间周旋保境，对新兴的金国既畏惧又觊觎。当金攻宋之际，西夏也在观望取利。",
+      "flag_badass": false
+    }
+  },
+  "initial_resources": {
+    "northern_song": {
+      "treasury": 500000,
+      "manpower": 280000,
+      "food": 8000,
+      "stability": 35,
+      "prestige": 45,
+      "corruption": 60
+    },
+    "jin_empire": {
+      "treasury": 280000,
+      "manpower": 150000,
+      "food": 5000,
+      "stability": 78,
+      "prestige": 80,
+      "corruption": 15
+    },
+    "western_xia": {
+      "treasury": 60000,
+      "manpower": 45000,
+      "food": 1200,
+      "stability": 60,
+      "prestige": 40,
+      "corruption": 25
+    }
+  },
+  "initial_military": {
+    "northern_song": [
+      {
+        "name": "汴京禁军·殿前司",
+        "type": "禁军",
+        "size": 80000,
+        "location": "河南",
+        "morale": 30,
+        "general": "李纲"
+      },
+      {
+        "name": "西军·种师道部",
+        "type": "精锐步兵",
+        "size": 40000,
+        "location": "陕西",
+        "morale": 70,
+        "general": "种师道"
+      },
+      {
+        "name": "西军·姚平仲部",
+        "type": "骑兵",
+        "size": 15000,
+        "location": "山西",
+        "morale": 65,
+        "general": "姚平仲"
+      },
+      {
+        "name": "河北勤王军",
+        "type": "混合部队",
+        "size": 30000,
+        "location": "河北",
+        "morale": 40,
+        "general": "张叔夜"
+      },
+      {
+        "name": "京东勤王军",
+        "type": "步兵",
+        "size": 20000,
+        "location": "山东",
+        "morale": 45,
+        "general": "宗泽"
+      },
+      {
+        "name": "两浙水师",
+        "type": "水师",
+        "size": 15000,
+        "location": "浙江",
+        "morale": 50,
+        "general": ""
+      },
+      {
+        "name": "襄阳驻屯军",
+        "type": "步兵",
+        "size": 18000,
+        "location": "湖北",
+        "morale": 50,
+        "general": "刘韐"
+      }
+    ],
+    "jin_empire": [
+      {
+        "name": "金国东路军",
+        "type": "精锐骑兵",
+        "size": 60000,
+        "location": "河北",
+        "morale": 88,
+        "general": "完颜宗望"
+      },
+      {
+        "name": "金国西路军",
+        "type": "精锐骑兵",
+        "size": 50000,
+        "location": "山西",
+        "morale": 85,
+        "general": "完颜宗翰"
+      },
+      {
+        "name": "女真中军",
+        "type": "精锐骑兵",
+        "size": 40000,
+        "location": "辽宁",
+        "morale": 90,
+        "general": "完颜晟"
+      },
+      {
+        "name": "契丹降兵·汉军",
+        "type": "混合部队",
+        "size": 35000,
+        "location": "北京",
+        "morale": 50,
+        "general": ""
+      },
+      {
+        "name": "蒙古边军",
+        "type": "骑兵",
+        "size": 15000,
+        "location": "内蒙古",
+        "morale": 65,
+        "general": ""
+      }
+    ],
+    "western_xia": [
+      {
+        "name": "西夏铁鹞子",
+        "type": "精锐骑兵",
+        "size": 12000,
+        "location": "宁夏",
+        "morale": 72,
+        "general": "李乾顺"
+      },
+      {
+        "name": "西夏步跋子",
+        "type": "步兵",
+        "size": 20000,
+        "location": "甘肃",
+        "morale": 60,
+        "general": ""
+      },
+      {
+        "name": "河西驻屯军",
+        "type": "混合部队",
+        "size": 10000,
+        "location": "青海",
+        "morale": 55,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      {
+        "a": "northern_song",
+        "b": "jin_empire",
+        "status": "war",
+        "tension": 100
+      },
+      {
+        "a": "northern_song",
+        "b": "western_xia",
+        "status": "neutral",
+        "tension": 55
+      },
+      {
+        "a": "jin_empire",
+        "b": "western_xia",
+        "status": "neutral",
+        "tension": 40
+      }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "jk_siege_of_kaifeng",
+      "name": "金兵围汴京",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "东京被围——金兵已渡黄河，直逼汴京城下",
+      "narrative": "靖康元年正月，完颜宗望的东路军已破相州、浚州，渡过黄河天险，进抵东京开封府城下。汴京城外火光冲天，金军铁骑在城外驰骋叫阵。\n\n尚书右丞李纲力主坚守：'汴京三重城防、内外禁军尚有八万，西军勤王之师已在途中。弃城则中原尽失！'\n\n而宰相白时中与李邦彦则主张割地求和：'金兵势大，不如暂割河北三镇以求和，保全宗庙社稷。'\n\n朝堂之上，主战与主和两派争执不下。你是战是和？",
+      "choices": [
+        {
+          "id": "defend_kaifeng",
+          "text": "任命李纲为亲征行营使，死守汴京，以待天下勤王",
+          "effects": {
+            "treasury": -30000,
+            "manpower": -8000,
+            "prestige": 20,
+            "stability": 10
+          },
+          "narrative_result": "赵桓任命李纲为亲征行营使，总领汴京防务。李纲发动军民加固城防，以神臂弓、床子弩封锁城墙。金兵数度攻城均被击退。\n\n恰在此时，种师道、姚平仲率西军主力日夜兼程赶到汴京勤王。二十万勤王军云集城外，与城内守军形成内外夹击之势！完颜宗望见势不妙，退兵至孟阳扎营，遣使请和……"
+        },
+        {
+          "id": "sue_for_peace",
+          "text": "接受金国条件，割让河北三镇、赔款百万、以亲王为质",
+          "effects": {
+            "treasury": -200000,
+            "prestige": -25,
+            "stability": -10,
+            "corruption": 5
+          },
+          "territory_changes": [
+            {"region_id": "河北", "to_faction": "jin_empire", "reason": "割让河北三镇予金国"},
+            {"region_id": "山西", "to_faction": "jin_empire", "reason": "割让河东予金国"}
+          ],
+          "narrative_result": "朝廷接受金国条件，遣康王赵构与少宰张邦昌入金营为质，割让太原、中山、河间三镇，赔款黄金五百万两、白银五千万两。金兵暂时退去，然而朝野上下皆以此为奇耻大辱。太学生陈东率数百名士子伏阙上书，要求罢免主和派、复用李纲……"
+        },
+        {
+          "id": "flee_south",
+          "text": "连夜南幸，迁都江宁府（南京），暂避金兵锋芒",
+          "effects": {
+            "treasury": -50000,
+            "prestige": -30,
+            "stability": -15,
+            "corruption": 10
+          },
+          "territory_changes": [
+            {"region_id": "河南", "to_faction": "jin_empire", "reason": "汴京弃守，金兵占据中原"}
+          ],
+          "narrative_result": "赵桓率宗室百官仓皇南奔，渡江至江宁府。金兵不战而得汴京，纵兵大掠，千年帝都毁于一旦。\n\n南渡之后，朝廷威信扫地，河北、中原各州县纷纷降金或自立。康王赵构在应天府（商丘）被拥立为大元帅，大宋的国祚悬于一线……"
+        }
+      ]
+    },
+    {
+      "id": "jk_qin_wang_army",
+      "name": "勤王之师的抉择",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 3 AND turn_number <= 8",
+        "priority": "high"
+      },
+      "title": "天下勤王——种师道与宗泽的联军",
+      "narrative": "种师道、宗泽、张叔夜等将领率各地勤王军汇集于汴京附近。然而诸军各自为战，粮草供应混乱。姚平仲急欲出战立功，种师道主张稳守消耗金军锐气。如何整合这支仓促拼凑的勤王之师，决定了汴京的命运。",
+      "choices": [
+        {
+          "id": "coordinate_defense",
+          "text": "统一指挥：委任种师道为诸军都统制，宗泽为副，坚守疲敌",
+          "effects": {
+            "treasury": -10000,
+            "manpower": 15000,
+            "stability": 15,
+            "prestige": 10
+          },
+          "narrative_result": "种师道统一指挥勤王诸军，以汴京城防为依托，宗泽在城外游击骚扰金军粮道。春雪消融后，金兵粮草不继、战马倒毙，完颜宗望被迫退兵。汴京保卫战取得阶段性胜利！然而金国西路军仍在围攻太原，战事远未结束……"
+        },
+        {
+          "id": "night_attack",
+          "text": "支持姚平仲夜袭金营，出其不意以求速胜",
+          "effects": {
+            "treasury": -5000,
+            "manpower": -12000,
+            "prestige": -5,
+            "stability": -5
+          },
+          "narrative_result": "姚平仲率七千精骑夜袭金营，不料金军事先获间谍密报，设伏以待。宋军中伏大败，姚平仲单骑脱逃，下落不明。\n\n此战失利动摇了勤王军的士气，种师道愤而病倒。金兵趁势反攻，汴京局势更加危急……"
+        }
+      ]
+    },
+    {
+      "id": "jk_taiyuan_falls",
+      "name": "太原陷落",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 6 AND jin_empire.controls('山西')",
+        "priority": "high"
+      },
+      "title": "西线崩溃——太原失守，金军会师",
+      "narrative": "完颜宗翰的西路军围攻太原二百五十余日，知府张孝纯、副都总管王禀率军民死守，粮尽援绝。城破之日，王禀投汾河殉国。太原失陷意味着金国东西两路大军可以会师，再次南下直取汴京。\n\n消息传到汴京，朝野震动。",
+      "auto_effects": {
+        "stability": -15,
+        "prestige": -10
+      }
+    },
+    {
+      "id": "jk_yue_fei_rises",
+      "name": "岳飞初露锋芒",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 5",
+        "priority": "medium"
+      },
+      "title": "河北义军——岳飞崭露头角",
+      "narrative": "在河北沦陷区，一位年仅二十三岁的青年军官岳飞在相州组织义军，屡次袭击金军粮道，以少胜多。其麾下'岳家军'纪律严明，'冻死不拆屋、饿死不掳掠'，深得河北民心。\n\n宗泽赏识岳飞之才，上表举荐。朝廷是否重用这位年轻的将领？",
+      "choices": [
+        {
+          "id": "promote_yue",
+          "text": "破格提拔：授岳飞为统制，令其率部归宗泽节制",
+          "effects": {
+            "treasury": -8000,
+            "manpower": 10000,
+            "prestige": 10,
+            "stability": 5
+          },
+          "narrative_result": "岳飞受封武翼郎、统制，率所部归入宗泽麾下。他在宗泽帐下屡献奇策，宗泽临终前将抗金兵符交予岳飞：'北伐中原，非此子不可！'"
+        },
+        {
+          "id": "ignore_yue",
+          "text": "暂不理会，义军各自为战即可",
+          "effects": {
+            "prestige": -5,
+            "stability": -5,
+            "corruption": 2
+          },
+          "narrative_result": "朝廷对河北义军的请援置若罔闻，岳飞等义军将领孤军奋战，粮草断绝，被迫南撤。河北抗金力量元气大伤……"
+        }
+      ]
+    },
+    {
+      "id": "jk_second_siege",
+      "name": "靖康之变——第二次汴京之围",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number >= 10 AND jin_empire.controls('山西') AND northern_song.controls('河南')",
+        "priority": "mandatory"
+      },
+      "title": "靖康二年·金兵再临——汴京危在旦夕",
+      "narrative": "靖康二年冬，完颜宗翰、完颜宗望合兵二十万再次南下。此时种师道已病故，勤王军大多遣散，汴京城防空虚。金兵以碾压之势攻破汴京外城，将皇宫团团围困。\n\n金人遣使入宫，要求徽钦二帝亲赴金营议和——这分明是一场精心策划的陷阱。城中断粮已三日，禁军溃散大半，宫人哭声不绝于耳……",
+      "choices": [
+        {
+          "id": "resist_to_death",
+          "text": "拒绝出城，焚烧宫室与金兵巷战到底（国破君死社稷）",
+          "effects": {
+            "treasury": 0,
+            "manpower": -50000,
+            "prestige": 40,
+            "stability": -50
+          },
+          "narrative_result": "赵桓拒绝出降，率残余禁军与金兵展开巷战。皇宫大火中，徽钦二帝不知所终……\n\n汴京陷落的消息传遍天下，康王赵构在应天府即位，改元建炎，南宋的历史开始了。金兵虽得汴京，却陷入中原人民此起彼伏的抵抗之中。"
+        },
+        {
+          "id": "surrender",
+          "text": "亲赴金营求和，以保全汴京百姓性命",
+          "effects": {
+            "treasury": -500000,
+            "manpower": -80000,
+            "prestige": -50,
+            "stability": -30,
+            "corruption": 15
+          },
+          "territory_changes": [
+            {"region_id": "河南", "to_faction": "jin_empire", "reason": "靖康之变，徽钦二帝北狩，汴京陷落"}
+          ],
+          "narrative_result": "靖康二年四月，金兵押解徽宗、钦宗二帝及宗室、大臣三千余人北返，汴京城中金银财宝、典籍文物被洗劫一空。这就是中国历史上最惨烈的亡国场景之一——'靖康之耻'。\n\n唯一幸免的宗室康王赵构在应天府登基，改元建炎，建立南宋。大宋国祚虽续，却已元气大伤……"
+        }
+      ]
+    },
+    {
+      "id": "jk_southern_song_founded",
+      "name": "南宋建立",
+      "type": "outcome",
+      "trigger": {
+        "condition": "northern_song.controls('河南') == false AND northern_song.controls('江苏') == true AND turn_number >= 10",
+        "priority": "follow_up"
+      },
+      "title": "建炎南渡——南宋的诞生",
+      "narrative": "汴京失陷后，康王赵构在南京应天府（商丘）登基称帝，改元建炎。随后在金兵追击下，赵构一路南逃，最终定都临安（杭州）。\n\n大宋虽失中原，但江南富庶、水师尚在、士民归心。李纲复相、宗泽守汴、岳飞北征——南宋的抗金事业才刚刚开始。",
+      "auto_effects": {
+        "prestige": 10,
+        "stability": 10
+      },
+      "territory_changes": [
+        {"region_id": "江苏", "to_faction": "northern_song", "reason": "南宋行在迁至临安"}
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "jk_li_gang_lost",
+      "name": "李纲罢相的代价",
+      "trigger": "jk_siege_of_kaifeng.chosen == 'sue_for_peace' AND turn_number >= 5",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {
+            "stability": -10,
+            "prestige": -10,
+            "corruption": 15
+          },
+          "narrative": "李纲因主战被罢相，朝中主和派当道。抗金将领心寒，河北义军群龙无首……"
+        }
+      ]
+    },
+    {
+      "id": "jk_fiscal_collapse",
+      "name": "岁币的长期负担",
+      "trigger": "jk_siege_of_kaifeng.chosen == 'sue_for_peace' AND turn_number >= 12",
+      "delayed_effects": [
+        {
+          "delay_turns": 6,
+          "effect": {"treasury": -50000, "corruption": 10},
+          "narrative": "巨额岁币压垮了大宋财政，地方官府加征税赋，民变四起。"
+        },
+        {
+          "delay_turns": 12,
+          "effect": {"manpower": -15000, "stability": -10},
+          "narrative": "持续赔款导致军费短缺，边军欠饷哗变，边防日益空虚。"
+        }
+      ]
+    },
+    {
+      "id": "jk_yue_fei_army_built",
+      "name": "岳家军壮大",
+      "trigger": "jk_yue_fei_rises.chosen == 'promote_yue' AND turn_number >= 15",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {"manpower": 20000, "prestige": 15},
+          "narrative": "经过数年经营，岳家军已发展为天下第一劲旅，'岳'字旗所到之处金兵闻风丧胆。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "jin_empire": {
+      "aggressiveness": 0.92,
+      "expansionism": 0.95,
+      "diplomacy_preference": "intimidation",
+      "decision_weights": {
+        "attack_south": 0.55,
+        "consolidate_north": 0.20,
+        "demand_tribute": 0.15,
+        "seek_truce": 0.10
+      }
+    },
+    "western_xia": {
+      "aggressiveness": 0.45,
+      "expansionism": 0.35,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "expand": 0.30,
+        "defend": 0.35,
+        "raid": 0.20,
+        "negotiate": 0.15
+      }
+    }
+  },
+  "victory_conditions": {
+    "major_victory": {
+      "description": "中兴大宋：收复燕云十六州，且金国势力衰减至 inactive",
+      "conditions": [
+        "北京 ∈ northern_song 控制",
+        "河北 ∈ northern_song 控制",
+        "jin_empire.status == 'defeated'"
+      ]
+    },
+    "standard_victory": {
+      "description": "保有江南：维持江苏、浙江不失，且 turn_number ≥ 48",
+      "conditions": [
+        "江苏 ∈ northern_song 控制",
+        "浙江 ∈ northern_song 控制",
+        "turn_number ≥ 48"
+      ]
+    },
+    "failure": {
+      "description": "社稷倾覆：江苏、浙江、福建全部失陷",
+      "conditions": [
+        "江苏 ∉ northern_song 控制",
+        "浙江 ∉ northern_song 控制",
+        "福建 ∉ northern_song 控制"
+      ]
+    }
+  }
+}

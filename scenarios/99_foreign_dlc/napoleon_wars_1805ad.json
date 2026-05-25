@@ -1,0 +1,696 @@
+{
+  "meta": {
+    "id": "napoleon_1805",
+    "title": "拿破仑战争",
+    "subtitle": "1805年 · 第三次反法同盟 · 奥斯特里茨之阳",
+    "description": "1804年12月，拿破仑·波拿巴在巴黎圣母院加冕为法兰西皇帝，欧洲列强为之震动。英国首相小皮特以黄金为纽带，纠合奥地利、俄罗斯、那不勒斯组成第三次反法同盟，誓言将'科西嘉暴发户'赶下皇位。拿破仑在布洛涅大营集结二十万大军准备跨海征英，却因特拉法加海战的惨败而被迫转向东线——他率领大军团以雷霆之势穿越黑森林，在乌尔姆包围并迫降了奥地利马克将军的整支军团。现在，1805年11月，法军已进入维也纳，而俄国沙皇亚历山大一世与奥地利皇帝弗朗茨二世的联军正在奥斯特里茨集结。你将以法兰西皇帝拿破仑一世的身份，指挥这场改变欧洲版图的决定性会战。",
+    "era": "拿破仑时代",
+    "start_year": 1805,
+    "start_month": 10,
+    "end_year": 1821,
+    "time_scale": "month",
+    "version": "5.0.0",
+    "author": "",
+    "map_manifest_key": "europe_napoleon_geo",
+    "era_key": "napoleon",
+    "map_template": "europe",
+    "tags": [
+      "拿破仑",
+      "法兰西帝国",
+      "反法同盟",
+      "奥斯特里茨",
+      "法国大革命",
+      "欧洲战争",
+      "近卫军",
+      "三皇会战"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 杜伊勒里宫·帝国大本营（Paris）",
+    "intel_org_name": "帝国宪兵队",
+    "region_lore_map": {
+      "france": "Empire Français·Paris（巴黎·帝国心脏）",
+      "britain": "Great Britain·London（不列颠·海上霸主·永不登陆）",
+      "austria": "Kaisertum Österreich·Wien（奥地利·哈布斯堡·战败中）",
+      "russia": "Российская Империя·Sankt-Peterburg（俄罗斯·神圣同盟支柱）",
+      "prussia": "Königreich Preußen·Berlin（普鲁士·观望中待价而沽）",
+      "spain": "Reino de España·Madrid（西班牙·法国盟友）"
+    }
+  },
+  "player_faction": "french_empire",
+  "map": {
+    "region_file": "europe_napoleon.geojson",
+    "initial_ownership": {
+      "french_empire": [
+        "france", "italy_north", "netherlands", "switzerland",
+        "confederation_rhine", "bavaria"
+      ],
+      "britain": [
+        "britain"
+      ],
+      "austria": [
+        "austria", "hungary"
+      ],
+      "russia": [
+        "russia"
+      ],
+      "prussia": [
+        "prussia", "hanover", "saxony"
+      ],
+      "spain": [
+        "spain"
+      ],
+      "neutral": [
+        "portugal", "sweden", "denmark", "naples",
+        "poland", "papal_states", "sicily_island",
+        "sardinia_island", "balkans", "ottoman"
+      ]
+    }
+  },
+  "factions": {
+    "french_empire": {
+      "name": "法兰西帝国",
+      "color": "#1A3A8A",
+      "ruler": "拿破仑·波拿巴",
+      "ruler_title": "法兰西人的皇帝",
+      "government": "军事独裁·帝国制",
+      "capital": "france",
+      "description": "从土伦的年轻炮兵上尉到法兰西皇帝，拿破仑仅用了十一年。大军团（Grande Armée）是欧洲最精锐的战争机器，达武、缪拉、内伊、苏尔特等元帅俱为当世名将。然而法国海军在特拉法加遭受重创，英国仍牢牢控制着海洋——拿破仑必须在陆地决战中粉碎反法同盟。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    },
+    "britain": {
+      "name": "大不列颠及爱尔兰联合王国",
+      "color": "#CC0000",
+      "ruler": "乔治三世",
+      "ruler_title": "大不列颠国王",
+      "government": "君主立宪·议会制",
+      "capital": "britain",
+      "description": "英国是反法同盟的财政支柱。小皮特首相以每年数百万英镑的补助金维系着大陆上的反法同盟。皇家海军在纳尔逊的率领下控制着英吉利海峡和世界所有重要航道。只要英国不被击败，法国的欧洲霸权就永远不会稳固。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    },
+    "austria": {
+      "name": "奥地利帝国",
+      "color": "#FFFFFF",
+      "ruler": "弗朗茨二世",
+      "ruler_title": "奥地利皇帝",
+      "government": "绝对君主制",
+      "capital": "austria",
+      "description": "哈布斯堡王朝的古老帝国是反法同盟的中坚力量。虽然屡败于拿破仑，但奥地利仍是中欧最强大的军事力量之一。弗朗茨二世将女儿玛丽·路易丝嫁给了拿破仑——但这桩政治婚姻并未换来永久的和平。维也纳既是拿破仑最顽强的对手，也是他的姻亲。",
+      "flag_badass": false,
+      "faction_type": "Empire"
+    },
+    "russia": {
+      "name": "俄罗斯帝国",
+      "color": "#006400",
+      "ruler": "亚历山大一世",
+      "ruler_title": "全俄罗斯的皇帝与独裁者",
+      "government": "绝对君主制·农奴制",
+      "capital": "russia",
+      "description": "年轻的沙皇亚历山大一世自视为欧洲旧秩序的捍卫者。俄罗斯拥有无穷的人力资源和广阔的战略纵深，拿破仑的'大军团'如果深入俄罗斯腹地，将面对的是一个吞噬军队的无底深渊。然而目前，俄奥联军必须在奥斯特里茨阻止拿破仑的锋芒。",
+      "flag_badass": false,
+      "faction_type": "Empire"
+    },
+    "prussia": {
+      "name": "普鲁士王国",
+      "color": "#2E5090",
+      "ruler": "腓特烈·威廉三世",
+      "ruler_title": "普鲁士国王",
+      "government": "绝对君主制·军国传统",
+      "capital": "prussia",
+      "description": "腓特烈大帝留给普鲁士的遗产——一支训练有素的军队和一个高效的官僚机器——正处在观望状态。柏林的态度暧昧：既不满拿破仑在德意志的扩张，又不愿冒险单独挑战法国。汉诺威被法军占领的事实激怒了普鲁士军官团，但国王本人还在犹豫。",
+      "flag_badass": false,
+      "faction_type": "Kingdom"
+    },
+    "spain": {
+      "name": "西班牙王国",
+      "color": "#FFD700",
+      "ruler": "卡洛斯四世",
+      "ruler_title": "西班牙国王",
+      "government": "绝对君主制（波旁王朝·法国盟友）",
+      "capital": "spain",
+      "description": "自1796年圣伊尔德丰索条约以来，西班牙被迫成为法国的盟友。西班牙舰队在特拉法加与法国联合出击，几乎全军覆没。卡洛斯四世懦弱无能，实权操于王后宠臣戈多伊之手。西班牙民间对法国的怨恨正在暗中积聚。",
+      "flag_badass": false,
+      "faction_type": "Kingdom"
+    }
+  },
+  "initial_resources": {
+    "french_empire": {
+      "treasury": 350000,
+      "manpower": 200000,
+      "food": 5000,
+      "stability": 72,
+      "prestige": 90,
+      "corruption": 15
+    },
+    "britain": {
+      "treasury": 500000,
+      "manpower": 80000,
+      "food": 3000,
+      "stability": 80,
+      "prestige": 85,
+      "corruption": 20
+    },
+    "austria": {
+      "treasury": 180000,
+      "manpower": 120000,
+      "food": 3500,
+      "stability": 55,
+      "prestige": 50,
+      "corruption": 35
+    },
+    "russia": {
+      "treasury": 120000,
+      "manpower": 250000,
+      "food": 4500,
+      "stability": 55,
+      "prestige": 60,
+      "corruption": 45
+    },
+    "prussia": {
+      "treasury": 150000,
+      "manpower": 90000,
+      "food": 2800,
+      "stability": 65,
+      "prestige": 55,
+      "corruption": 25
+    },
+    "spain": {
+      "treasury": 40000,
+      "manpower": 50000,
+      "food": 1800,
+      "stability": 45,
+      "prestige": 30,
+      "corruption": 55
+    }
+  },
+  "initial_military": {
+    "french_empire": [
+      {
+        "name": "大军团·第三军团（达武）",
+        "type": "精锐步兵军团",
+        "size": 35000,
+        "location": "austria",
+        "morale": 90,
+        "general": "路易·达武元帅"
+      },
+      {
+        "name": "大军团·第四军团（苏尔特）",
+        "type": "精锐步兵军团",
+        "size": 30000,
+        "location": "austria",
+        "morale": 88,
+        "general": "尼古拉·苏尔特元帅"
+      },
+      {
+        "name": "大军团·第五军团（拉纳）",
+        "type": "精锐步兵军团",
+        "size": 25000,
+        "location": "austria",
+        "morale": 85,
+        "general": "让·拉纳元帅"
+      },
+      {
+        "name": "骑兵军团（缪拉）",
+        "type": "精锐骑兵",
+        "size": 22000,
+        "location": "austria",
+        "morale": 88,
+        "general": "若阿尚·缪拉元帅"
+      },
+      {
+        "name": "帝国近卫军",
+        "type": "精锐步兵/骑兵",
+        "size": 15000,
+        "location": "austria",
+        "morale": 95,
+        "general": "拿破仑一世"
+      },
+      {
+        "name": "意大利军团",
+        "type": "步兵军团",
+        "size": 20000,
+        "location": "italy_north",
+        "morale": 80,
+        "general": "安德烈·马塞纳元帅"
+      },
+      {
+        "name": "法国驻防军团",
+        "type": "步兵",
+        "size": 25000,
+        "location": "france",
+        "morale": 70,
+        "general": ""
+      }
+    ],
+    "britain": [
+      {
+        "name": "皇家海军·海峡舰队",
+        "type": "战列舰编队",
+        "size": 35,
+        "location": "britain",
+        "morale": 90,
+        "general": "霍雷肖·纳尔逊"
+      },
+      {
+        "name": "皇家海军·地中海舰队",
+        "type": "战列舰编队",
+        "size": 25,
+        "location": "naples",
+        "morale": 85,
+        "general": ""
+      },
+      {
+        "name": "英国远征军",
+        "type": "步兵",
+        "size": 30000,
+        "location": "britain",
+        "morale": 75,
+        "general": ""
+      }
+    ],
+    "austria": [
+      {
+        "name": "奥地利主力军团",
+        "type": "步兵",
+        "size": 60000,
+        "location": "austria",
+        "morale": 55,
+        "general": "卡尔大公"
+      },
+      {
+        "name": "马克将军残部",
+        "type": "溃军",
+        "size": 8000,
+        "location": "austria",
+        "morale": 20,
+        "general": "马克"
+      },
+      {
+        "name": "匈牙利驻军",
+        "type": "步兵",
+        "size": 20000,
+        "location": "hungary",
+        "morale": 50,
+        "general": ""
+      }
+    ],
+    "russia": [
+      {
+        "name": "俄罗斯第一西方军团",
+        "type": "步兵",
+        "size": 55000,
+        "location": "austria",
+        "morale": 60,
+        "general": "库图佐夫"
+      },
+      {
+        "name": "俄罗斯近卫军",
+        "type": "精锐步兵/骑兵",
+        "size": 15000,
+        "location": "austria",
+        "morale": 75,
+        "general": "亚历山大一世"
+      },
+      {
+        "name": "俄罗斯本土军团",
+        "type": "步兵",
+        "size": 80000,
+        "location": "russia",
+        "morale": 55,
+        "general": ""
+      }
+    ],
+    "prussia": [
+      {
+        "name": "普鲁士主力军团",
+        "type": "步兵",
+        "size": 60000,
+        "location": "prussia",
+        "morale": 68,
+        "general": "布伦瑞克公爵"
+      },
+      {
+        "name": "萨克森驻军",
+        "type": "步兵",
+        "size": 12000,
+        "location": "saxony",
+        "morale": 55,
+        "general": ""
+      }
+    ],
+    "spain": [
+      {
+        "name": "西班牙王家军团",
+        "type": "旧式步兵",
+        "size": 35000,
+        "location": "spain",
+        "morale": 45,
+        "general": "戈多伊"
+      },
+      {
+        "name": "西班牙舰队残部",
+        "type": "战列舰",
+        "size": 10,
+        "location": "spain",
+        "morale": 30,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      {
+        "a": "french_empire",
+        "b": "britain",
+        "status": "war",
+        "tension": 100
+      },
+      {
+        "a": "french_empire",
+        "b": "austria",
+        "status": "war",
+        "tension": 98
+      },
+      {
+        "a": "french_empire",
+        "b": "russia",
+        "status": "war",
+        "tension": 95
+      },
+      {
+        "a": "french_empire",
+        "b": "prussia",
+        "status": "neutral",
+        "tension": 65
+      },
+      {
+        "a": "french_empire",
+        "b": "spain",
+        "status": "alliance",
+        "tension": 35
+      },
+      {
+        "a": "britain",
+        "b": "austria",
+        "status": "alliance",
+        "tension": 10
+      },
+      {
+        "a": "britain",
+        "b": "russia",
+        "status": "alliance",
+        "tension": 10
+      },
+      {
+        "a": "austria",
+        "b": "russia",
+        "status": "alliance",
+        "tension": 15
+      },
+      {
+        "a": "austria",
+        "b": "prussia",
+        "status": "neutral",
+        "tension": 30
+      },
+      {
+        "a": "russia",
+        "b": "prussia",
+        "status": "neutral",
+        "tension": 20
+      }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "nap_austerlitz",
+      "name": "奥斯特里茨三皇会战",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "奥斯特里茨——三皇对决的早晨",
+      "narrative": "1805年12月2日。奥斯特里茨村以西的普拉岑高地笼罩在晨雾之中。拿破仑故意示弱，将右翼苏尔特军团后撤，引诱俄奥联军离开高地。达武元帅的第三军团正从维也纳方向强行军赶来。\n\n沙皇亚历山大一世与奥皇弗朗茨二世亲临战场，联军参谋总长魏罗特尔制定了正面强攻法军右翼的计划——而这正中拿破仑的下怀。\n\n日出时分，拿破仑对贝尔蒂埃说：'太阳出来了——这就是奥斯特里茨的太阳！'",
+      "choices": [
+        {
+          "id": "austerlitz_classic",
+          "text": "按计划执行：苏尔特突击普拉岑高地，分割联军中央",
+          "effects": {
+            "treasury": -15000,
+            "manpower": -6000,
+            "prestige": 40,
+            "stability": 15
+          },
+          "territory_changes": [
+            {"region_id": "austria", "to_faction": "french_empire", "reason": "奥斯特里茨大捷，奥地利被迫签订《普雷斯堡和约》"}
+          ],
+          "narrative_result": "上午9时，苏尔特军团从雾中冲出，直取普拉岑高地——联军中央被一举突破！俄军左翼被压缩至冰封的池塘上，法军炮兵轰击冰面，数千俄军坠入冰水之中。\n\n'最辉煌的胜利！'拿破仑在战报中写道。俄奥联军损失三万六千人，而法军仅损失八千。沙皇亚历山大一世含泪撤退，弗朗茨二世被迫求和。第三次反法同盟土崩瓦解。\n\n欧洲跪倒在这位三十六岁科西嘉人的脚下。"
+        },
+        {
+          "id": "austerlitz_cautious",
+          "text": "稳守反击：等待达武军团会合后再发起总攻",
+          "effects": {
+            "treasury": -8000,
+            "manpower": -3000,
+            "prestige": 15,
+            "stability": 5
+          },
+          "narrative_result": "拿破仑选择了更保守的战术——等待达武军团完全抵达后才发起攻击。虽然伤亡更小，但联军也得以有序撤退。俄军主力未受重创，沙皇亚历山大发誓要卷土重来。\n\n一场决定性胜利变成了战术性胜利——反法同盟的瓦解可能要再等一年。"
+        }
+      ]
+    },
+    {
+      "id": "nap_confederation_rhine",
+      "name": "莱茵邦联成立",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 6 AND french_empire.controls('austria') == true",
+        "priority": "high"
+      },
+      "title": "神圣罗马帝国的终结——莱茵邦联诞生",
+      "narrative": "奥斯特里茨的胜利彻底改变了德意志的政治版图。1806年7月，十六个德意志邦国在巴黎签订条约，宣布脱离神圣罗马帝国，成立莱茵邦联，以拿破仑为保护者。\n\n弗朗茨二世被迫放弃神圣罗马帝国皇帝头衔——这个存在了844年（自奥托大帝962年加冕）的古老帝国正式灭亡。\n\n拿破仑在巴黎得意地宣布：'查理曼的帝国在我的手中复活了。'",
+      "auto_effects": {
+        "prestige": 25,
+        "stability": 10
+      },
+      "territory_changes": [
+        {"region_id": "confederation_rhine", "to_faction": "french_empire", "reason": "莱茵邦联成立，十六个德意志邦国加入法国势力范围"}
+      ]
+    },
+    {
+      "id": "nap_prussia_decision",
+      "name": "普鲁士的最后通牒",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number >= 8 AND french_empire.controls('confederation_rhine') == true",
+        "priority": "high"
+      },
+      "title": "柏林的最后通牒——普鲁士走向战争",
+      "narrative": "莱茵邦联的成立触动了普鲁士的神经。腓特烈·威廉三世在俄国的怂恿和王后路易丝的主战情绪推动下，向法国发出最后通牒：法军必须在两周内撤出德意志所有领土。\n\n拿破仑在大本营读到通牒后大笑：'普鲁士人以为他们是腓特烈大帝时代的军队吗？他们还在用三十年前的战术，而我每场战役都在创新。'\n\n但塔列朗警告：'陛下，普鲁士军队仍保留着腓特烈大帝的荣光。小觑他们可能付出代价。'",
+      "choices": [
+        {
+          "id": "defeat_prussia",
+          "text": "先发制人！令大军团立即向普鲁士进军",
+          "effects": {
+            "treasury": -30000,
+            "manpower": -10000,
+            "prestige": 30,
+            "stability": 10
+          },
+          "territory_changes": [
+            {"region_id": "prussia", "to_faction": "french_empire", "reason": "耶拿-奥尔施塔特大捷，普鲁士全境陷落"},
+            {"region_id": "saxony", "to_faction": "french_empire", "reason": "萨克森加入莱茵邦联"}
+          ],
+          "narrative_result": "1806年10月，拿破仑率大军团在耶拿和奥尔施塔特两场会战中同时击溃普鲁士主力。达武元帅以两万六千人对阵六万普军，一战成名。\n\n拿破仑骑马进入柏林，在腓特烈大帝的墓前说：'如果他还在世，我们今天就不会站在这里。'普鲁士在二十四天内被彻底击败——欧洲从未见过如此迅速而彻底的军事胜利。"
+        },
+        {
+          "id": "negotiate_prussia",
+          "text": "外交安抚：归还汉诺威，许诺不干涉北德意志",
+          "effects": {
+            "treasury": -5000,
+            "prestige": -10,
+            "stability": 5
+          },
+          "narrative_result": "塔列朗的外交手腕暂时安抚了普鲁士。法国归还汉诺威，换取普鲁士的中立保证。然而这只是推迟了冲突——普鲁士的军官团仍然渴望与法国一战，而俄国也在积极拉拢柏林加入新的反法同盟。"
+        }
+      ]
+    },
+    {
+      "id": "nap_russia_campaign",
+      "name": "俄罗斯的寒冬",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 20 AND french_empire.controls('prussia') == true AND russia.status == 'war'",
+        "priority": "high"
+      },
+      "title": "莫斯科的抉择——远征俄罗斯？",
+      "narrative": "1812年，沙皇亚历山大一世违反《蒂尔西特和约》，重新对英开放贸易。拿破仑面临他一生中最重大的决定——是否率大军入侵俄罗斯？\n\n波兰地图、无穷的森林、泥泞的道路、即将到来的寒冬……参谋们私下表达担忧。但如果不惩罚沙皇，法国的欧洲体系将失去威信。\n\n拿破仑看着俄罗斯地图沉吟良久。",
+      "choices": [
+        {
+          "id": "invade_russia",
+          "text": "集结六十万大军渡涅曼河，直取莫斯科！",
+          "effects": {
+            "treasury": -120000,
+            "manpower": -40000,
+            "prestige": 35,
+            "stability": -10
+          },
+          "narrative_result": "1812年6月，六十万大军（包括法国及盟国军队）渡过涅曼河。俄军在库图佐夫指挥下执行焦土政策，不断后撤，避免决战。\n\n博罗季诺会战中双方损失惨重，法军进入莫斯科——但城市已是一片火海（俄军纵火）。拿破仑在克里姆林宫等待沙皇的求和信，然而亚历山大一世态度坚决：绝不谈判。\n\n寒冬降临，法军被迫从莫斯科撤退。别列津纳河畔，冻死、饿死、被哥萨克骑兵追杀的士兵尸体铺满了雪原……出发的六十万人，回到波兰的不足三万。\n\n这是拿破仑帝国由盛转衰的转折点。"
+        },
+        {
+          "id": "contain_russia",
+          "text": "以波兰为缓冲，封锁俄国边境而不深入腹地",
+          "effects": {
+            "treasury": -30000,
+            "manpower": -5000,
+            "prestige": -5,
+            "stability": 10
+          },
+          "territory_changes": [
+            {"region_id": "poland", "to_faction": "french_empire", "reason": "建立华沙大公国作为对抗俄国的缓冲国"}
+          ],
+          "narrative_result": "拿破仑听取了达武元帅的劝谏，没有深入俄罗斯。他扶植波兰华沙大公国作为东欧屏障，沿维斯瓦河建立防线。\n\n沙皇虽然不满，但也不敢单独挑战法国的大军团。欧洲大陆维持着脆弱的平衡——然而英国从未停止寻找新的盟友。反法同盟的幽灵始终在拿破仑帝国的边缘徘徊……"
+        }
+      ]
+    },
+    {
+      "id": "nap_congress_vienna",
+      "name": "维也纳体系",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 36 AND (french_empire.controls('austria') == true OR french_empire.controls('prussia') == true)",
+        "priority": "medium"
+      },
+      "title": "欧洲的新秩序——拿破仑体系的巩固与挑战",
+      "narrative": "随着战事的进展，欧洲的地缘政治版图被彻底改写。拿破仑皇帝必须思考：如何治理这个由他一手创造的帝国体系？是继续军事扩张，还是巩固已有的疆域、建立一套可持续的欧洲秩序？\n\n塔列朗进言：'陛下，宝剑可以赢得帝国，但只有法律和制度才能维持它。'\n\n然而英国始终如同一座永不沉没的航空母舰，横亘在拿破仑帝国面前。只要英国不被击败，法国的霸权就随时可能被下一次反法同盟推翻。",
+      "auto_effects": {
+        "prestige": 20,
+        "stability": 5
+      }
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "nap_english_blockade",
+      "name": "大陆封锁体系的后果",
+      "trigger": "nap_austerlitz.chosen == 'austerlitz_classic' AND turn_number >= 12",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {"treasury": -25000, "stability": -10},
+          "narrative": "拿破仑的'大陆封锁令'禁止欧洲各国与英国贸易。然而走私猖獗，经济混乱反而损害了法国及其盟国的利益。俄国和普鲁士对封锁令的阳奉阴违成为新的冲突导火索。"
+        }
+      ]
+    },
+    {
+      "id": "nap_spanish_ulcer",
+      "name": "西班牙溃疡",
+      "trigger": "turn_number >= 14 AND spain.status == 'alliance'",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {"manpower": -10000, "treasury": -20000, "prestige": -10},
+          "narrative": "拿破仑试图将兄长约瑟夫·波拿巴扶上西班牙王位，引发了西班牙人民的激烈反抗。游击战（guerrilla——这个西班牙词后来进入了世界军事词典）消耗了大量法军兵力。塔列朗叹息道：'陛下，西班牙是一个溃疡——它会吞噬我们。'"
+        }
+      ]
+    },
+    {
+      "id": "nap_polish_state",
+      "name": "波兰的复活",
+      "trigger": "nap_russia_campaign.chosen == 'contain_russia' AND turn_number >= 24",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {"manpower": 15000, "prestige": 10},
+          "narrative": "华沙大公国在法国保护下蓬勃发展，波兰人感激拿破仑恢复了他们的国家（虽然只是部分领土），踊跃加入法国军团。波兰骑兵成为大军团中最忠诚、最勇猛的部队之一。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "britain": {
+      "aggressiveness": 0.70,
+      "expansionism": 0.30,
+      "diplomacy_preference": "diplomatic",
+      "decision_weights": {
+        "naval_blockade": 0.40,
+        "fund_allies": 0.35,
+        "amphibious_raid": 0.15,
+        "continental_invasion": 0.10
+      }
+    },
+    "austria": {
+      "aggressiveness": 0.55,
+      "expansionism": 0.40,
+      "diplomacy_preference": "coalition_builder",
+      "decision_weights": {
+        "reform_army": 0.35,
+        "seek_alliance": 0.30,
+        "defend_territory": 0.25,
+        "offensive": 0.10
+      }
+    },
+    "russia": {
+      "aggressiveness": 0.60,
+      "expansionism": 0.55,
+      "diplomacy_preference": "intimidation",
+      "decision_weights": {
+        "strategic_depth": 0.40,
+        "expand_west": 0.20,
+        "expand_south": 0.20,
+        "diplomatic_maneuver": 0.20
+      }
+    },
+    "prussia": {
+      "aggressiveness": 0.50,
+      "expansionism": 0.35,
+      "diplomacy_preference": "cautious",
+      "decision_weights": {
+        "military_reform": 0.35,
+        "seek_alliance": 0.30,
+        "defend": 0.25,
+        "offensive": 0.10
+      }
+    },
+    "spain": {
+      "aggressiveness": 0.25,
+      "expansionism": 0.15,
+      "diplomacy_preference": "survival",
+      "decision_weights": {
+        "maintain_neutrality": 0.40,
+        "defend_colonies": 0.30,
+        "follow_france": 0.20,
+        "rebel": 0.10
+      }
+    }
+  },
+  "victory_conditions": {
+    "total_victory": {
+      "description": "欧洲霸主：英国求和或灭亡，俄奥普三国全部沦为附庸或被征服",
+      "conditions": [
+        "britain.status == 'defeated' OR britain.status == 'vassal'",
+        "austria ∈ french_empire 控制",
+        "prussia ∈ french_empire 控制",
+        "russia.status != 'war'"
+      ]
+    },
+    "standard_victory": {
+      "description": "大陆体系：击败奥地利与普鲁士，控制中欧且法国本土无恙",
+      "conditions": [
+        "austria ∈ french_empire 控制",
+        "prussia ∈ french_empire 控制",
+        "france ∈ french_empire 控制",
+        "turn_number ≥ 48"
+      ]
+    },
+    "failure": {
+      "description": "帝国倾覆：巴黎失陷于任何反法同盟势力",
+      "conditions": [
+        "france ∉ french_empire 控制"
+      ]
+    }
+  }
+}

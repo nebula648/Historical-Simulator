@@ -1,0 +1,684 @@
+{
+  "meta": {
+    "id": "roman_republic_264bc",
+    "title": "罗马共和国",
+    "subtitle": "A.U.C. 490 · 公元前 264 年 · 第一次布匿战争前夕",
+    "description": "罗马共和国刚刚统一意大利半岛，元老院的目光第一次越过墨西拿海峡，投向富庶的西西里岛。海峡对岸，迦太基的海上帝国已经称霸西地中海三百年——他们的商船遍布每一座港口，他们的战船封锁着直布罗陀。当墨西拿的雇佣兵（马麦丁人）同时向罗马和迦太基求援的那一刻，两大强权之间的世纪决战已无可避免。你将以罗马执政官（Consul）的身份，在元老院的掣肘与授权之间，指挥罗马军团远征西西里，建造罗马的第一支海军，挑战迦太基的海上霸权。每一个决策都将影响SPQR的命运——是成为地中海的新主人，还是被迦太基的黄金与战象碾碎？",
+    "era": "罗马共和国·布匿战争前夕",
+    "start_year": -264,
+    "start_month": 3,
+    "end_year": -201,
+    "time_scale": "month",
+    "version": "5.0.0",
+    "author": "",
+    "map_manifest_key": "europe_rome_geo",
+    "era_key": "rome",
+    "map_template": "europe",
+    "world_rules": ["senate_influence"],
+    "tags": [
+      "罗马",
+      "迦太基",
+      "布匿战争",
+      "元老院",
+      "地中海",
+      "古典时代",
+      "SPQR",
+      "汉尼拔"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 罗马元老院（Curia Hostilia·Forum Romanum）",
+    "intel_org_name": "Frumentarii",
+    "region_lore_map": {
+      "italia": "Italia·Roma（罗马城·七丘之城·SPQR）",
+      "sicilia": "Sicilia·Syracusae（西西里·希腊城邦/迦太基争夺）",
+      "carthago": "Africa·Carthago（迦太基城·海上帝国心脏）",
+      "sardinia": "Sardinia·Caralis（撒丁岛·迦太基海军基地）",
+      "hispania": "Hispania·Carthago Nova（西班牙·迦太基银矿殖民地）",
+      "graecia": "Graecia·Athenae/Corinthus（希腊·马其顿霸权衰退中）",
+      "aegyptus": "Aegyptus·Alexandria（埃及·托勒密王国粮仓）"
+    }
+  },
+  "player_faction": "roman_republic",
+  "map": {
+    "region_file": "europe_rome.geojson",
+    "initial_ownership": {
+      "roman_republic": [
+        "italia"
+      ],
+      "carthage": [
+        "carthago", "numidia", "mauretania", "hispania",
+        "sardinia", "corsica", "sicilia"
+      ],
+      "macedon": [
+        "macedonia", "graecia", "epirus", "thracia", "illyria"
+      ],
+      "seleucid_empire": [
+        "syria", "mesopotamia", "asia_minor", "palaestina",
+        "armenia", "parthia"
+      ],
+      "ptolemaic_egypt": [
+        "aegyptus", "cyrenaica", "cyprus", "crete"
+      ],
+      "neutral": [
+        "gallia_cisalpina", "gallia_narbonensis", "gallia_comata",
+        "lusitania", "britannia", "germania", "dacia", "pannonia"
+      ]
+    }
+  },
+  "factions": {
+    "roman_republic": {
+      "name": "罗马共和国（SPQR）",
+      "color": "#C41E3A",
+      "ruler": "元老院与执政官",
+      "ruler_title": "Consul（执政官）",
+      "government": "贵族共和制·元老院主导",
+      "capital": "italia",
+      "description": "自推翻王政以来，罗马人以元老院和公民大会统治共和国已有两百余年。刚刚结束的皮洛士战争证明了罗马军团可以击败希腊化王国的战象。现在整个意大利半岛统一在SPQR的旗帜下——但元老们深知，海外的迦太基才是真正的考验。",
+      "flag_badass": true,
+      "faction_type": "Republic"
+    },
+    "carthage": {
+      "name": "迦太基",
+      "color": "#8B4513",
+      "ruler": "哈米尔卡·巴卡",
+      "ruler_title": "Shophet（苏菲特·执政官）",
+      "government": "商业寡头制·百人会议",
+      "capital": "carthago",
+      "description": "腓尼基人在北非建立的商业帝国，控制着西地中海的贸易路线。迦太基海军拥有三百余艘五列桨战船，是古代世界最强大的海上力量。其雇佣军来自努米底亚骑兵、巴利阿里投石手和西班牙步兵——黄金可以买到一切，除了忠诚。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    },
+    "macedon": {
+      "name": "马其顿（安提柯王朝）",
+      "color": "#4A6B8A",
+      "ruler": "安提柯二世·戈纳塔斯",
+      "ruler_title": "Basileus（马其顿国王）",
+      "government": "希腊化王国",
+      "capital": "macedonia",
+      "description": "亚历山大大帝的继承人之一，安提柯王朝统治着马其顿本土和希腊诸城邦。与埃及托勒密、塞琉古帝国三足鼎立，常年争战。对西方的罗马和迦太基，马其顿尚不了解——但这不代表他们不会介入。",
+      "flag_badass": false,
+      "faction_type": "Kingdom"
+    },
+    "seleucid_empire": {
+      "name": "塞琉古帝国",
+      "color": "#B8860B",
+      "ruler": "安条克二世·忒奥斯",
+      "ruler_title": "Basileus Megas（万王之王）",
+      "government": "希腊化帝国·东方专制",
+      "capital": "syria",
+      "description": "亚历山大大帝遗产中最大的继承者，疆域从爱琴海延伸到印度河。然而帝国过大难治，内部叛乱不断，帕提亚和巴克特里亚正在东方蠢蠢欲动。安条克二世忙于与埃及争霸，无暇西顾。",
+      "flag_badass": false,
+      "faction_type": "Empire"
+    },
+    "ptolemaic_egypt": {
+      "name": "托勒密埃及",
+      "color": "#FFD700",
+      "ruler": "托勒密二世·费拉德尔甫斯",
+      "ruler_title": "Pharaoh（法老）",
+      "government": "希腊化王国·法老制",
+      "capital": "aegyptus",
+      "description": "托勒密王朝统治着古代世界最富庶的土地——尼罗河谷。亚历山大里亚的图书馆与灯塔是希腊化文明的最高象征。埃及的粮食和黄金供养着强大的海军，但托勒密二世更关心的是与塞琉古帝国争夺叙利亚，而非西方的战争。",
+      "flag_badass": false,
+      "faction_type": "Kingdom"
+    }
+  },
+  "initial_resources": {
+    "roman_republic": {
+      "treasury": 180000,
+      "manpower": 80000,
+      "food": 4000,
+      "stability": 65,
+      "prestige": 55,
+      "corruption": 15
+    },
+    "carthage": {
+      "treasury": 350000,
+      "manpower": 55000,
+      "food": 3500,
+      "stability": 70,
+      "prestige": 75,
+      "corruption": 30
+    },
+    "macedon": {
+      "treasury": 80000,
+      "manpower": 50000,
+      "food": 2000,
+      "stability": 55,
+      "prestige": 50,
+      "corruption": 25
+    },
+    "seleucid_empire": {
+      "treasury": 250000,
+      "manpower": 100000,
+      "food": 5000,
+      "stability": 45,
+      "prestige": 60,
+      "corruption": 40
+    },
+    "ptolemaic_egypt": {
+      "treasury": 200000,
+      "manpower": 60000,
+      "food": 5000,
+      "stability": 65,
+      "prestige": 55,
+      "corruption": 20
+    }
+  },
+  "initial_military": {
+    "roman_republic": [
+      {
+        "name": "第一军团（Legio I）",
+        "type": "重装步兵",
+        "size": 25000,
+        "location": "italia",
+        "morale": 75,
+        "general": "阿庇乌斯·克劳狄乌斯"
+      },
+      {
+        "name": "第二军团（Legio II）",
+        "type": "重装步兵",
+        "size": 25000,
+        "location": "italia",
+        "morale": 72,
+        "general": "昆图斯·费边"
+      },
+      {
+        "name": "同盟骑兵（Alae Sociorum）",
+        "type": "骑兵",
+        "size": 6000,
+        "location": "italia",
+        "morale": 68,
+        "general": ""
+      },
+      {
+        "name": "意大利同盟辅助军",
+        "type": "民兵",
+        "size": 15000,
+        "location": "italia",
+        "morale": 55,
+        "general": ""
+      },
+      {
+        "name": "罗马舰队（新建）",
+        "type": "战船编队",
+        "size": 40,
+        "location": "italia",
+        "morale": 40,
+        "general": "盖乌斯·杜伊利乌斯"
+      }
+    ],
+    "carthage": [
+      {
+        "name": "迦太基海军·主力舰队",
+        "type": "五列桨战船",
+        "size": 120,
+        "location": "carthago",
+        "morale": 85,
+        "general": "汉诺"
+      },
+      {
+        "name": "迦太基海军·西西里舰队",
+        "type": "五列桨战船",
+        "size": 60,
+        "location": "sicilia",
+        "morale": 80,
+        "general": ""
+      },
+      {
+        "name": "迦太基海军·撒丁舰队",
+        "type": "五列桨战船",
+        "size": 40,
+        "location": "sardinia",
+        "morale": 78,
+        "general": ""
+      },
+      {
+        "name": "迦太基陆军·非洲军团",
+        "type": "混合部队",
+        "size": 35000,
+        "location": "carthago",
+        "morale": 72,
+        "general": "哈米尔卡·巴卡"
+      },
+      {
+        "name": "努米底亚骑兵",
+        "type": "轻骑兵",
+        "size": 12000,
+        "location": "numidia",
+        "morale": 70,
+        "general": ""
+      },
+      {
+        "name": "西班牙雇佣军",
+        "type": "混合部队",
+        "size": 15000,
+        "location": "hispania",
+        "morale": 60,
+        "general": ""
+      },
+      {
+        "name": "巴利阿里投石兵",
+        "type": "轻步兵",
+        "size": 3000,
+        "location": "hispania",
+        "morale": 65,
+        "general": ""
+      }
+    ],
+    "macedon": [
+      {
+        "name": "马其顿方阵军团",
+        "type": "重装步兵",
+        "size": 25000,
+        "location": "macedonia",
+        "morale": 70,
+        "general": "安提柯二世"
+      },
+      {
+        "name": "马其顿舰队",
+        "type": "战船编队",
+        "size": 30,
+        "location": "graecia",
+        "morale": 55,
+        "general": ""
+      },
+      {
+        "name": "希腊驻屯军",
+        "type": "步兵",
+        "size": 10000,
+        "location": "graecia",
+        "morale": 50,
+        "general": ""
+      }
+    ],
+    "seleucid_empire": [
+      {
+        "name": "塞琉古王家军团",
+        "type": "希腊化重步兵",
+        "size": 45000,
+        "location": "syria",
+        "morale": 68,
+        "general": "安条克二世"
+      },
+      {
+        "name": "塞琉古战象军团",
+        "type": "战象",
+        "size": 30,
+        "location": "syria",
+        "morale": 65,
+        "general": ""
+      },
+      {
+        "name": "东方总督区驻军",
+        "type": "混合部队",
+        "size": 25000,
+        "location": "mesopotamia",
+        "morale": 55,
+        "general": ""
+      },
+      {
+        "name": "安纳托利亚驻军",
+        "type": "步兵",
+        "size": 15000,
+        "location": "asia_minor",
+        "morale": 55,
+        "general": ""
+      }
+    ],
+    "ptolemaic_egypt": [
+      {
+        "name": "托勒密王家军团",
+        "type": "希腊化重步兵",
+        "size": 30000,
+        "location": "aegyptus",
+        "morale": 65,
+        "general": "托勒密二世"
+      },
+      {
+        "name": "托勒密海军·亚历山大舰队",
+        "type": "战船编队",
+        "size": 80,
+        "location": "aegyptus",
+        "morale": 72,
+        "general": ""
+      },
+      {
+        "name": "昔兰尼加驻军",
+        "type": "步兵",
+        "size": 8000,
+        "location": "cyrenaica",
+        "morale": 50,
+        "general": ""
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      {
+        "a": "roman_republic",
+        "b": "carthage",
+        "status": "neutral",
+        "tension": 90
+      },
+      {
+        "a": "roman_republic",
+        "b": "macedon",
+        "status": "neutral",
+        "tension": 40
+      },
+      {
+        "a": "roman_republic",
+        "b": "seleucid_empire",
+        "status": "neutral",
+        "tension": 10
+      },
+      {
+        "a": "roman_republic",
+        "b": "ptolemaic_egypt",
+        "status": "neutral",
+        "tension": 10
+      },
+      {
+        "a": "carthage",
+        "b": "macedon",
+        "status": "neutral",
+        "tension": 30
+      },
+      {
+        "a": "carthage",
+        "b": "ptolemaic_egypt",
+        "status": "neutral",
+        "tension": 35
+      },
+      {
+        "a": "macedon",
+        "b": "ptolemaic_egypt",
+        "status": "war",
+        "tension": 80
+      },
+      {
+        "a": "macedon",
+        "b": "seleucid_empire",
+        "status": "neutral",
+        "tension": 60
+      },
+      {
+        "a": "seleucid_empire",
+        "b": "ptolemaic_egypt",
+        "status": "war",
+        "tension": 85
+      }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "rome_messana_crisis",
+      "name": "墨西拿危机",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number <= 3",
+        "priority": "mandatory"
+      },
+      "title": "墨西拿海峡的呼唤——战争还是和平？",
+      "narrative": "墨西拿城的马麦丁雇佣兵同时向罗马和迦太基求援。迦太基已经派兵进驻墨西拿要塞，控制了西西里岛与意大利之间的海峡。\n\n元老院为此展开了激烈的辩论。克劳狄乌斯家族力主出兵：'如果迦太基控制了西西里，他们下一步将封锁第勒尼安海——罗马将变成内陆城邦！'保守的费边家族则警告：'迦太基的海军可以轻易切断我们的补给线，这场战争可能毁灭共和国。'\n\n作为执政官，你必须在元老院发表你的意见。",
+      "choices": [
+        {
+          "id": "declare_war",
+          "text": "向元老院提议：接受马麦丁人请求，出兵西西里（宣战迦太基）",
+          "effects": {
+            "treasury": -25000,
+            "manpower": -5000,
+            "prestige": 20,
+            "stability": -10
+          },
+          "territory_changes": [
+            {"region_id": "sicilia", "to_faction": "roman_republic", "reason": "罗马军团渡海攻占墨西拿，控制西西里东部"}
+          ],
+          "narrative_result": "元老院以微弱多数通过了战争提案（Senatus Consultum）。阿庇乌斯·克劳狄乌斯率领两个军团渡过墨西拿海峡——这是罗马军团第一次踏上意大利以外的土地。\n\n迦太基元老院接到宣战消息后，汉诺说了一句著名的话：'罗马人把他们的脚伸进了我们的大海。他们很快就会后悔的。'\n\n第一次布匿战争正式开始。"
+        },
+        {
+          "id": "cautious_diplomacy",
+          "text": "暂不介入，派使团与迦太基谈判西西里势力范围划分",
+          "effects": {
+            "treasury": -5000,
+            "prestige": -10,
+            "stability": 5
+          },
+          "narrative_result": "元老院决定暂不出兵，派遣使团前往迦太基谈判。然而迦太基人视罗马的克制为软弱，趁机加强了在西西里全岛的军事存在。\n\n半年后，迦太基舰队开始在墨西拿海峡巡逻，意大利的贸易商船纷纷抱怨被拦截。元老院中的主战派声音越来越大……"
+        },
+        {
+          "id": "naval_buildup",
+          "text": "暂不宣战，但秘密扩建海军，准备未来决战",
+          "effects": {
+            "treasury": -40000,
+            "manpower": 5000,
+            "prestige": 5,
+            "stability": 0
+          },
+          "narrative_result": "费边·马克西穆斯提出了一个折中方案：暂不开战，但以'保卫意大利沿海'为名，大规模建造战船。\n\n罗马人在意大利沿海森林中砍伐木材，以一艘搁浅的迦太基五列桨战船为模板，在六十天内建造了一百二十艘战船。更惊人的是，他们发明了一种秘密武器——'乌鸦吊桥'（Corvus），一种可以钩住敌舰并让罗马步兵登上敌船作战的装置。当迦太基人发现时，罗马已经拥有了一支不可忽视的舰队。"
+        }
+      ]
+    },
+    {
+      "id": "rome_corvus_battle",
+      "name": "米拉海战",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 5 AND rome_declares_war == true",
+        "priority": "high"
+      },
+      "title": "米拉角海战——乌鸦吊桥的首次亮相",
+      "narrative": "执政官盖乌斯·杜伊利乌斯率领新建的罗马舰队，在米拉角（Mylae）遭遇迦太基海军。\n\n迦太基人看到罗马人的笨拙划桨，嘲笑这群'旱鸭子'竟然敢到海上来。然而当两军接战时，罗马战船上突然放下巨大的木制吊桥——桥端铁钉深深扎入迦太基甲板，罗马重装步兵如履平地般冲上敌船！\n\n海战变成了步兵战——而这正是罗马军团最擅长的。",
+      "choices": [
+        {
+          "id": "aggressive_naval",
+          "text": "全线进攻！利用乌鸦吊桥将迦太基舰队全部俘虏",
+          "effects": {
+            "treasury": -15000,
+            "manpower": -3000,
+            "prestige": 30,
+            "stability": 10
+          },
+          "narrative_result": "杜伊利乌斯利用乌鸦吊桥大获全胜，俘获迦太基战船五十余艘，击沉十四艘。迦太基海军司令逃回迦太基后，向元老院报告：'罗马人把海战变成了陆战，我们的桨手无法与他们的军团士兵肉搏。'\n\n罗马元老院为杜伊利乌斯举行了罗马史上第一次海战凯旋式。罗马从陆地强国变成了海上力量——迦太基人第一次感到了恐惧。"
+        },
+        {
+          "id": "conservative_naval",
+          "text": "试探性交战，重点保护陆军补给线而非冒险决战",
+          "effects": {
+            "treasury": -5000,
+            "manpower": -1000,
+            "prestige": 10,
+            "stability": 5
+          },
+          "narrative_result": "杜伊利乌斯采取谨慎策略，以保护陆军补给线为首要任务。虽然未获决定性胜利，但乌鸦吊桥的威力得到了验证。罗马舰队安全地确保了墨西拿海峡的控制权，军团在西西里岛的陆战稳步推进。"
+        }
+      ]
+    },
+    {
+      "id": "rome_senate_crisis",
+      "name": "元老院危机",
+      "type": "audience",
+      "trigger": {
+        "condition": "turn_number >= 10 AND roman_republic.stability <= 50",
+        "priority": "high"
+      },
+      "title": "元老院分裂——克劳狄乌斯vs费边",
+      "narrative": "战争进入第二年，罗马虽然在海上取得了一定成功，但西西里的陆战陷入僵持，海军损失也在风暴中加剧。\n\n元老院中，以克劳狄乌斯家族为首的'主战派'要求增派军团、远征非洲直捣迦太基本土；以费边家族为首的'稳健派'主张巩固西西里、避免冒险。\n\n两派斗争日趋白热化，甚至影响到了军粮和军费的供应。作为执政官，你必须化解这场政治危机——",
+      "choices": [
+        {
+          "id": "back_claudius",
+          "text": "支持远征非洲：组建四个新军团，登陆迦太基本土",
+          "effects": {
+            "treasury": -50000,
+            "manpower": -10000,
+            "prestige": 25,
+            "stability": -10
+          },
+          "narrative_result": "执政官马库斯·阿蒂利乌斯·雷古鲁斯率领四个军团渡海远征非洲，在克鲁佩亚登陆，直逼迦太基城。迦太基人大惊失色，几乎愿意接受任何和平条件。\n\n然而雷古鲁斯开出的条件过于苛刻，迦太基人决定继续抵抗。他们雇佣了斯巴达将领克桑提普斯来训练军队……非洲远征的最终命运，将在下一场大战中决定。"
+        },
+        {
+          "id": "back_fabius",
+          "text": "支持费边策略：巩固西西里，封锁迦太基而非远征非洲",
+          "effects": {
+            "treasury": -15000,
+            "prestige": -5,
+            "stability": 10,
+            "corruption": -5
+          },
+          "narrative_result": "执政官选择了费边的稳健策略。罗马军团逐步攻克西西里岛上的迦太基据点，同时海军执行封锁任务，切断迦太基与西西里的联系。\n\n这虽然是一场缓慢的消耗战，但罗马的国力——意大利的人力资源——正是消耗战的最大优势。迦太基的雇佣兵军团正在一点点被消磨……"
+        }
+      ]
+    },
+    {
+      "id": "rome_first_fleet_disaster",
+      "name": "风暴中的舰队",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 14 AND roman_republic.controls('sicilia') == true",
+        "priority": "high"
+      },
+      "title": "卡马里纳风暴——地中海的自然之怒",
+      "narrative": "罗马海军在一次大规模运兵行动中遭遇地中海风暴。指挥官们无视了水手关于天气的警告，命令舰队出发。结果在卡马里纳（Camarina）外海，近三百艘战船和运输船被巨浪吞没，约十万罗马士兵和水手葬身海底。\n\n这是罗马历史上最惨重的军事灾难之一。元老院哀悼之日，全罗马没有一家不传出哭声。",
+      "auto_effects": {
+        "manpower": -15000,
+        "treasury": -30000,
+        "stability": -20,
+        "prestige": -15
+      }
+    },
+    {
+      "id": "rome_siege_of_lilybaeum",
+      "name": "利利俾围城战",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 20 AND roman_republic.controls('sicilia') == true",
+        "priority": "medium"
+      },
+      "title": "利利俾——迦太基在西西里的最后堡垒",
+      "narrative": "经过多年苦战，迦太基在西西里仅剩利利俾（Lilybaeum）和德雷帕农（Drepana）两座港口。利利俾城防坚固，迦太基海军仍能通过海上补给线维持守军。\n\n攻克这座要塞意味着完全控制西西里——也可能意味着战争的终结。",
+      "choices": [
+        {
+          "id": "siege_lilybaeum",
+          "text": "全力围攻：以陆海联合封锁彻底困死利利俾",
+          "effects": {
+            "treasury": -35000,
+            "manpower": -8000,
+            "prestige": 20,
+            "stability": 10
+          },
+          "territory_changes": [
+            {"region_id": "sicilia", "to_faction": "roman_republic", "reason": "攻克利利俾，西西里全岛归属罗马"}
+          ],
+          "narrative_result": "经过长达一年的陆海联合封锁，利利俾终因粮尽而降。迦太基在西西里的最后一面旗帜被拔下。\n\n消息传到迦太基，百人会议终于认真考虑以有利条件求和……"
+        },
+        {
+          "id": "negotiate_peace",
+          "text": "以当前战线议和：罗马保有西西里，迦太基赔款退出",
+          "effects": {
+            "treasury": 20000,
+            "prestige": 5,
+            "stability": 10
+          },
+          "narrative_result": "罗马与迦太基签订了和平条约。迦太基承认西西里为罗马行省，支付战争赔款三千塔兰特。第一次布匿战争结束。\n\n但迦太基的哈米尔卡·巴卡怒火中烧。他在西班牙建立了新的根据地，并发誓要让他的儿子汉尼拔完成复仇……"
+        }
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "rome_hamilcar_oath",
+      "name": "哈米尔卡之誓",
+      "trigger": "rome_siege_of_lilybaeum.chosen == 'negotiate_peace' AND turn_number >= 24",
+      "delayed_effects": [
+        {
+          "delay_turns": 6,
+          "effect": {"event_trigger": "hannibal_rises"},
+          "narrative": "哈米尔卡·巴卡在西班牙建立了庞大的殖民地，并让九岁的儿子汉尼拔在巴力神祭坛前宣誓：'永生永世与罗马为敌。'"
+        }
+      ]
+    },
+    {
+      "id": "rome_naval_innovation",
+      "name": "罗马海军的进化",
+      "trigger": "rome_corvus_battle.chosen == 'aggressive_naval' AND turn_number >= 12",
+      "delayed_effects": [
+        {
+          "delay_turns": 4,
+          "effect": {"manpower": 5000, "prestige": 10},
+          "narrative": "米拉海战的经验促使罗马改进了乌鸦吊桥的设计，并训练了专业的海军军团士兵。罗马海军的战斗力已经可以与任何地中海强国抗衡。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "carthage": {
+      "aggressiveness": 0.75,
+      "expansionism": 0.65,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "naval_supremacy": 0.40,
+        "mercenary_recruitment": 0.25,
+        "diplomatic_isolation": 0.20,
+        "land_offensive": 0.15
+      }
+    },
+    "macedon": {
+      "aggressiveness": 0.55,
+      "expansionism": 0.45,
+      "diplomacy_preference": "balanced",
+      "decision_weights": {
+        "greek_dominance": 0.40,
+        "expand_north": 0.25,
+        "westward_adventure": 0.15,
+        "defend": 0.20
+      }
+    },
+    "seleucid_empire": {
+      "aggressiveness": 0.50,
+      "expansionism": 0.55,
+      "diplomacy_preference": "intimidation",
+      "decision_weights": {
+        "syrian_wars": 0.40,
+        "internal_stability": 0.30,
+        "eastern_frontier": 0.20,
+        "westward": 0.10
+      }
+    },
+    "ptolemaic_egypt": {
+      "aggressiveness": 0.45,
+      "expansionism": 0.35,
+      "diplomacy_preference": "diplomatic",
+      "decision_weights": {
+        "naval_dominance": 0.35,
+        "syrian_wars": 0.30,
+        "economic_development": 0.25,
+        "westward": 0.10
+      }
+    }
+  },
+  "victory_conditions": {
+    "total_victory": {
+      "description": "地中海霸主：摧毁迦太基，控制西西里、撒丁、科西嘉与北非",
+      "conditions": [
+        "carthage.status == 'defeated'",
+        "sicilia ∈ roman_republic 控制",
+        "sardinia ∈ roman_republic 控制",
+        "carthago ∈ roman_republic 控制"
+      ]
+    },
+    "standard_victory": {
+      "description": "第一次布匿战争胜利：控制西西里，达成对迦太基的优势和约",
+      "conditions": [
+        "sicilia ∈ roman_republic 控制",
+        "carthage.manpower ≤ 25000 OR carthage.status != 'war'"
+      ]
+    },
+    "failure": {
+      "description": "迦太基反攻：意大利本土失陷于迦太基",
+      "conditions": [
+        "italia ∉ roman_republic 控制"
+      ]
+    }
+  }
+}

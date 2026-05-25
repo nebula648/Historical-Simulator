@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "description": "剧本索引文件 —— 所有可用剧本的 ID → 文件名映射。loader.py 以此为主数据源。",
+    "version": "1.1.0",
+    "updated": "2026-05-24"
+  },
+  "scenarios": [
+    {
+      "id": "chongzhen_1644",
+      "title": "崇祯十七年",
+      "subtitle": "公元 1644 年 · 大顺军围北京 · 山海关外的抉择",
+      "era": "明末清初",
+      "start_year": 1644,
+      "tags": ["明末", "清初", "南明", "李自成", "吴三桂", "多尔衮", "甲申之变"],
+      "file": "chongzhen_1644.json"
+    },
+    {
+      "id": "chu_han_contention_206bc",
+      "title": "楚汉相争",
+      "subtitle": "公元前 206 年 · 鸿门宴后 · 天下未定",
+      "era": "秦汉之际",
+      "start_year": -206,
+      "tags": ["秦末", "楚汉", "刘邦", "项羽", "韩信", "鸿门宴"],
+      "file": "chu_han_contention_206bc.json"
+    },
+    {
+      "id": "han_wu_northern_campaigns_129bc",
+      "title": "汉武北伐",
+      "subtitle": "公元前 129 年 · 汉武帝反击匈奴之始",
+      "era": "西汉",
+      "start_year": -129,
+      "tags": ["汉武", "匈奴", "卫青", "霍去病", "张骞", "丝绸之路"],
+      "file": "han_wu_northern_campaigns_129bc.json"
+    },
+    {
+      "id": "red_cliffs_208ad",
+      "title": "赤壁之战",
+      "subtitle": "建安十三年 · 公元 208 年 · 曹操南下",
+      "era": "汉末三国",
+      "start_year": 208,
+      "tags": ["三国", "赤壁", "曹操", "周瑜", "诸葛亮", "孙刘联盟"],
+      "file": "red_cliffs_208ad.json"
+    },
+    {
+      "id": "battle_of_fei_river_383ad",
+      "title": "淝水之战",
+      "subtitle": "东晋太元八年 · 公元 383 年 · 苻坚百万雄师南下",
+      "era": "东晋十六国",
+      "start_year": 383,
+      "tags": ["东晋", "淝水之战", "苻坚", "谢安", "北府兵", "南北朝序曲", "前秦"],
+      "file": "03_jin_sui_tang/battle_of_fei_river_383ad.json"
+    },
+    {
+      "id": "anshi_rebellion_762ad",
+      "title": "安史之乱：帝国黄昏",
+      "subtitle": "宝应元年 · 公元 762 年 · 长安孤城·夕阳无限好",
+      "era": "盛唐·帝国黄昏",
+      "start_year": 762,
+      "tags": ["安史之乱", "唐代宗", "藩镇割据", "河朔三镇", "吐蕃入寇", "神策军", "郭子仪", "悲情史诗", "帝国黄昏"],
+      "file": "03_jin_sui_tang/anshi_rebellion.json"
+    },
+    {
+      "id": "southern_song_defense_1260ad",
+      "title": "南宋：中兴与覆灭",
+      "subtitle": "宋景定元年 · 公元 1260 年 · 蒙哥暴毙·忽必烈北归·天赐良机",
+      "era": "南宋末年·景定年间",
+      "start_year": 1260,
+      "tags": ["南宋", "忽必烈", "襄阳", "钓鱼城", "贾似道", "蒙宋战争", "崖山", "文天祥", "中兴", "覆灭"],
+      "file": "04_song_yuan_ming/yuan_invasion_song.json"
+    },
+    {
+      "id": "jingkang_1126",
+      "title": "靖康之耻",
+      "subtitle": "北宋靖康元年 · 公元 1126 年 · 金兵南下围汴京",
+      "era": "北宋末年",
+      "start_year": 1126,
+      "tags": ["北宋", "靖康之耻", "金国", "岳飞", "李纲", "汴京保卫战", "宋金战争"],
+      "file": "04_song_yuan_ming/jingkang_incident_1126ad.json"
+    },
+    {
+      "id": "yuan_conquest_1276",
+      "title": "元灭南宋",
+      "subtitle": "元至元十三年 · 公元 1276 年 · 伯颜下江南·临安降元",
+      "era": "元朝·至元年间",
+      "start_year": 1276,
+      "tags": ["元朝", "忽必烈", "伯颜", "南宋灭亡", "临安", "文天祥", "崖山海战", "大一统"],
+      "file": "04_song_yuan_ming/yuan_conquest_1276ad.json"
+    },
+    {
+      "id": "san_fan_rebellion_1673",
+      "title": "三藩之乱",
+      "subtitle": "康熙十二年 · 公元 1673 年 · 吴三桂举兵反清·天下震动",
+      "era": "清初·康熙朝",
+      "start_year": 1673,
+      "tags": ["清初", "三藩之乱", "吴三桂", "康熙", "耿精忠", "尚可喜", "反清复明"],
+      "file": "04_song_yuan_ming/san_fan_rebellion.json"
+    },
+    {
+      "id": "roman_republic_264bc",
+      "title": "罗马共和国",
+      "subtitle": "A.U.C. 490 · 公元前 264 年 · 第一次布匿战争前夕",
+      "era": "罗马共和国·布匿战争前夕",
+      "start_year": -264,
+      "tags": ["罗马", "迦太基", "布匿战争", "元老院", "地中海", "古典时代", "SPQR", "汉尼拔"],
+      "file": "99_foreign_dlc/roman_republic_264bc.json"
+    },
+    {
+      "id": "napoleon_1805",
+      "title": "拿破仑战争",
+      "subtitle": "1805年 · 第三次反法同盟 · 奥斯特里茨之阳",
+      "era": "拿破仑时代",
+      "start_year": 1805,
+      "tags": ["拿破仑", "法兰西帝国", "反法同盟", "奥斯特里茨", "法国大革命", "欧洲战争", "近卫军", "三皇会战"],
+      "file": "99_foreign_dlc/napoleon_wars_1805ad.json"
+    }
+  ]
+}

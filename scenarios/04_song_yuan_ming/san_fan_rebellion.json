@@ -1,0 +1,541 @@
+{
+  "meta": {
+    "id": "san_fan_rebellion_1673",
+    "title": "三藩之乱",
+    "subtitle": "康熙十二年 · 公元 1673 年 · 吴三桂举兵反清·天下震动",
+    "description": "康熙十二年十一月，平西王吴三桂在昆明五华山树起'天下都招讨兵马大元帅'大旗，以'兴明讨虏'为号，正式举兵反清。一时间贵州、四川、湖南望风而降，耿精忠据福建、尚之信据广东先后响应，数月之间六省变色，半壁江山动摇。你将以吴三桂的身份，在清廷的围剿与三藩的合纵连横中，抉择'反清复明'还是'割据称帝'。是挥师北上饮马长江、与康熙争夺天下，还是割据西南偏安一隅？关宁铁骑的马蹄声与永历帝陵前的誓言，将共同谱写这最后的大明悲歌。",
+    "era": "清初·康熙朝",
+    "start_year": 1673,
+    "start_month": 11,
+    "end_year": 1685,
+    "time_scale": "month",
+    "version": "5.0.0",
+    "author": "",
+    "map_manifest_key": "late_ming_geo",
+    "era_key": "qing_early",
+    "map_template": "china",
+    "world_rules": ["three_feudatories"],
+    "tags": [
+      "清初",
+      "三藩之乱",
+      "吴三桂",
+      "康熙",
+      "耿精忠",
+      "尚可喜",
+      "反清复明",
+      "关宁铁骑"
+    ]
+  },
+  "era_metadata": {
+    "power_center_title": "🏯 平西王府（云南·五华山·银安殿）",
+    "intel_org_name": "密折房",
+    "region_lore_map": {
+      "云南": "云南省·昆明府（平西王府驻地·五华山银安殿）",
+      "贵州": "贵州省·贵阳府（平西王节制·马宝镇守）",
+      "四川": "四川省·成都府（川陕咽喉·入滇门户）",
+      "湖南": "湖南省·长沙府（湖广粮仓·南北要冲）",
+      "湖北": "湖北省·武昌府（长江锁钥·九省通衢）",
+      "福建": "福建省·福州府（靖南王耿精忠驻地）",
+      "广东": "广东省·广州府（平南王尚可喜驻地）",
+      "北京": "直隶省·京师（紫禁城·乾清宫·康熙帝御极之地）",
+      "陕西": "陕西省·西安府（川陕总督驻地·西北劲旅基地）"
+    }
+  },
+  "player_faction": "wu_sangui",
+  "map": {
+    "region_file": "china_late_ming.geojson",
+    "initial_ownership": {
+      "wu_sangui": [
+        "云南", "贵州"
+      ],
+      "qing_empire": [
+        "北京", "天津", "河北", "山西", "山东",
+        "河南", "陕西", "甘肃", "宁夏", "青海",
+        "新疆", "西藏", "四川", "重庆",
+        "湖北", "湖南", "江苏", "安徽", "浙江", "江西",
+        "辽宁", "吉林", "黑龙江", "内蒙古"
+      ],
+      "geng_jingzhong": [
+        "福建"
+      ],
+      "shang_kexi": [
+        "广东", "广西"
+      ],
+      "neutral": [
+        "台湾", "海南"
+      ]
+    }
+  },
+  "factions": {
+    "wu_sangui": {
+      "name": "平西王·吴三桂",
+      "color": "#8B0000",
+      "ruler": "吴三桂",
+      "ruler_title": "天下都招讨兵马大元帅·平西王",
+      "government": "藩王割据政权",
+      "capital": "云南",
+      "description": "吴三桂，引清兵入关又亲手绞杀永历帝的前明叛将，如今坐镇云南、贵州两省，节制云贵川湖广五省兵马，拥兵二十万，富可敌国。康熙帝欲撤三藩，吴三桂骑虎难下——降则削藩夺权、人为刀俎；叛则天下震动、或可一搏。关宁铁骑尚在，大明遗民犹存，这一次，他要为自己而战。",
+      "flag_badass": true,
+      "faction_type": "Rebellion"
+    },
+    "qing_empire": {
+      "name": "大清帝国",
+      "color": "#DAA520",
+      "ruler": "爱新觉罗·玄烨",
+      "ruler_title": "皇帝",
+      "government": "中央集权帝国",
+      "capital": "北京",
+      "description": "年方弱冠的康熙帝已显露雄主之姿。除鳌拜、平三藩、收台湾、征噶尔丹——这些将定义他一生功业的宏图，正从撤藩之议开始。面对吴三桂的叛乱，康熙沉着应对：调集八旗劲旅南下，分化瓦解三藩联盟，以举国之力围剿西南。大清国运，系于此战。",
+      "flag_badass": true,
+      "faction_type": "Empire"
+    },
+    "geng_jingzhong": {
+      "name": "靖南王·耿精忠",
+      "color": "#D2691E",
+      "ruler": "耿精忠",
+      "ruler_title": "靖南王",
+      "government": "藩王割据政权",
+      "capital": "福建",
+      "description": "耿精忠袭祖父耿仲明之爵，坐镇福建。年轻气盛而不甘久居人下，对清廷撤藩之议心怀不满。吴三桂起兵后，耿精忠在福州举兵响应，自称'总统兵马大将军'。然其根基不深，军力有限，若战局不利极易动摇。",
+      "flag_badass": false,
+      "faction_type": "Rebellion"
+    },
+    "shang_kexi": {
+      "name": "平南王·尚可喜",
+      "color": "#2E8B57",
+      "ruler": "尚可喜（尚之信摄军事）",
+      "ruler_title": "平南王",
+      "government": "藩王割据政权",
+      "capital": "广东",
+      "description": "尚可喜年事已高，军务多由其子尚之信代理。平南王府盘踞广东近三十年，控制岭南财赋，拥有水陆劲旅。尚可喜本人忠于清廷，但尚之信暗怀异志，与吴三桂暗通款曲。父子之间的分歧，使广东成为三藩之乱中最不稳定的一环。",
+      "flag_badass": false,
+      "faction_type": "Rebellion"
+    }
+  },
+  "initial_resources": {
+    "wu_sangui": {
+      "treasury": 120000,
+      "manpower": 80000,
+      "food": 45000,
+      "stability": 70,
+      "prestige": 90,
+      "corruption": 25
+    },
+    "qing_empire": {
+      "treasury": 250000,
+      "manpower": 280000,
+      "food": 130000,
+      "stability": 82,
+      "prestige": 85,
+      "corruption": 30
+    },
+    "geng_jingzhong": {
+      "treasury": 40000,
+      "manpower": 30000,
+      "food": 18000,
+      "stability": 55,
+      "prestige": 45,
+      "corruption": 28
+    },
+    "shang_kexi": {
+      "treasury": 50000,
+      "manpower": 35000,
+      "food": 22000,
+      "stability": 50,
+      "prestige": 50,
+      "corruption": 32
+    }
+  },
+  "initial_military": {
+    "wu_sangui": [
+      {
+        "name": "关宁铁骑",
+        "type": "精锐骑兵",
+        "size": 25000,
+        "location": "云南",
+        "morale": 92,
+        "general": "吴三桂"
+      },
+      {
+        "name": "云南督标营",
+        "type": "步兵",
+        "size": 15000,
+        "location": "云南",
+        "morale": 75,
+        "general": "夏国相"
+      },
+      {
+        "name": "贵州抚标营",
+        "type": "步兵",
+        "size": 10000,
+        "location": "贵州",
+        "morale": 72,
+        "general": "马宝"
+      },
+      {
+        "name": "平西王府护卫营",
+        "type": "亲兵",
+        "size": 5000,
+        "location": "云南",
+        "morale": 95,
+        "general": "胡国柱"
+      },
+      {
+        "name": "滇池水师",
+        "type": "水师",
+        "size": 3000,
+        "location": "云南",
+        "morale": 60,
+        "general": "王屏藩"
+      }
+    ],
+    "qing_empire": [
+      {
+        "name": "禁旅八旗·骁骑营",
+        "type": "精锐骑兵",
+        "size": 20000,
+        "location": "北京",
+        "morale": 85,
+        "general": "图海"
+      },
+      {
+        "name": "禁旅八旗·前锋营",
+        "type": "精锐骑兵",
+        "size": 15000,
+        "location": "北京",
+        "morale": 88,
+        "general": "勒尔锦"
+      },
+      {
+        "name": "禁旅八旗·护军营",
+        "type": "精锐步兵",
+        "size": 12000,
+        "location": "北京",
+        "morale": 90,
+        "general": "杰书"
+      },
+      {
+        "name": "湖广总督标营",
+        "type": "步兵",
+        "size": 30000,
+        "location": "湖北",
+        "morale": 65,
+        "general": "蔡毓荣"
+      },
+      {
+        "name": "四川总督标营",
+        "type": "步兵",
+        "size": 20000,
+        "location": "四川",
+        "morale": 60,
+        "general": "周有德"
+      },
+      {
+        "name": "陕甘绿营",
+        "type": "混合部队",
+        "size": 25000,
+        "location": "陕西",
+        "morale": 70,
+        "general": "张勇"
+      },
+      {
+        "name": "长江水师",
+        "type": "水师",
+        "size": 12000,
+        "location": "湖北",
+        "morale": 65,
+        "general": "徐治都"
+      }
+    ],
+    "geng_jingzhong": [
+      {
+        "name": "靖南王府卫队",
+        "type": "步兵",
+        "size": 8000,
+        "location": "福建",
+        "morale": 60,
+        "general": "耿精忠"
+      },
+      {
+        "name": "福建水师",
+        "type": "水师",
+        "size": 5000,
+        "location": "福建",
+        "morale": 55,
+        "general": "曾养性"
+      }
+    ],
+    "shang_kexi": [
+      {
+        "name": "平南王府卫队",
+        "type": "步兵",
+        "size": 7000,
+        "location": "广东",
+        "morale": 58,
+        "general": "尚之信"
+      },
+      {
+        "name": "广东水师",
+        "type": "水师",
+        "size": 4000,
+        "location": "广东",
+        "morale": 50,
+        "general": "尚之孝"
+      }
+    ]
+  },
+  "diplomacy": {
+    "relations": [
+      { "a": "wu_sangui", "b": "qing_empire", "status": "tension", "tension": 78 },
+      { "a": "wu_sangui", "b": "geng_jingzhong", "status": "neutral", "tension": 25 },
+      { "a": "wu_sangui", "b": "shang_kexi", "status": "neutral", "tension": 30 },
+      { "a": "qing_empire", "b": "geng_jingzhong", "status": "vassal", "tension": 55 },
+      { "a": "qing_empire", "b": "shang_kexi", "status": "vassal", "tension": 48 }
+    ]
+  },
+  "scripted_events": [
+    {
+      "id": "evt_sf_001",
+      "name": "请旨撤藩",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number == 1",
+        "priority": "mandatory"
+      },
+      "title": "康熙下诏撤藩——三藩命运的分水岭",
+      "narrative": "康熙帝在乾清宫召集议政王大臣会议，下诏撤除三藩。平西王吴三桂、靖南王耿精忠、平南王尚可喜均被告知——交出军权、迁回关外。这是康熙削藩的雷霆手段，也是三藩命运的分水岭。\n\n谋士方光琛进言：'王爷，清廷已露獠牙。若从命，则人为刀俎我为鱼肉；若抗旨，则天下震动或可一搏。'\n\n吴三桂沉吟良久，望向五华山下连绵的关宁铁骑营帐……",
+      "choices": [
+        {
+          "id": "choice_accept",
+          "text": "接受撤藩，交出兵权，率部迁回辽东",
+          "effects": { "wu_sangui": { "stability": -30, "prestige": -50 }, "qing_empire": { "stability": 15 } },
+          "narrative_result": "吴三桂黯然接受了撤藩诏令。关宁铁骑放下刀剑，五华山王府人去楼空。一世枭雄，终归于寂。但这真的是结局吗？"
+        },
+        {
+          "id": "choice_revolt",
+          "text": "拒绝撤藩！树起'天下都招讨兵马大元帅'大旗，正式举兵反清！",
+          "effects": { "wu_sangui": { "prestige": 10, "stability": 5 }, "qing_empire": { "stability": -20 } },
+          "narrative_result": "吴三桂掷诏于地，在昆明五华山树起反旗。'兴明讨虏，恢复汉室'——檄文传遍天下，三藩之乱正式爆发！康熙帝龙颜大怒，调集八旗主力南下平叛。",
+          "diplomacy_changes": [
+            { "a": "wu_sangui", "b": "qing_empire", "tension_delta": 20, "new_status": "war" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evt_sf_002",
+      "name": "祭拜明陵",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 2 AND global_flags.revolt_started == true",
+        "priority": "optional"
+      },
+      "title": "祭拜永历帝陵——争取天下汉人民心",
+      "narrative": "谋士方光琛建议吴三桂以'祭拜永历帝陵'为名，在昆明城外举行隆重的祭奠仪式，以争取天下汉人民心。这是政治姿态，也是军事动员——让天下人知道，平西王是为大明复仇而来。\n\n然而，公开祭拜意味着断绝与清廷的一切回旋余地。是高举'反清复明'大旗，还是暂且以'割据自保'为号？",
+      "choices": [
+        {
+          "id": "choice_worship_public",
+          "text": "举行盛大祭奠，昭告天下'反清复明'",
+          "effects": { "wu_sangui": { "prestige": 20, "manpower": 15000 }, "qing_empire": { "stability": -10 } },
+          "narrative_result": "吴三桂白衣素冠，在永历帝陵前伏地痛哭。'先帝在上，臣三桂今日举义，为大明复仇！'——消息传出，湖广遗民群起响应，义军蜂拥来投。"
+        },
+        {
+          "id": "choice_worship_private",
+          "text": "私下祭拜，不对外声张，保持'割据称王'的模糊立场",
+          "effects": { "wu_sangui": { "prestige": 5, "stability": 10 } },
+          "narrative_result": "吴三桂在深夜独自前往永历陵，焚香默祷。他深知'反清复明'之名太重，不如暂且以'割据自保'为号，静观天下变局。"
+        }
+      ]
+    },
+    {
+      "id": "evt_sf_003",
+      "name": "联络耿精忠、尚可喜",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 3 AND global_flags.revolt_started == true",
+        "priority": "mandatory"
+      },
+      "title": "联络耿精忠、尚可喜——三藩合纵之势",
+      "narrative": "反旗已举，当务之急是联络福建耿精忠与广东尚之信共同起兵。三藩若能合纵，则可形成西南-东南-岭南的铁三角，对清廷构成致命威胁。\n\n吴三桂遣密使分赴福州与广州。耿精忠在犹豫数日后举兵响应，自称'总统兵马大将军'。尚之信囚禁其父尚可喜，控制广州，响应吴三桂。三藩合纵之势初成，清廷朝野震惊！",
+      "auto_effects": {
+        "geng_jingzhong": { "stability": -10 },
+        "shang_kexi": { "stability": -10 }
+      },
+      "diplomacy_changes": [
+        { "a": "wu_sangui", "b": "geng_jingzhong", "tension_delta": -20, "new_status": "allied" },
+        { "a": "wu_sangui", "b": "shang_kexi", "tension_delta": -15, "new_status": "allied" }
+      ]
+    },
+    {
+      "id": "evt_sf_004",
+      "name": "清廷反击",
+      "type": "outcome",
+      "trigger": {
+        "condition": "turn_number >= 5 AND global_flags.revolt_started == true",
+        "priority": "mandatory"
+      },
+      "title": "康熙调兵遣将——大清帝国的全面反击",
+      "narrative": "康熙帝在乾清宫昼夜不眠，亲自调度各路兵马。图海率禁旅八旗自京南下，张勇率西宁劲旅入川截击，蔡毓荣在长江布防。大清帝国的战争机器全速运转，一场席卷半个中国的内战全面升级！",
+      "auto_effects": {
+        "qing_empire": { "stability": 5, "manpower": 50000 },
+        "wu_sangui": { "stability": -5 }
+      }
+    },
+    {
+      "id": "evt_sf_005",
+      "name": "耿精忠动摇",
+      "type": "conditional",
+      "trigger": {
+        "condition": "turn_number >= 8 AND global_flags.geng_joined == true",
+        "priority": "optional"
+      },
+      "title": "耿精忠动摇——福建面临清军水陆夹攻",
+      "narrative": "清廷重兵压境，耿精忠的福建孤悬东南沿海，难以抵挡清军水陆夹攻。密使传来消息：耿精忠正在与清廷暗中接触，有投降之意！若耿精忠降清，福建门户大开，吴三桂将失去重要的东南盟友。\n\n马宝请命：'末将愿率贵州劲旅入闽，助耿精忠稳定军心！'但方光琛警告：'贵州兵力抽调，则西南门户空虚，康熙必趁虚而入。'",
+      "choices": [
+        {
+          "id": "choice_reinforce_geng",
+          "text": "派马宝率军入闽，支援耿精忠稳定军心",
+          "effects": { "wu_sangui": { "manpower": -8000, "prestige": 5 }, "geng_jingzhong": { "stability": 20 } },
+          "narrative_result": "马宝率贵州劲旅昼夜兼程入闽，耿精忠闻讯大喜，军心暂稳。但这也意味着贵州防线出现空虚——康熙会抓住这个机会吗？"
+        },
+        {
+          "id": "choice_abandon_geng",
+          "text": "放弃耿精忠，集中兵力北进湖广",
+          "effects": { "geng_jingzhong": { "stability": -40 }, "qing_empire": { "stability": 10 } },
+          "narrative_result": "吴三桂选择放弃福建。耿精忠孤立无援，不久后降清。福建落入清廷之手，但吴三桂的主力得以完整地投入湖广战场。取舍之间，皆是豪赌。",
+          "diplomacy_changes": [
+            { "a": "wu_sangui", "b": "geng_jingzhong", "tension_delta": 50, "new_status": "neutral" },
+            { "a": "qing_empire", "b": "geng_jingzhong", "tension_delta": -40, "new_status": "vassal" }
+          ]
+        }
+      ]
+    }
+  ],
+  "butterfly_rules": [
+    {
+      "id": "bf_sf_001",
+      "name": "撤藩诏令——康熙的先发制人",
+      "trigger": "wu_sangui.prestige > 85 AND wu_sangui.stability > 60",
+      "delayed_effects": [
+        {
+          "delay_turns": 1,
+          "effect": {
+            "wu_sangui": { "stability": -10 },
+            "qing_empire": { "stability": 5 }
+          },
+          "narrative": "吴三桂的威望如日中天，康熙帝深感不安。乾清宫中，撤藩之议再起——卧榻之侧，岂容他人鼾睡？"
+        }
+      ]
+    },
+    {
+      "id": "bf_sf_002",
+      "name": "三藩合纵——清廷朝野震恐",
+      "trigger": "geng_jingzhong.status == 'allied' AND shang_kexi.status == 'allied'",
+      "delayed_effects": [
+        {
+          "delay_turns": 1,
+          "effect": {
+            "qing_empire": { "stability": -15, "prestige": -10 }
+          },
+          "narrative": "三藩同时举兵，半壁江山变色。北京城中人心惶惶，甚至有大臣密奏康熙帝'暂避锋芒，还都盛京'。"
+        },
+        {
+          "delay_turns": 6,
+          "effect": {
+            "qing_empire": { "manpower": 30000 }
+          },
+          "narrative": "康熙帝沉着应对，在全国范围内征调绿营兵丁，八旗蒙古骑兵也从草原南下增援。"
+        }
+      ]
+    },
+    {
+      "id": "bf_sf_003",
+      "name": "攻入湖广——天下遗民群起响应",
+      "trigger": "wu_sangui.controlled_regions contains '湖北' OR wu_sangui.controlled_regions contains '湖南'",
+      "delayed_effects": [
+        {
+          "delay_turns": 2,
+          "effect": {
+            "wu_sangui": { "manpower": 20000, "prestige": 10 }
+          },
+          "narrative": "吴三桂大军攻入湖广，'反清复明'的旗帜在长江两岸飘扬。前明遗民、士绅、溃兵纷纷来投，义军声势大振！"
+        },
+        {
+          "delay_turns": 6,
+          "effect": {
+            "qing_empire": { "stability": -10 }
+          },
+          "narrative": "湖广失陷的消息传到北京，康熙帝震怒。朝中动摇派开始私下议论——若吴三桂渡过长江，大事去矣。"
+        }
+      ]
+    },
+    {
+      "id": "bf_sf_004",
+      "name": "困守西南——优势逆转",
+      "trigger": "turn_number > 12 AND wu_sangui.controlled_regions.length < 4",
+      "delayed_effects": [
+        {
+          "delay_turns": 3,
+          "effect": {
+            "qing_empire": { "stability": 10, "manpower": 20000 }
+          },
+          "narrative": "吴三桂久困西南一隅，攻势受阻。康熙帝调集全国兵力围剿，清军在四川、湖广逐步取得优势。三藩之乱的转折点已经到来……"
+        },
+        {
+          "delay_turns": 8,
+          "effect": {
+            "geng_jingzhong": { "stability": -20 },
+            "shang_kexi": { "stability": -20 }
+          },
+          "narrative": "看到吴三桂攻势受挫，耿精忠与尚之信开始动摇。密使往来于福州、广州与北京之间——联盟裂痕日渐扩大。"
+        }
+      ]
+    }
+  ],
+  "ai_personality": {
+    "wu_sangui": {
+      "aggressiveness": 0.85,
+      "expansionism": 0.80,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "military_offensive": 0.40,
+        "diplomatic_alliance": 0.25,
+        "internal_consolidation": 0.20,
+        "defensive_entrenchment": 0.15
+      }
+    },
+    "qing_empire": {
+      "aggressiveness": 0.75,
+      "expansionism": 0.70,
+      "diplomacy_preference": "hegemonic",
+      "decision_weights": {
+        "military_offensive": 0.35,
+        "diplomatic_divide": 0.30,
+        "economic_warfare": 0.20,
+        "defensive_consolidation": 0.15
+      }
+    },
+    "geng_jingzhong": {
+      "aggressiveness": 0.50,
+      "expansionism": 0.45,
+      "diplomacy_preference": "opportunistic",
+      "decision_weights": {
+        "survival_first": 0.40,
+        "military_offensive": 0.20,
+        "diplomatic_balancing": 0.25,
+        "internal_stability": 0.15
+      }
+    },
+    "shang_kexi": {
+      "aggressiveness": 0.40,
+      "expansionism": 0.35,
+      "diplomacy_preference": "cautious",
+      "decision_weights": {
+        "survival_first": 0.45,
+        "diplomatic_neutrality": 0.25,
+        "internal_stability": 0.20,
+        "military_offensive": 0.10
+      }
+    }
+  }
+}
